@@ -74,7 +74,7 @@
 
     
         <meta property="article:published_time" content="Tue Jun 06 2017 15:29:00 GMT+0800" />
-        <meta property="article:modified_time" content="Tue Jul 25 2017 01:39:18 GMT+0800" />
+        <meta property="article:modified_time" content="Tue Jul 25 2017 01:52:18 GMT+0800" />
     
 
     <!-- The Twitter Card protocol -->
@@ -115,7 +115,7 @@
     "headline": "使用html和nginx配置文件实现页面跳转",
     "url": "https://blog.asec01.net/use-html-and-nginx-to-redirect/index.html",
     "datePublished": "Tue Jun 06 2017 15:29:00 GMT+0800",
-    "dateModified": "Tue Jul 25 2017 01:39:18 GMT+0800",
+    "dateModified": "Tue Jul 25 2017 01:52:18 GMT+0800",
     "description": "",
     "mainEntityOfPage": {
         "@type": "WebPage",
@@ -527,7 +527,7 @@
 <p></p><h3>302</h3><p></p>
 <p><pre class="pure-highlightjs"><code class="">rewrite ^/(.*) <a href="http://exp.com/$1" target="_blank" rel="external">http://exp.com/$1</a> redirect;</code></pre><br><span style="color: #333333; font-family: Arial, 'Microsoft YaHei'; font-size: 15.75px; background-color: #ffffff;">插入至 server{ 与 } 之间即可</span></p>
 <p><span style="color: #333333; font-family: Arial, 'Microsoft YaHei';"><span style="font-size: 15.75px; background-color: #ffffff;">示例：</span></span></p>
-<p><pre class="pure-highlightjs"><code class="">server{<br>    listen 80;<br>    server_name jump.asec01.net;<br>    rewrite ^/(.*) <a href="https://blog.asec01.net/$1" target="_blank" rel="external">https://blog.asec01.net/$1</a> permanent;<br>    access_log off;<br>}</code></pre><br>&nbsp;</p>
+<p><pre class="pure-highlightjs"><code class="">server{<br>    listen 80;<br>    server_name jump.asec01.net;<br>    rewrite ^/(.*) <a href="https://blog.asec01.net/$1">https://blog.asec01.net/$1</a> permanent;<br>    access_log off;<br>}</code></pre><br>&nbsp;</p>
 <p>&nbsp;</p>
 <p><span style="color: #333333; font-family: Arial, 'Microsoft YaHei'; font-size: 15.75px; background-color: #ffffff;">注:301为永久跳转，302为临时跳转。<br></span></p>
 <p></p><h3 class="title-level-3" style="margin: 0.15rem 0px 0px; font-size: 0.17rem; line-height: 1.5; color: #3f3f3f; font-family: Helvetica, sans-serif; background-color: #ffffff;" data-title="301 Moved Permanently"></h3><p></p>

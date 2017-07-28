@@ -189,7 +189,7 @@
     <link href="https://blog.asec01.net/use-html-and-nginx-to-redirect/"/>
     <id>https://blog.asec01.net/use-html-and-nginx-to-redirect/</id>
     <published>2017-06-06T07:29:00.000Z</published>
-    <updated>2017-07-24T17:39:18.128Z</updated>
+    <updated>2017-07-24T17:52:18.642Z</updated>
     
     <content type="html"><![CDATA[<a id="more"></a>
 <p></p><h2>html方式</h2><br>等待5秒，跳转到<a href="https://www.google.com/" target="_blank" rel="external">https://www.google.com/</a><p></p>
@@ -200,7 +200,7 @@
 <p></p><h3>302</h3><p></p>
 <p><pre class="pure-highlightjs"><code class="">rewrite ^/(.*) <a href="http://exp.com/$1" target="_blank" rel="external">http://exp.com/$1</a> redirect;</code></pre><br><span style="color: #333333; font-family: Arial, 'Microsoft YaHei'; font-size: 15.75px; background-color: #ffffff;">插入至 server{ 与 } 之间即可</span></p>
 <p><span style="color: #333333; font-family: Arial, 'Microsoft YaHei';"><span style="font-size: 15.75px; background-color: #ffffff;">示例：</span></span></p>
-<p><pre class="pure-highlightjs"><code class="">server{<br>    listen 80;<br>    server_name jump.asec01.net;<br>    rewrite ^/(.*) <a href="https://blog.asec01.net/$1" target="_blank" rel="external">https://blog.asec01.net/$1</a> permanent;<br>    access_log off;<br>}</code></pre><br>&nbsp;</p>
+<p><pre class="pure-highlightjs"><code class="">server{<br>    listen 80;<br>    server_name jump.asec01.net;<br>    rewrite ^/(.*) <a href="https://blog.asec01.net/$1">https://blog.asec01.net/$1</a> permanent;<br>    access_log off;<br>}</code></pre><br>&nbsp;</p>
 <p>&nbsp;</p>
 <p><span style="color: #333333; font-family: Arial, 'Microsoft YaHei'; font-size: 15.75px; background-color: #ffffff;">注:301为永久跳转，302为临时跳转。<br></span></p>
 <p></p><h3 class="title-level-3" style="margin: 0.15rem 0px 0px; font-size: 0.17rem; line-height: 1.5; color: #3f3f3f; font-family: Helvetica, sans-serif; background-color: #ffffff;" data-title="301 Moved Permanently"></h3><p></p>
