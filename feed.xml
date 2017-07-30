@@ -8,25 +8,25 @@
     <atom:link href="//feed.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Sun, 30 Jul 2017 15:43:59 GMT</pubDate>
+    <pubDate>Sun, 30 Jul 2017 15:44:53 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
       <title>世界，您好！</title>
       <link>https://blog.asec01.net/hello-world/</link>
       <guid>https://blog.asec01.net/hello-world/</guid>
-      <pubDate>Sat, 29 Jul 2017 18:54:26 GMT</pubDate>
+      <pubDate>Sun, 30 Jul 2017 15:44:37 GMT</pubDate>
       <description>
       
-        &lt;h3 id=&quot;2017-07-29&quot;&gt;&lt;a href=&quot;#2017-07-29&quot; class=&quot;headerlink&quot; title=&quot;2017-07-29&quot;&gt;&lt;/a&gt;2017-07-29&lt;/h3&gt;&lt;p&gt;RSS地址更改为&lt;br&gt;&lt;a href=&quot;https://blog.asec01.net/feed.xml&quot;&gt;https://blog.asec01.net/feed.xml&lt;/a&gt;&lt;/p&gt;
+        &lt;h3 id=&quot;2017-07-30&quot;&gt;&lt;a href=&quot;#2017-07-30&quot; class=&quot;headerlink&quot; title=&quot;2017-07-30&quot;&gt;&lt;/a&gt;2017-07-30&lt;/h3&gt;&lt;p&gt;RSS地址更改为&lt;br&gt;&lt;a href=&quot;https://blog.asec01.net/feed.xml&quot;&gt;https://blog.asec01.net/feed.xml&lt;/a&gt;&lt;/p&gt;
       
       </description>
       
-      <content:encoded><![CDATA[<h3 id="2017-07-29"><a href="#2017-07-29" class="headerlink" title="2017-07-29"></a>2017-07-29</h3><p>RSS地址更改为<br><a href="https://blog.asec01.net/feed.xml">https://blog.asec01.net/feed.xml</a></p>
+      <content:encoded><![CDATA[<h3 id="2017-07-30"><a href="#2017-07-30" class="headerlink" title="2017-07-30"></a>2017-07-30</h3><p>RSS地址更改为<br><a href="https://blog.asec01.net/feed.xml">https://blog.asec01.net/feed.xml</a></p>
 <a id="more"></a>
 <p>迁回自有服务器，Coding不好用。。。  </p>
 <hr>
-<h3 id="2017-07-29-1"><a href="#2017-07-29-1" class="headerlink" title="2017-07-29"></a>2017-07-29</h3><p>迁移到Coding啦  </p>
+<h3 id="2017-07-29"><a href="#2017-07-29" class="headerlink" title="2017-07-29"></a>2017-07-29</h3><p>迁移到Coding啦  </p>
 <hr>
 <h3 id="2017-07-25"><a href="#2017-07-25" class="headerlink" title="2017-07-25"></a>2017-07-25</h3><p>来试试纯静态吧  </p>
 <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
