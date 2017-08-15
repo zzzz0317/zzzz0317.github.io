@@ -8,8 +8,68 @@
     <atom:link href="//feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>某人胡写和瞎想的地方</description>
-    <pubDate>Sun, 30 Jul 2017 15:44:53 GMT</pubDate>
+    <pubDate>Tue, 15 Aug 2017 05:10:29 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>用笔记本屏幕造个显示器</title>
+      <link>https://blog.asec01.net/how-to-modified-laptop-screen-to-monitor/</link>
+      <guid>https://blog.asec01.net/how-to-modified-laptop-screen-to-monitor/</guid>
+      <pubDate>Sat, 12 Aug 2017 15:18:12 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;嗯，高三了，老妈没收了我的显示器[捂脸] （虽然以前也不给我吧）&lt;/p&gt;
+&lt;p&gt;暑假还有点时间，搞事！&lt;/p&gt;
+&lt;h2&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>嗯，高三了，老妈没收了我的显示器[捂脸] （虽然以前也不给我吧）</p>
+<p>暑假还有点时间，搞事！</p>
+<h2><a id="more"></a></h2>
+<h2>前期准备</h2>
+<h5>2017.8.10-11</h5>
+<p>手头有个巨老的笔记本 NEC Versa S3000<br>
+拆了拆了<br>
+嗯第一次拆笔记本，喵的键盘还可以卸下来[再次捂脸]<br>
+拆机过程并不重要，重要的是我忘记拍照了[第三次捂脸]</p>
+<p>液晶屏GET√</p>
+<p><img src="https://zz-res.b0.upaiyun.com/blog/how-to-modified-laptop-screen-to-monitor/IMG_20170812_225438.jpg" alt="image"></p>
+<p><img src="https://zz-res.b0.upaiyun.com/blog/how-to-modified-laptop-screen-to-monitor/IMG_20170811_224208.jpg" alt="image"></p>
+<p>然后是 华强宝</p>
+<p><img src="https://zz-res.b0.upaiyun.com/blog/how-to-modified-laptop-screen-to-monitor/IMG_20170812_225912.png" alt="image"></p>
+<hr>
+<h2>货到啦</h2>
+<h5>2017.08.14</h5>
+<p>忘记拍拆包了[捂脸]</p>
+<p>组装起来试一试<br>
+<img src="https://zz-res.b0.upaiyun.com/blog/how-to-modified-laptop-screen-to-monitor/IMG_20170814_155301.jpg" alt="image"><br>
+<img src="https://zz-res.b0.upaiyun.com/blog/how-to-modified-laptop-screen-to-monitor/IMG_20170814_155347.jpg" alt="image"><br>
+嗯，很好，能用</p>
+<p>然后开始搞外壳<br>
+<img src="https://zz-res.b0.upaiyun.com/blog/how-to-modified-laptop-screen-to-monitor/IMG_20170814_160510.jpg" alt="image"></p>
+<p><img src="https://zz-res.b0.upaiyun.com/blog/how-to-modified-laptop-screen-to-monitor/IMG_20170814_160914.jpg" alt="image"><br>
+放到原来的外壳上</p>
+<p><img src="https://zz-res.b0.upaiyun.com/blog/how-to-modified-laptop-screen-to-monitor/IMG_20170814_160942.jpg" alt="image"><br>
+某根电源线太短我只能在外壳上打洞了[捂脸]</p>
+<p><img src="https://zz-res.b0.upaiyun.com/blog/how-to-modified-laptop-screen-to-monitor/IMG_20170814_161309.jpg" alt="image"><br>
+装上外壳依旧能用</p>
+<h3>这就完了？</h3>
+<h2>才怪嘞！</h2>
+<p>裸着用怎么行<br>
+给线路板加个壳保护一下嘛</p>
+<p><img src="https://zz-res.b0.upaiyun.com/blog/how-to-modified-laptop-screen-to-monitor/IMG_20170814_162432.jpg" alt="image"><br>
+快递盒的正确用法</p>
+<p><img src="https://zz-res.b0.upaiyun.com/blog/how-to-modified-laptop-screen-to-monitor/IMG_20170814_162550.jpg" alt="image"><br>
+万能的泡棉胶</p>
+<h2>完工！</h2>
+<p><img src="https://zz-res.b0.upaiyun.com/blog/how-to-modified-laptop-screen-to-monitor/IMG_20170814_230405.jpg" alt="image"></p>
+<p><img src="https://zz-res.b0.upaiyun.com/blog/how-to-modified-laptop-screen-to-monitor/IMG_20170814_164029.jpg" alt="image"></p>
+<p>希望不会被我和蔼的老妈发现[捂脸]</p>
+]]></content:encoded>
+      
+      <comments>https://blog.asec01.net/how-to-modified-laptop-screen-to-monitor/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>世界，您好！</title>
@@ -18,75 +78,49 @@
       <pubDate>Sun, 30 Jul 2017 15:44:37 GMT</pubDate>
       <description>
       
-        &lt;h3 id=&quot;2017-07-30&quot;&gt;&lt;a href=&quot;#2017-07-30&quot; class=&quot;headerlink&quot; title=&quot;2017-07-30&quot;&gt;&lt;/a&gt;2017-07-30&lt;/h3&gt;&lt;p&gt;RSS地址更改为&lt;br&gt;&lt;a href=&quot;https://blog.asec01.net/feed.xml&quot;&gt;https://blog.asec01.net/feed.xml&lt;/a&gt;&lt;/p&gt;
+        &lt;h3&gt;2017-07-30&lt;/h3&gt;
+&lt;p&gt;RSS地址更改为&lt;br&gt;
+&lt;a href=&quot;https://blog.asec01.net/feed.xml&quot;&gt;https://blog.asec01.net/feed.xml&lt;/a&gt;&lt;/p&gt;
       
       </description>
       
-      <content:encoded><![CDATA[<h3 id="2017-07-30"><a href="#2017-07-30" class="headerlink" title="2017-07-30"></a>2017-07-30</h3><p>RSS地址更改为<br><a href="https://blog.asec01.net/feed.xml">https://blog.asec01.net/feed.xml</a></p>
+      <content:encoded><![CDATA[<h3>2017-07-30</h3>
+<p>RSS地址更改为<br>
+<a href="https://blog.asec01.net/feed.xml">https://blog.asec01.net/feed.xml</a></p>
 <a id="more"></a>
-<p>迁回自有服务器，Coding不好用。。。  </p>
+<p>迁回自有服务器，Coding不好用。。。</p>
 <hr>
-<h3 id="2017-07-29"><a href="#2017-07-29" class="headerlink" title="2017-07-29"></a>2017-07-29</h3><p>迁移到Coding啦  </p>
+<h3>2017-07-29</h3>
+<p>迁移到Coding啦</p>
 <hr>
-<h3 id="2017-07-25"><a href="#2017-07-25" class="headerlink" title="2017-07-25"></a>2017-07-25</h3><p>来试试纯静态吧  </p>
+<h3>2017-07-25</h3>
+<p>来试试纯静态吧</p>
 <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<h2>Quick Start</h2>
+<h3>Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<h3>Run server</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<h3>Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<h3>Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
 <hr>
-<h3 id="2017-06-24"><a href="#2017-06-24" class="headerlink" title="2017-06-24"></a>2017-06-24</h3><p>WordPress太烧内存了，于是我换了Typecho</p>
+<h3>2017-06-24</h3>
+<p>WordPress太烧内存了，于是我换了Typecho</p>
 <hr>
-<h3 id="2017-03-06"><a href="#2017-03-06" class="headerlink" title="2017-03-06"></a>2017-03-06</h3><p>由于 X 国 Y 市 Z 区教委某恶心的规定（通知），学校给我开的福利虚拟机的IP地址外网接入服务被强行关停，所以我只能把这博客挪到了这里。。。</p>
+<h3>2017-03-06</h3>
+<p>由于 X 国 Y 市 Z 区教委某恶心的规定（通知），学校给我开的福利虚拟机的IP地址外网接入服务被强行关停，所以我只能把这博客挪到了这里。。。</p>
 <p>然后又因为种种原因备份无法恢复（其实是因为我懒），以前的博文就拜拜啦</p>
 <p>在接下来的时间里，我会在这里分享一些在网络生活中很有用的东西，就不举例了哈</p>
 <p>and顺便分享个生活!</p>
 ]]></content:encoded>
       
       <comments>https://blog.asec01.net/hello-world/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>一些想说的和未来一年的一点点规划</title>
-      <link>https://blog.asec01.net/sth-to-say-17-07-29/</link>
-      <guid>https://blog.asec01.net/sth-to-say-17-07-29/</guid>
-      <pubDate>Sat, 29 Jul 2017 06:02:41 GMT</pubDate>
-      <description>
-      
-        &lt;h4 id=&quot;烦！&quot;&gt;&lt;a href=&quot;#烦！&quot; class=&quot;headerlink&quot; title=&quot;烦！  &quot;&gt;&lt;/a&gt;烦！
-      
-      </description>
-      
-      <content:encoded><![CDATA[<h4 id="烦！"><a href="#烦！" class="headerlink" title="烦！  "></a>烦！  <a id="more"></a></h4><ul>
-<li><p>我并不是个爱学习的人，学习也只是为了高考能考个好点的大学，研究自己喜欢的东西。</p>
-</li>
-<li><p>我没法选择去专科或者干脆不读了，因为这样没有任何人能支持我。</p>
-</li>
-<li><p>别想让我离开我的数据和搭建起来的服务，它们就像我孩子一样。</p>
-</li>
-</ul>
-<p>你并不知道我在弄这些在你们眼里没有用的东西的时候付出了多少精力与时间。所以，请尊重一下我的劳动成果，别老劝我  </p>
-<blockquote>
-<p>高三了，得好好学习，这些都不重要  </p>
-</blockquote>
-<p>不重要？对我来说这些就是很重要</p>
-<blockquote>
-<p>这是为你好….</p>
-</blockquote>
-<p>为我好？你们不在意我内心想法吗？</p>
-<hr>
-<h4 id="关于高三"><a href="#关于高三" class="headerlink" title="关于高三"></a>关于高三</h4><p>高三是该好好学习收收心。<br>我知道我在干什么。  </p>
-<p>在大多数时间，我会努力学习。关心我的人可以放心这点。<br>小部分时间，我需要放松一下，弄这些在你们眼里没有用的东西对我来说就是放松。<br>放松≠休息  </p>
-<p>不要突然把太高的要求压在我身上，也别用别人家的孩子和我比，这样我会很不开心，效率maybe也会拉的很低，适合我最好。这就是我在学校心情不错回家心情爆炸的原因。</p>
-<hr>
-<p>好了就嘚嘚这么多吧 嘚嘚出来就舒服多了</p>
-]]></content:encoded>
-      
-      <comments>https://blog.asec01.net/sth-to-say-17-07-29/#disqus_thread</comments>
     </item>
     
     <item>
@@ -133,9 +167,11 @@
 <p>比如博客顶部的这个</p>
 <p><img src="https://zz-res.b0.upaiyun.com/old/typecho/2017/06/1788633181.jpg" alt="20170626133342.jpg"></p>
 <p>还有这个</p>
-<p>这俩都调用了一言（hitokoto.cn）的API。</p>
-<p>第一个源码在here↓<br><a href="https://zz-res.b0.upaiyun.com/old/typecho/2017/06/3342414833.zip" target="_blank" rel="external">yiyan.zip</a></p>
-<p>第二个就不放源码了哈，实现起来一点都不难<br><a href="http://public.asec01.net/projects/yiyan/" target="_blank" rel="external">http://public.asec01.net/projects/yiyan/</a></p>
+<p>这俩都调用了一言（<a href="http://hitokoto.cn" target="_blank" rel="external">hitokoto.cn</a>）的API。</p>
+<p>第一个源码在here↓<br>
+<a href="https://zz-res.b0.upaiyun.com/old/typecho/2017/06/3342414833.zip" target="_blank" rel="external">yiyan.zip</a></p>
+<p>第二个就不放源码了哈，实现起来一点都不难<br>
+<a href="http://public.asec01.net/projects/yiyan/" target="_blank" rel="external">http://public.asec01.net/projects/yiyan/</a></p>
 ]]></content:encoded>
       
       <comments>https://blog.asec01.net/use-yiyan-api-build-something/#disqus_thread</comments>
@@ -149,21 +185,29 @@
       <description>
       
         &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h3 id=&quot;程序与硬件方面&quot;&gt;&lt;a href=&quot;#程序与硬件方面&quot; class=&quot;headerlink&quot; title=&quot;程序与硬件方面&quot;&gt;&lt;/a&gt;程序与硬件方面&lt;/h3&gt;&lt;h5 id=&quot;在厂家提供的程序上做出修改，添加拨码开关用于快速调整开
+&lt;h3&gt;程序与硬件方面&lt;/h3&gt;
+&lt;h5&gt;在厂家提供的程序上做出修改，添加拨码开关用于快速调整开球战术。&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;重新测量距离数据，使程序判断车在赛场中的位置更加精准。&lt;/li&gt;
+&lt;li&gt;修改添加开球战术。&lt;/li&gt;
+&lt;/o
       
       </description>
       
       <content:encoded><![CDATA[<a id="more"></a>
-<h3 id="程序与硬件方面"><a href="#程序与硬件方面" class="headerlink" title="程序与硬件方面"></a>程序与硬件方面</h3><h5 id="在厂家提供的程序上做出修改，添加拨码开关用于快速调整开球战术。"><a href="#在厂家提供的程序上做出修改，添加拨码开关用于快速调整开球战术。" class="headerlink" title="在厂家提供的程序上做出修改，添加拨码开关用于快速调整开球战术。"></a>在厂家提供的程序上做出修改，添加拨码开关用于快速调整开球战术。</h5><ol>
-<li>重新测量距离数据，使程序判断车在赛场中的位置更加精准。  </li>
-<li>修改添加开球战术。  <ul>
-<li>战术1:启动后0.3s内不受追球程序控制，前0.05s以40%的功率进行直冲，后0.25s以100%的功率直冲。这是最常用的战术，用于冲破对方防线 。  </li>
+<h3>程序与硬件方面</h3>
+<h5>在厂家提供的程序上做出修改，添加拨码开关用于快速调整开球战术。</h5>
+<ol>
+<li>重新测量距离数据，使程序判断车在赛场中的位置更加精准。</li>
+<li>修改添加开球战术。</li>
+</ol>
+<ul>
+<li>战术1:启动后0.3s内不受追球程序控制，前0.05s以40%的功率进行直冲，后0.25s以100%的功率直冲。这是最常用的战术，用于冲破对方防线 。</li>
 <li>战术2:(仅用于开球)启动后0.3s内不受追球程序控制，前0.05s以40%的功率进行直冲，之后带球向右偏转，最后启动追球模块尝试射门。</li>
 <li>战术3:启动后0.5s内不受追球程序控制，前0.05s以40%的功率进行直冲，后0.45s以100%的功率直冲。此战术可在开球时扰乱对方机器人的进攻路线，使另一台机器人获得优势。</li>
 </ul>
-</li>
-</ol>
-<h3 id="比赛"><a href="#比赛" class="headerlink" title="比赛"></a>比赛</h3><ol>
+<h3>比赛</h3>
+<ol>
 <li>对方机器人并排放在球门前，中间留空，我方开球，直接启用战术1，进球成功率99％</li>
 <li>对方开球，我方防守，一个机器人正对对方机器人，开启冲撞战术，有很大几率抢到球。</li>
 <li>开球时机器人不正对球，用前部偏左或偏右撞击机器人，可使机器人在开球时向右偏，绕开对方防线。</li>
@@ -172,9 +216,11 @@
 <li>中场休息时用风扇给电机散热。</li>
 </ol>
 <hr>
-<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>付出总会有收获。</p>
+<h3>写在最后</h3>
+<p>付出总会有收获。</p>
 <hr>
-<h4 id="未完待续-by-哲"><a href="#未完待续-by-哲" class="headerlink" title="未完待续 by 哲"></a>未完待续 by 哲</h4>]]></content:encoded>
+<h4>未完待续 by 哲</h4>
+]]></content:encoded>
       
       <comments>https://blog.asec01.net/robot-competition-2017-exp/#disqus_thread</comments>
     </item>
@@ -187,19 +233,18 @@
       <description>
       
         &lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot; src=&quot;//music.163.com/outchain/player?type=2&amp;id=430026356&amp;auto=1&amp;height=66&quot;&gt;&lt;/iframe&gt;
-
 &lt;hr&gt;
 &lt;p&gt;好几天前就该写了。。。&lt;/p&gt;
       
       </description>
       
       <content:encoded><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=430026356&auto=1&height=66"></iframe>
-
 <hr>
 <p>好几天前就该写了。。。</p>
 <a id="more"></a>
 <hr>
-<p>经过6月10、11两天的激烈角逐，我和明明小组赛三战全胜，半决赛惜败最后的冠军队，止步四强，最后在全市各区县11支代表队中夺得第三名。感谢学校为我们提供这么好的环境。<br><img src="https://zz-res.b0.upaiyun.com/old/typecho/2017/06/2483275344.jpg" alt="1.jpg"></p>
+<p>经过6月10、11两天的激烈角逐，我和明明小组赛三战全胜，半决赛惜败最后的冠军队，止步四强，最后在全市各区县11支代表队中夺得第三名。感谢学校为我们提供这么好的环境。<br>
+<img src="https://zz-res.b0.upaiyun.com/old/typecho/2017/06/2483275344.jpg" alt="1.jpg"></p>
 <p><img src="https://zz-res.b0.upaiyun.com/old/typecho/2017/06/2044858228.jpg" alt="2.jpg"></p>
 <p><img src="https://zz-res.b0.upaiyun.com/old/typecho/2017/06/3208353433.jpg" alt="3.jpg"></p>
 <p><img src="https://zz-res.b0.upaiyun.com/old/typecho/2017/06/381128313.jpg" alt="4.jpg"></p>
@@ -209,8 +254,10 @@
 <p><img src="https://zz-res.b0.upaiyun.com/old/typecho/2017/06/3985478342.jpg" alt="8.jpg"></p>
 <p><img src="https://zz-res.b0.upaiyun.com/old/typecho/2017/06/2264798567.jpg" alt="9.jpg"></p>
 <hr>
-<h3 id="经验"><a href="#经验" class="headerlink" title="经验"></a>经验</h3><p><a href="https://blog.asec01.net/robot-competition-2017-exp/">https://blog.asec01.net/robot-competition-2017-exp/</a></p>
-<h3 id="部分内容来源"><a href="#部分内容来源" class="headerlink" title="部分内容来源"></a>部分内容来源</h3><p><a href="https://mp.weixin.qq.com/s?__biz=MzAxODU1ODg2Mg==&amp;mid=2649515921&amp;idx=1&amp;sn=13c130e958b01e94d92f2eeb8a8cd2b9" target="_blank" rel="external">https://mp.weixin.qq.com/s?__biz=MzAxODU1ODg2Mg==&amp;mid=2649515921&amp;idx=1&amp;sn=13c130e958b01e94d92f2eeb8a8cd2b9</a></p>
+<h3>经验</h3>
+<p><a href="https://blog.asec01.net/robot-competition-2017-exp/">https://blog.asec01.net/robot-competition-2017-exp/</a></p>
+<h3>部分内容来源</h3>
+<p><a href="https://mp.weixin.qq.com/s?__biz=MzAxODU1ODg2Mg==&amp;mid=2649515921&amp;idx=1&amp;sn=13c130e958b01e94d92f2eeb8a8cd2b9" target="_blank" rel="external">https://mp.weixin.qq.com/s?__biz=MzAxODU1ODg2Mg==&amp;mid=2649515921&amp;idx=1&amp;sn=13c130e958b01e94d92f2eeb8a8cd2b9</a></p>
 ]]></content:encoded>
       
       <comments>https://blog.asec01.net/robot-competition-2017/#disqus_thread</comments>
@@ -224,24 +271,42 @@
       <description>
       
         &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;p&gt;&lt;/p&gt;&lt;h2&gt;html方式&lt;/h2&gt;&lt;br&gt;等待5秒，跳转到&lt;a href=&quot;https://www.google.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.google.com/
+&lt;p&gt;&lt;/p&gt;&lt;h2&gt;html方式&lt;/h2&gt;&lt;br&gt;
+等待5秒，跳转到https://www.google.com/&lt;p&gt;&lt;/p&gt;
+&lt;pre class=&quot;pure-highlightjs&quot;&gt;&lt;code class=&quot;&quot;&gt;&amp;lt;meta ht
       
       </description>
       
       <content:encoded><![CDATA[<a id="more"></a>
-<p></p><h2>html方式</h2><br>等待5秒，跳转到<a href="https://www.google.com/" target="_blank" rel="external">https://www.google.com/</a><p></p>
-<p><pre class="pure-highlightjs"><code class="">&lt;meta http-equiv=”refresh” content=”5;url=<a href="https://www.google.com/&quot;&amp;gt" target="_blank" rel="external">https://www.google.com/&quot;&amp;gt</a>;</code></pre><br>插入至&lt;head&gt;标签中即可</p>
-<p></p><h2>nginx 301/302 页面重定向</h2><p></p>
-<p></p><h3>301</h3><p></p>
-<p><pre class="pure-highlightjs"><code class="">rewrite ^/(.*) <a href="http://exp.com/$1" target="_blank" rel="external">http://exp.com/$1</a> permanent;</code></pre></p>
+<p></p><h2>html方式</h2><br>
+等待5秒，跳转到https://www.google.com/<p></p>
+<pre class="pure-highlightjs"><code class="">&lt;meta http-equiv="refresh" content="5;url=https://www.google.com/"&gt;</code></pre>
+<p>插入至&lt;head&gt;标签中即可</p>
+<p></p><h2>nginx 301/302 页面重定向</h2><br>
+<h3>301</h3><p></p>
+<pre class="pure-highlightjs"><code class="">rewrite ^/(.*) http://exp.com/$1 permanent;</code></pre>
 <p></p><h3>302</h3><p></p>
-<p><pre class="pure-highlightjs"><code class="">rewrite ^/(.*) <a href="http://exp.com/$1" target="_blank" rel="external">http://exp.com/$1</a> redirect;</code></pre><br><span style="color: #333333; font-family: Arial, 'Microsoft YaHei'; font-size: 15.75px; background-color: #ffffff;">插入至 server{ 与 } 之间即可</span></p>
+<pre class="pure-highlightjs"><code class="">rewrite ^/(.*) http://exp.com/$1 redirect;</code></pre>
+<p><span style="color: #333333; font-family: Arial, 'Microsoft YaHei'; font-size: 15.75px; background-color: #ffffff;">插入至 server{ 与 } 之间即可</span></p>
 <p><span style="color: #333333; font-family: Arial, 'Microsoft YaHei';"><span style="font-size: 15.75px; background-color: #ffffff;">示例：</span></span></p>
-<p><pre class="pure-highlightjs"><code class="">server{<br>    listen 80;<br>    server_name jump.asec01.net;<br>    rewrite ^/(.*) <a href="https://blog.asec01.net/$1">https://blog.asec01.net/$1</a> permanent;<br>    access_log off;<br>}</code></pre><br>&nbsp;</p>
-<p>&nbsp;</p>
-<p><span style="color: #333333; font-family: Arial, 'Microsoft YaHei'; font-size: 15.75px; background-color: #ffffff;">注:301为永久跳转，302为临时跳转。<br></span></p>
-<p></p><h3 class="title-level-3" style="margin: 0.15rem 0px 0px; font-size: 0.17rem; line-height: 1.5; color: #3f3f3f; font-family: Helvetica, sans-serif; background-color: #ffffff;" data-title="301 Moved Permanently"></h3><p></p>
-<blockquote><br><h3 class="title-level-3" data-title="301 Moved Permanently"></h3><br><h3 class="title-level-3" data-title="301 Moved Permanently">301 Moved Permanently</h3><br><p class="para">被请求的资源已永久移动到新位置，并且将来任何对此资源的引用都应该使用本响应返回的若干个 URI 之一。如果可能，拥有链接编辑功能的客户端应当自动把请求的地址修改为从服务器反馈回来的地址。除非额外指定，否则这个响应也是可缓存的。</p><br><br><h3 class="title-level-3" data-title="302 Move temporarily">302 Move temporarily</h3><br><p class="para">请求的资源临时从不同的 URI响应请求。由于这样的重定向是临时的，客户端应当继续向原有地址发送以后的请求。只有在Cache-Control或Expires中进行了指定的情况下，这个响应才是可缓存的。</p><br></blockquote>
+<pre class="pure-highlightjs"><code class="">server{
+    listen 80;
+    server_name jump.asec01.net;
+    rewrite ^/(.*) https://blog.asec01.net/$1 permanent;
+    access_log off;
+}</code></pre>
+<p> </p>
+<p> </p>
+<p><span style="color: #333333; font-family: Arial, 'Microsoft YaHei'; font-size: 15.75px; background-color: #ffffff;">注:301为永久跳转，302为临时跳转。<br>
+</span><br>
+</p><h3 class="title-level-3" style="margin: 0.15rem 0px 0px; font-size: 0.17rem; line-height: 1.5; color: #3f3f3f; font-family: Helvetica, sans-serif; background-color: #ffffff;" data-title="301 Moved Permanently"></h3><p></p>
+<blockquote>
+<h3 class="title-level-3" data-title="301 Moved Permanently"></h3>
+<h3 class="title-level-3" data-title="301 Moved Permanently">301 Moved Permanently</h3>
+<p class="para">被请求的资源已永久移动到新位置，并且将来任何对此资源的引用都应该使用本响应返回的若干个 URI 之一。如果可能，拥有链接编辑功能的客户端应当自动把请求的地址修改为从服务器反馈回来的地址。除非额外指定，否则这个响应也是可缓存的。</p>
+<p></p><h3 class="title-level-3" data-title="302 Move temporarily">302 Move temporarily</h3><p></p>
+<p class="para">请求的资源临时从不同的 URI响应请求。由于这样的重定向是临时的，客户端应当继续向原有地址发送以后的请求。只有在Cache-Control或Expires中进行了指定的情况下，这个响应才是可缓存的。</p>
+</blockquote>
 ]]></content:encoded>
       
       <comments>https://blog.asec01.net/use-html-and-nginx-to-redirect/#disqus_thread</comments>
@@ -254,31 +319,32 @@
       <pubDate>Sun, 21 May 2017 11:33:00 GMT</pubDate>
       <description>
       
-        &lt;p&gt;咸鱼咸鱼大咸鱼&lt;br&gt;
+        &lt;p&gt;咸鱼咸鱼大咸鱼&lt;/p&gt;
       
       </description>
       
-      <content:encoded><![CDATA[<p>咸鱼咸鱼大咸鱼<br><a id="more"></a><br>17.05.15 胡连</p>
-<p><img src="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/wp-1495366216211.png!webp">&nbsp;</p>
+      <content:encoded><![CDATA[<p>咸鱼咸鱼大咸鱼</p>
+<a id="more"></a>
+<p>17.05.15 胡连</p>
+<p><img src="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/wp-1495366216211.png!webp"> </p>
 <p>17.05.16 继续胡连</p>
-<p><img src="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/wp-1495366179420.png!webp">&nbsp;</p>
+<p><img src="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/wp-1495366179420.png!webp"> </p>
 <p>17.05.17 LVL7 get√</p>
-<p><img src="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/wp-1495366140374.jpg!webp">&nbsp;&nbsp;</p>
+<p><img src="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/wp-1495366140374.jpg!webp">  </p>
 <p>17.05.18 第一次用 L7 的 XMP Buster</p>
-<p><img src="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/wp-1495365637512.png!webp"></p>
-<p>&nbsp;</p>
+<img src="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/wp-1495365637512.png!webp">
+<p> </p>
 <p>17.05.19 早上发现刘家窑的新 Portal</p>
-<p><img src="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/wp-1495365781839.png!webp"></p>
+<img src="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/wp-1495365781839.png!webp">
 <p>放学把门口总部绿了</p>
-<p><img src="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/wp-1495365702494.png!webp" style="color: rgb(0, 135, 190);"></p>
-<p>&nbsp;</p>
+<img src="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/wp-1495365702494.png!webp" style="color: rgb(0, 135, 190);">
+<p> </p>
 <p>17.05.20 大晚上出去搞事</p>
 <p>红桶get√</p>
-<p><img src="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/wp-1495365951182.png!webp"></p>
+<img src="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/wp-1495365951182.png!webp">
 <p>经验get√</p>
 <p><img src="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/wp-1495365998666.png!webp">体力。。没了</p>
-<p><img src="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/wp-1495365985318.png!webp"></p>
-]]></content:encoded>
+<img src="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/wp-1495365985318.png!webp">]]></content:encoded>
       
       <comments>https://blog.asec01.net/ingress-17-05-17-20/#disqus_thread</comments>
     </item>
@@ -290,18 +356,20 @@
       <pubDate>Sun, 14 May 2017 15:09:00 GMT</pubDate>
       <description>
       
-        &lt;p&gt;咸鱼咸鱼小咸鱼&lt;br&gt;
+        &lt;p&gt;咸鱼咸鱼小咸鱼&lt;/p&gt;
       
       </description>
       
-      <content:encoded><![CDATA[<p>咸鱼咸鱼小咸鱼<br><a id="more"></a><br>17-5-13↓</p>
-<p><img src="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/wp-1494774233962.png"></p>
+      <content:encoded><![CDATA[<p>咸鱼咸鱼小咸鱼</p>
+<a id="more"></a>
+<p>17-5-13↓</p>
+<img src="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/wp-1494774233962.png">
 <p>～～～我是一条分割线～～～</p>
 <p>17-05-14↓</p>
-<p><img src="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/wp-1494774415673.png"></p>
-<p>～～～我是一条分割线～～～<br>and小黄车↓</p>
-<p><img src="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/wp-1494774452946.png"></p>
-]]></content:encoded>
+<img src="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/wp-1494774415673.png">
+<p>～～～我是一条分割线～～～<br>
+and小黄车↓</p>
+<img src="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/wp-1494774452946.png">]]></content:encoded>
       
       <comments>https://blog.asec01.net/ingress-17-05-14/#disqus_thread</comments>
     </item>
@@ -320,19 +388,19 @@
       <content:encoded><![CDATA[<p>嗯，Adobe似乎不管盗版。。<a id="more"></a></p>
 <p>原价嘛。。自己去官网看</p>
 <p>破解器↓</p>
-<p><img class="alignnone size-full wp-image-50" src="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/20170514123836.png" alt="" width="99" height="132"></p>
+<img class="alignnone size-full wp-image-50" src="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/20170514123836.png" alt="" width="99" height="132">
 <p>（当年第一次戳开的时候，音乐吓我一跳。。嗯。。好怕怕）</p>
-<p><img class="alignnone size-full wp-image-49" src="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/20170514123709.png" alt="" width="412" height="295"></p>
+<img class="alignnone size-full wp-image-49" src="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/20170514123709.png" alt="" width="412" height="295">
 <p>产品列表↓（太多了懒得一张一张截图了，反正很全）</p>
-<p><img class="alignnone size-full wp-image-51" src="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/20170514124029.png" alt="" width="413" height="296"></p>
-<p><img class="alignnone size-full wp-image-52" src="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/20170514124322.png" alt="" width="414" height="297"></p>
+<img class="alignnone size-full wp-image-51" src="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/20170514124029.png" alt="" width="413" height="296">
+<img class="alignnone size-full wp-image-52" src="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/20170514124322.png" alt="" width="414" height="297">
 <p>从CS4到CC2014都能破解</p>
 <p>实测CC2017也可以=_=</p>
 <p>选错产品&amp;版本也可也0.0</p>
 <p>醉了。。</p>
 <p>当然还是要支持正版的啦（买不起）</p>
 <p>小伙伴的文章：<a href="https://liyin.date/2017/04/30/one-adobe-carsh-resolve/" target="_blank" rel="external">一次 Adobe 软件的崩溃解决</a></p>
-<p>[video width=”400” height=”360” mp4=”<a href="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/Video_5532647147155561461_1494737627.mp4&quot;][/video" target="_blank" rel="external">https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/Video_5532647147155561461_1494737627.mp4&quot;][/video</a>]</p>
+<p>[video width=“400” height=“360” mp4=“<a href="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/Video_5532647147155561461_1494737627.mp4" target="_blank" rel="external">https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/Video_5532647147155561461_1494737627.mp4</a>”][/video]</p>
 ]]></content:encoded>
       
       <comments>https://blog.asec01.net/universal-adobe-patcher/#disqus_thread</comments>
