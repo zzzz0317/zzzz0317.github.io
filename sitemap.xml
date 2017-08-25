@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.asec01.net/about/index.html</loc>
+    
+    <lastmod>2017-08-25T16:57:07.653Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.asec01.net/how-to-modified-laptop-screen-to-monitor/</loc>
     
     <lastmod>2017-08-15T05:10:29.657Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>https://blog.asec01.net/link-request/index.html</loc>
     
     <lastmod>2017-08-02T13:37:40.512Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.asec01.net/about/index.html</loc>
-    
-    <lastmod>2017-08-02T13:16:12.253Z</lastmod>
     
   </url>
   
