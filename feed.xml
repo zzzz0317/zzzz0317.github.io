@@ -8,8 +8,248 @@
     <atom:link href="//feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>某人胡写和瞎想的地方</description>
-    <pubDate>Tue, 15 Aug 2017 05:10:29 GMT</pubDate>
+    <pubDate>Wed, 04 Oct 2017 16:58:38 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>ESP8266 断网神器 基础使用</title>
+      <link>https://blog.asec01.net/esp8266-wifi-deauther-basic/</link>
+      <guid>https://blog.asec01.net/esp8266-wifi-deauther-basic/</guid>
+      <pubDate>Wed, 04 Oct 2017 15:51:03 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;我们都是熊孩纸~~~ x2&lt;/p&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>我们都是熊孩纸~~~ x2</p>
+<a id="more"></a>
+<hr>
+<p>&lt; 接上文 &gt;</p>
+<h4>基础使用</h4>
+<p>本文仅介绍Deauth攻击。<br>
+后续我会写关于Beacon和Probe的使用方式，敬请期待</p>
+<hr>
+<h4>连接</h4>
+<p>这块没有啥好说的。。。<br>
+使用手机或者 PC 搜索 WiFi 接入点<br>
+你会发现一个名为 <strong>pwned</strong> 的接入点，此热点默认密码为 <strong>deauther</strong><br>
+<img src="https://zz-res.b0.upaiyun.com/blog/esp8266-wifi-deauther-basic/connect-wifi-01.png!pic" alt="image"><br>
+<img src="https://zz-res.b0.upaiyun.com/blog/esp8266-wifi-deauther-basic/connect-wifi-02.png!pic" alt="image"></p>
+<p>然后随便打开个现代一点的浏览器（360滚，谁知道他会搞出什么事）<br>
+在地址栏输入 <strong>192.168.4.1</strong><br>
+<img src="https://zz-res.b0.upaiyun.com/blog/esp8266-wifi-deauther-basic/web-warning.png!pic" alt="image"></p>
+<p>翻译：</p>
+<blockquote>
+<p>此软件仅用于测试802.11 标准中的常见漏洞.<br>
+它可以中断无保护的 wi-fi 连接.<br>
+在使用之前请查阅您的国家的法律.</p>
+<p>您只能在自己的网络和设备上使用它!<br>
+此软件在未经许可的情况下对其他网络的使用是非法的!</p>
+<p>你要为你所做的一切包括这个程序负责!<br>
+它将记录所有针对任何网络和设备的操作.</p>
+<p>请不要将此项目命名为干扰器，他没有扰乱任何频率。<br>
+去 <a href="http://github.com/spacehuhn/esp8266_deauther" target="_blank" rel="external">github.com/spacehuhn/esp8266_deauther</a> 获得更多信息</p>
+</blockquote>
+<p>当然果断理解啦</p>
+<hr>
+<h4>扫描接入点</h4>
+<p>理解了上面的通知会直接把你带到扫描页面（192.168.4.1/apscan.html）<br>
+<img src="https://zz-res.b0.upaiyun.com/blog/esp8266-wifi-deauther-basic/web-scan-aps.png!pic" alt="image"></p>
+<p>等待几秒，扫描完成<br>
+<img src="https://zz-res.b0.upaiyun.com/blog/esp8266-wifi-deauther-basic/web-scan-aps-result.png!pic" alt="image"><br>
+选择攻击目标<br>
+<img src="https://zz-res.b0.upaiyun.com/blog/esp8266-wifi-deauther-basic/web-scan-aps-select.png!pic" alt="image"></p>
+<hr>
+<h4>攻击</h4>
+<p>切换到攻击页面（192.168.4.1/attack.html）<br>
+<img src="https://zz-res.b0.upaiyun.com/blog/esp8266-wifi-deauther-basic/web-attack.png!pic" alt="image"></p>
+<p>开始攻击<br>
+<img src="https://zz-res.b0.upaiyun.com/blog/esp8266-wifi-deauther-basic/web-attack-start.png!pic" alt="image"></p>
+<hr>
+<h4>效果</h4>
+<p>2.4G 就是连不上<br>
+<img src="https://zz-res.b0.upaiyun.com/blog/esp8266-wifi-deauther-basic/phone-wifi-01.png!pic" alt="image"><br>
+<img src="https://zz-res.b0.upaiyun.com/blog/esp8266-wifi-deauther-basic/phone-wifi-02.png!pic" alt="image"></p>
+<hr>
+<h4>设置</h4>
+<p>切换到设置页面（192.168.4.1/settings.html）<br>
+<img src="https://zz-res.b0.upaiyun.com/blog/esp8266-wifi-deauther-basic/web-settings-1.png!pic" alt="image"><br>
+SSID 是控制板子用的接入点的名称<br>
+Password 是连接密码</p>
+<p><img src="https://zz-res.b0.upaiyun.com/blog/esp8266-wifi-deauther-basic/web-settings-2.png!pic" alt="image"><br>
+Timeout 是自动停止时间<br>
+调成0为不自动停止</p>
+<p>其他设置不建议新手小白修改。。。</p>
+<hr>
+<h3>本文，完</h3>
+<p>Beacon之类的请待我更新下一篇博文。。。</p>
+]]></content:encoded>
+      
+      <comments>https://blog.asec01.net/esp8266-wifi-deauther-basic/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>ESP8266 断网神器 淘板子与刷入程序</title>
+      <link>https://blog.asec01.net/esp8266-wifi-deauther/</link>
+      <guid>https://blog.asec01.net/esp8266-wifi-deauther/</guid>
+      <pubDate>Tue, 03 Oct 2017 17:38:09 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;我们都是熊孩纸~~~&lt;/p&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>我们都是熊孩纸~~~</p>
+<a id="more"></a>
+<h4>实现原理：</h4>
+<blockquote>
+<p>Deauth（去认证）攻击<br>
+任何客户端进入一个无线网络前必须先获得一个AP接入点的认证，在这之后跟这个AP相关联。当一个客户端离开时，他会发送一个去除认证信息去不再和AP进行关联。攻击者可以向绑定到客户端IP地址的接入点发送去除认证消息，从而使用户离线并且需要重新认证，从而让攻击者可以观察到重新认证握手时候的有价值的信息。<br>
+为了防御这种攻击，可以设置接入点延迟解除认证或者解除关联请求（比如这样的请求需要排队等待5到10秒），从而给接入点机会来观测客户端后续发送过来的数据包。如果一个数据包在一个解除认证或者解除关联请求被放入等待队列之后到达，那么该请求会被丢弃，因为合法客户端将不会以该顺序生成数据包。</p>
+<p>来自 维基百科 网络接口层安全 （“Deauth（去认证）攻击”章节）</p>
+</blockquote>
+<hr>
+<h3>搞事情第一步当然是采购</h3>
+<p>某宝上面淘一块，推荐NodeMCU<br>
+推荐选择CP2102版本的，CH340的那个大了点。。。<br>
+CP2102: <a href="https://cnhv.co/2gua" target="_blank" rel="external">https://item.taobao.com/item.htm?id=530734023642</a><br>
+CH-340: <a href="https://cnhv.co/2gul" target="_blank" rel="external">https://item.taobao.com/item.htm?id=531755241333</a></p>
+<hr>
+<h3>然后货到了开搞</h3>
+<h4>两种搞事情的方式</h4>
+<ol>
+<li>直接刷大佬编译好的程序</li>
+<li>把大佬的源码拉过来自己编译</li>
+</ol>
+<p>本文先介绍第一种方式<br>
+第二种似乎。。没有什么必要<br>
+以后再写吧</p>
+<hr>
+<h4>下载 NodeMCU-Flasher</h4>
+<p><a href="https://cnhv.co/2gv8" target="_blank" rel="external">https://github.com/nodemcu/nodemcu-flasher</a></p>
+<p><img src="https://zz-res.b0.upaiyun.com/blog/esp8266-wifi-deauther/nodemcu-flasher-download.PNG!pic" alt="image"></p>
+<p>根据你自己的操作系统版本，这俩文件夹自己选<br>
+<img src="https://zz-res.b0.upaiyun.com/blog/esp8266-wifi-deauther/nodemcu-flasher-use-01.PNG!pic" alt="image"></p>
+<p><img src="https://zz-res.b0.upaiyun.com/blog/esp8266-wifi-deauther/nodemcu-flasher-use-02.PNG!pic" alt="image"></p>
+<p>打开软件<br>
+<img src="https://zz-res.b0.upaiyun.com/blog/esp8266-wifi-deauther/nodemcu-flasher-use-03.PNG!pic" alt="image"></p>
+<p>将 NodeMCU 连接到电脑上<br>
+（我就不告诉你咋装驱动）<br>
+<img src="https://zz-res.b0.upaiyun.com/blog/esp8266-wifi-deauther/nodemcu-flasher-connect.PNG!pic" alt="image"><br>
+连接成功，放在一边</p>
+<hr>
+<h4>下载 esp8266_deauther</h4>
+<p>发布地址: <a href="https://cnhv.co/2gx7" target="_blank" rel="external">https://github.com/spacehuhn/esp8266_deauther/releases</a><br>
+直接下载: <a href="https://cnhv.co/2gxo" target="_blank" rel="external">https://github.com/spacehuhn/esp8266_deauther/releases/download/v.1.6/esp8266_deauther_1mb.bin</a></p>
+<hr>
+<h4>开始刷程序</h4>
+<p>Config -&gt; 小齿轮 -&gt; 选择刚刚下载的文件<br>
+<img src="https://zz-res.b0.upaiyun.com/blog/esp8266-wifi-deauther/nodemcu-flasher-use-04.PNG!pic" alt="image"></p>
+<p>Operation -&gt; Flash<br>
+<img src="https://zz-res.b0.upaiyun.com/blog/esp8266-wifi-deauther/nodemcu-flasher-use-05.PNG!pic" alt="image"></p>
+<p>刷入完成<br>
+<img src="https://zz-res.b0.upaiyun.com/blog/esp8266-wifi-deauther/nodemcu-flasher-use-05.PNG!pic" alt="image"></p>
+<hr>
+<h3>本文，完</h3>
+<p>基础使用请看：<a href="https://cnhv.co/2mip" target="_blank" rel="external">https://blog.asec01.net/esp8266-wifi-deauther-basic/</a></p>
+]]></content:encoded>
+      
+      <comments>https://blog.asec01.net/esp8266-wifi-deauther/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>九年计划</title>
+      <link>https://blog.asec01.net/nine-years-plan/</link>
+      <guid>https://blog.asec01.net/nine-years-plan/</guid>
+      <pubDate>Thu, 21 Sep 2017 05:08:00 GMT</pubDate>
+      <description>
+      
+        &lt;h2&gt;简单说明&lt;/h2&gt;
+&lt;p&gt;在北京市第五十四中学的秋季运动会上，武旭主任屡次担当女子实心球裁判。&lt;/p&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<h2>简单说明</h2>
+<p>在北京市第五十四中学的秋季运动会上，武旭主任屡次担当女子实心球裁判。</p>
+<a id="more"></a>  
+<p>每年计划的执行者都会拍下一张武旭主任坐在那里的照片[滑稽]<br>
+本计划的目标是拍摄武旭主任9年的变化，在计划最后一年在朋友圈中发9张图。</p>
+<h2>成果展示</h2>
+<p>2014 [暂未添加原图]<br>
+<img src="https://zz-res.b0.upaiyun.com/blog/nine-years-plan/2014.jpg!pic" alt="image"></p>
+<p>2015 [暂未添加原图]<br>
+<img src="https://zz-res.b0.upaiyun.com/blog/nine-years-plan/2015.jpg!pic" alt="image"></p>
+<p>2016 [暂未添加原图]<br>
+<img src="https://zz-res.b0.upaiyun.com/blog/nine-years-plan/2016.jpg!pic" alt="image"></p>
+<p>2017 [暂未添加原图]<br>
+<img src="https://zz-res.b0.upaiyun.com/blog/nine-years-plan/2017.JPG!pic" alt="image"></p>
+<h2>计划成员</h2>
+<ul>
+<li>
+<p><strong>江昊楠</strong>：本计划的发起者。<br>
+拍摄2014-2016年，共三张<br>
+当时的职务：DV社团社长（2014-2016）</p>
+</li>
+<li>
+<p><strong>张哲</strong>：拍摄2017<br>
+当时的职务：科技社团社长（2016-2017）</p>
+</li>
+<li>
+<p><strong>周慧明</strong>： 拍摄2017<br>
+当时的职务：科技社团副社长（2016-2017）</p>
+</li>
+<li>
+<p><strong>蒋思怡</strong>：预备成员</p>
+</li>
+</ul>
+<h2>备注</h2>
+<ul>
+<li>本计划由 2017届毕业生 <strong>江昊楠</strong> 发起。</li>
+<li>本计划共需要9年，已执行3年。</li>
+</ul>
+]]></content:encoded>
+      
+      <comments>https://blog.asec01.net/nine-years-plan/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>辣鸡MIUI</title>
+      <link>https://blog.asec01.net/junk-miui/</link>
+      <guid>https://blog.asec01.net/junk-miui/</guid>
+      <pubDate>Sun, 10 Sep 2017 15:55:19 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;MIUI9 快如闪电&lt;br&gt;
+快你个锤子&lt;/p&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>MIUI9 快如闪电<br>
+快你个锤子</p>
+<a id="more"></a>
+<p>不小心把Magisk框架弄崩了<br>
+然后爽死我<br>
+绿色守护没自动休眠应用<br>
+冰箱把国产毒瘤都放出来了<br>
+开个摩拜小车要5分钟<br>
+网易云音乐开始慢放</p>
+<p>Magisk死了的时候内存最多能剩1.3G<br>
+卡的要命<br>
+修好了只剩不到700M<br>
+一点都不卡<br>
+谁能给我解释一下这是啥个意思</p>
+<p>更新到开发板 7.9.7<br>
+依旧装不上Magisk v14.0<br>
+还强行改我按键习惯<br>
+短按菜单键不能显示菜单<br>
+那这玩意为何还要叫菜单键<br>
+<img src="https://zz-res.b0.upaiyun.com/blog/junk-miui/Screenshot_2017-09-10-23-25-17-255_com.android.settings.png!pic" alt="image"></p>
+<p>以后换手机绝对不用国产深度定制系统</p>
+]]></content:encoded>
+      
+      <comments>https://blog.asec01.net/junk-miui/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>用笔记本屏幕造个显示器</title>
@@ -34,8 +274,8 @@
 嗯第一次拆笔记本，喵的键盘还可以卸下来[再次捂脸]<br>
 拆机过程并不重要，重要的是我忘记拍照了[第三次捂脸]</p>
 <p>液晶屏GET√</p>
-<p><img src="https://zz-res.b0.upaiyun.com/blog/how-to-modified-laptop-screen-to-monitor/IMG_20170812_225438.jpg" alt="image"></p>
-<p><img src="https://zz-res.b0.upaiyun.com/blog/how-to-modified-laptop-screen-to-monitor/IMG_20170811_224208.jpg" alt="image"></p>
+<p><img src="https://zz-res.b0.upaiyun.com/blog/how-to-modified-laptop-screen-to-monitor/IMG_20170812_225438.jpg!pic" alt="image"></p>
+<p><img src="https://zz-res.b0.upaiyun.com/blog/how-to-modified-laptop-screen-to-monitor/IMG_20170811_224208.jpg!pic" alt="image"></p>
 <p>然后是 华强宝</p>
 <p><img src="https://zz-res.b0.upaiyun.com/blog/how-to-modified-laptop-screen-to-monitor/IMG_20170812_225912.png" alt="image"></p>
 <hr>
@@ -43,84 +283,32 @@
 <h5>2017.08.14</h5>
 <p>忘记拍拆包了[捂脸]</p>
 <p>组装起来试一试<br>
-<img src="https://zz-res.b0.upaiyun.com/blog/how-to-modified-laptop-screen-to-monitor/IMG_20170814_155301.jpg" alt="image"><br>
-<img src="https://zz-res.b0.upaiyun.com/blog/how-to-modified-laptop-screen-to-monitor/IMG_20170814_155347.jpg" alt="image"><br>
+<img src="https://zz-res.b0.upaiyun.com/blog/how-to-modified-laptop-screen-to-monitor/IMG_20170814_155301.jpg!pic" alt="image"><br>
+<img src="https://zz-res.b0.upaiyun.com/blog/how-to-modified-laptop-screen-to-monitor/IMG_20170814_155347.jpg!pic" alt="image"><br>
 嗯，很好，能用</p>
 <p>然后开始搞外壳<br>
-<img src="https://zz-res.b0.upaiyun.com/blog/how-to-modified-laptop-screen-to-monitor/IMG_20170814_160510.jpg" alt="image"></p>
-<p><img src="https://zz-res.b0.upaiyun.com/blog/how-to-modified-laptop-screen-to-monitor/IMG_20170814_160914.jpg" alt="image"><br>
+<img src="https://zz-res.b0.upaiyun.com/blog/how-to-modified-laptop-screen-to-monitor/IMG_20170814_160510.jpg!pic" alt="image"></p>
+<p><img src="https://zz-res.b0.upaiyun.com/blog/how-to-modified-laptop-screen-to-monitor/IMG_20170814_160914.jpg!pic" alt="image"><br>
 放到原来的外壳上</p>
-<p><img src="https://zz-res.b0.upaiyun.com/blog/how-to-modified-laptop-screen-to-monitor/IMG_20170814_160942.jpg" alt="image"><br>
+<p><img src="https://zz-res.b0.upaiyun.com/blog/how-to-modified-laptop-screen-to-monitor/IMG_20170814_160942.jpg!pic" alt="image"><br>
 某根电源线太短我只能在外壳上打洞了[捂脸]</p>
-<p><img src="https://zz-res.b0.upaiyun.com/blog/how-to-modified-laptop-screen-to-monitor/IMG_20170814_161309.jpg" alt="image"><br>
+<p><img src="https://zz-res.b0.upaiyun.com/blog/how-to-modified-laptop-screen-to-monitor/IMG_20170814_161309.jpg!pic" alt="image"><br>
 装上外壳依旧能用</p>
 <h3>这就完了？</h3>
 <h2>才怪嘞！</h2>
 <p>裸着用怎么行<br>
 给线路板加个壳保护一下嘛</p>
-<p><img src="https://zz-res.b0.upaiyun.com/blog/how-to-modified-laptop-screen-to-monitor/IMG_20170814_162432.jpg" alt="image"><br>
+<p><img src="https://zz-res.b0.upaiyun.com/blog/how-to-modified-laptop-screen-to-monitor/IMG_20170814_162432.jpg!pic" alt="image"><br>
 快递盒的正确用法</p>
-<p><img src="https://zz-res.b0.upaiyun.com/blog/how-to-modified-laptop-screen-to-monitor/IMG_20170814_162550.jpg" alt="image"><br>
+<p><img src="https://zz-res.b0.upaiyun.com/blog/how-to-modified-laptop-screen-to-monitor/IMG_20170814_162550.jpg!pic" alt="image"><br>
 万能的泡棉胶</p>
 <h2>完工！</h2>
-<p><img src="https://zz-res.b0.upaiyun.com/blog/how-to-modified-laptop-screen-to-monitor/IMG_20170814_230405.jpg" alt="image"></p>
-<p><img src="https://zz-res.b0.upaiyun.com/blog/how-to-modified-laptop-screen-to-monitor/IMG_20170814_164029.jpg" alt="image"></p>
+<p><img src="https://zz-res.b0.upaiyun.com/blog/how-to-modified-laptop-screen-to-monitor/IMG_20170814_230405.jpg!pic" alt="image"></p>
+<p><img src="https://zz-res.b0.upaiyun.com/blog/how-to-modified-laptop-screen-to-monitor/IMG_20170814_164029.jpg!pic" alt="image"></p>
 <p>希望不会被我和蔼的老妈发现[捂脸]</p>
 ]]></content:encoded>
       
       <comments>https://blog.asec01.net/how-to-modified-laptop-screen-to-monitor/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>世界，您好！</title>
-      <link>https://blog.asec01.net/hello-world/</link>
-      <guid>https://blog.asec01.net/hello-world/</guid>
-      <pubDate>Sun, 30 Jul 2017 15:44:37 GMT</pubDate>
-      <description>
-      
-        &lt;h3&gt;2017-07-30&lt;/h3&gt;
-&lt;p&gt;RSS地址更改为&lt;br&gt;
-&lt;a href=&quot;https://blog.asec01.net/feed.xml&quot;&gt;https://blog.asec01.net/feed.xml&lt;/a&gt;&lt;/p&gt;
-      
-      </description>
-      
-      <content:encoded><![CDATA[<h3>2017-07-30</h3>
-<p>RSS地址更改为<br>
-<a href="https://blog.asec01.net/feed.xml">https://blog.asec01.net/feed.xml</a></p>
-<a id="more"></a>
-<p>迁回自有服务器，Coding不好用。。。</p>
-<hr>
-<h3>2017-07-29</h3>
-<p>迁移到Coding啦</p>
-<hr>
-<h3>2017-07-25</h3>
-<p>来试试纯静态吧</p>
-<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2>Quick Start</h2>
-<h3>Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3>Run server</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3>Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3>Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-<hr>
-<h3>2017-06-24</h3>
-<p>WordPress太烧内存了，于是我换了Typecho</p>
-<hr>
-<h3>2017-03-06</h3>
-<p>由于 X 国 Y 市 Z 区教委某恶心的规定（通知），学校给我开的福利虚拟机的IP地址外网接入服务被强行关停，所以我只能把这博客挪到了这里。。。</p>
-<p>然后又因为种种原因备份无法恢复（其实是因为我懒），以前的博文就拜拜啦</p>
-<p>在接下来的时间里，我会在这里分享一些在网络生活中很有用的东西，就不举例了哈</p>
-<p>and顺便分享个生活!</p>
-]]></content:encoded>
-      
-      <comments>https://blog.asec01.net/hello-world/#disqus_thread</comments>
     </item>
     
     <item>
@@ -310,100 +498,6 @@
 ]]></content:encoded>
       
       <comments>https://blog.asec01.net/use-html-and-nginx-to-redirect/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>[Ingress]一周咸鱼报告17.05.17-20</title>
-      <link>https://blog.asec01.net/ingress-17-05-17-20/</link>
-      <guid>https://blog.asec01.net/ingress-17-05-17-20/</guid>
-      <pubDate>Sun, 21 May 2017 11:33:00 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;咸鱼咸鱼大咸鱼&lt;/p&gt;
-      
-      </description>
-      
-      <content:encoded><![CDATA[<p>咸鱼咸鱼大咸鱼</p>
-<a id="more"></a>
-<p>17.05.15 胡连</p>
-<p><img src="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/wp-1495366216211.png!webp"> </p>
-<p>17.05.16 继续胡连</p>
-<p><img src="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/wp-1495366179420.png!webp"> </p>
-<p>17.05.17 LVL7 get√</p>
-<p><img src="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/wp-1495366140374.jpg!webp">  </p>
-<p>17.05.18 第一次用 L7 的 XMP Buster</p>
-<img src="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/wp-1495365637512.png!webp">
-<p> </p>
-<p>17.05.19 早上发现刘家窑的新 Portal</p>
-<img src="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/wp-1495365781839.png!webp">
-<p>放学把门口总部绿了</p>
-<img src="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/wp-1495365702494.png!webp" style="color: rgb(0, 135, 190);">
-<p> </p>
-<p>17.05.20 大晚上出去搞事</p>
-<p>红桶get√</p>
-<img src="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/wp-1495365951182.png!webp">
-<p>经验get√</p>
-<p><img src="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/wp-1495365998666.png!webp">体力。。没了</p>
-<img src="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/wp-1495365985318.png!webp">]]></content:encoded>
-      
-      <comments>https://blog.asec01.net/ingress-17-05-17-20/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>[Ingress]咸鱼报告17.05.14</title>
-      <link>https://blog.asec01.net/ingress-17-05-14/</link>
-      <guid>https://blog.asec01.net/ingress-17-05-14/</guid>
-      <pubDate>Sun, 14 May 2017 15:09:00 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;咸鱼咸鱼小咸鱼&lt;/p&gt;
-      
-      </description>
-      
-      <content:encoded><![CDATA[<p>咸鱼咸鱼小咸鱼</p>
-<a id="more"></a>
-<p>17-5-13↓</p>
-<img src="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/wp-1494774233962.png">
-<p>～～～我是一条分割线～～～</p>
-<p>17-05-14↓</p>
-<img src="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/wp-1494774415673.png">
-<p>～～～我是一条分割线～～～<br>
-and小黄车↓</p>
-<img src="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/wp-1494774452946.png">]]></content:encoded>
-      
-      <comments>https://blog.asec01.net/ingress-17-05-14/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>吐槽一下Adobe对盗版态度</title>
-      <link>https://blog.asec01.net/universal-adobe-patcher/</link>
-      <guid>https://blog.asec01.net/universal-adobe-patcher/</guid>
-      <pubDate>Sun, 14 May 2017 04:57:55 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;嗯，Adobe似乎不管盗版。。
-      
-      </description>
-      
-      <content:encoded><![CDATA[<p>嗯，Adobe似乎不管盗版。。<a id="more"></a></p>
-<p>原价嘛。。自己去官网看</p>
-<p>破解器↓</p>
-<img class="alignnone size-full wp-image-50" src="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/20170514123836.png" alt="" width="99" height="132">
-<p>（当年第一次戳开的时候，音乐吓我一跳。。嗯。。好怕怕）</p>
-<img class="alignnone size-full wp-image-49" src="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/20170514123709.png" alt="" width="412" height="295">
-<p>产品列表↓（太多了懒得一张一张截图了，反正很全）</p>
-<img class="alignnone size-full wp-image-51" src="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/20170514124029.png" alt="" width="413" height="296">
-<img class="alignnone size-full wp-image-52" src="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/20170514124322.png" alt="" width="414" height="297">
-<p>从CS4到CC2014都能破解</p>
-<p>实测CC2017也可以=_=</p>
-<p>选错产品&amp;版本也可也0.0</p>
-<p>醉了。。</p>
-<p>当然还是要支持正版的啦（买不起）</p>
-<p>小伙伴的文章：<a href="https://liyin.date/2017/04/30/one-adobe-carsh-resolve/" target="_blank" rel="external">一次 Adobe 软件的崩溃解决</a></p>
-<p>[video width=“400” height=“360” mp4=“<a href="https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/Video_5532647147155561461_1494737627.mp4" target="_blank" rel="external">https://zz-res.b0.upaiyun.com/old/wordpress/2017/05/Video_5532647147155561461_1494737627.mp4</a>”][/video]</p>
-]]></content:encoded>
-      
-      <comments>https://blog.asec01.net/universal-adobe-patcher/#disqus_thread</comments>
     </item>
     
   </channel>
