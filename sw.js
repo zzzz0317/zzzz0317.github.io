@@ -1,6 +1,6 @@
 "use strict";
 (function() {
-    var cacheVersion = "201712032207";
+    var cacheVersion = "201712032220";
     var staticImageCacheName = "image" + cacheVersion;
     var staticAssetsCacheName = "assets" + cacheVersion;
     var contentCacheName = "content" + cacheVersion;
@@ -25,8 +25,6 @@
             maxEntries: maxEntries,
             offlineFallbackimage: '/offline-r.svg'
         }
-    });
-    self.toolbox.router.get("/Git/Deploy/(.*)", self.toolbox.networkOnly, {
     });
     self.toolbox.router.get("/(.*)", self.toolbox.cacheFirst, {
         origin: /cdnjs\.cat\.net/,
