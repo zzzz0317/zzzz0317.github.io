@@ -3,6 +3,7 @@
 
 
     
+    
   <url>
     <loc>https://blog.asec01.net/use-html-and-nginx-to-redirect/</loc>
     <lastmod>2017-12-03T12:00:42.000Z</lastmod>
@@ -10,21 +11,6 @@
         <display>
         <title>使用html和nginx配置文件实现页面跳转</title>
         <pubTime>2017-06-06T07:29:00.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://blog.asec01.net/bj54zx-2017-summer/</loc>
-    <lastmod>2017-12-03T12:00:42.000Z</lastmod>
-    <data>
-        <display>
-        <title>做好精致教育 成就共同梦想</title>
-        <pubTime>2017-07-12T09:48:00.000Z</pubTime>
         
          
            
@@ -187,6 +173,20 @@
     </url>
 
     
+  <url>
+    <loc>https://blog.asec01.net/bj54zx-2017-summer/</loc>
+    <lastmod>2017-12-03T12:00:42.000Z</lastmod>
+    <data>
+        <display>
+        <title>做好精致教育 成就共同梦想</title>
+        <pubTime>2017-07-12T09:48:00.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
     
     
     
