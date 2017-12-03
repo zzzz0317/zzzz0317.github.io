@@ -1,6 +1,6 @@
 "use strict";
 (function() {
-    var cacheVersion = "201712032118";
+    var cacheVersion = "201712032158";
     var staticImageCacheName = "image" + cacheVersion;
     var staticAssetsCacheName = "assets" + cacheVersion;
     var contentCacheName = "content" + cacheVersion;
@@ -37,6 +37,13 @@
         }
     });
     self.toolbox.router.get("/", self.toolbox.networkFirst, {
+        cache: {
+            name: contentCacheName,
+            maxEntries: maxEntries,
+            offlineFallbackimage: '/offline-r.svg'
+        }
+    });
+	self.toolbox.router.get("/(.*)", self.toolbox.networkFirst, {
         cache: {
             name: contentCacheName,
             maxEntries: maxEntries,
