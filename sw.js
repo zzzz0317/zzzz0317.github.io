@@ -56,7 +56,7 @@
     self.toolbox.router.get("/js/(.*)", self.toolbox.networkFirst, {
         origin: /blog\.zhangzhe-tech\.cn/
     });
-	self.toolbox.router.get("/myfiles/attachment/(.*)", self.toolbox.networkFirst, {
+	self.toolbox.router.get("/img/(.*)", self.toolbox.networkFirst, {
         origin: /zz-res\.b0\.upaiyun\.com/,
         cache: {
             name: staticAssetsCacheName,
