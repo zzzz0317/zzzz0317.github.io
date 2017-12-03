@@ -128,15 +128,15 @@ CH-340: <a href="https://cnhv.co/2gul" target="_blank" rel="external">https://it
 <hr>
 <h4>下载 NodeMCU-Flasher</h4>
 <p><a href="https://cnhv.co/2gv8" target="_blank" rel="external">https://github.com/nodemcu/nodemcu-flasher</a></p>
-<p><img src="https://zz-res.b0.upaiyun.com/blog/esp8266-wifi-deauther/nodemcu-flasher-download.PNG!pic" alt="image"></p>
+<p><img src="https://blog.asec01.net/esp8266-wifi-deauther/nodemcu-flasher-download.PNG" alt="image"></p>
 <p>根据你自己的操作系统版本，这俩文件夹自己选<br>
-<img src="https://zz-res.b0.upaiyun.com/blog/esp8266-wifi-deauther/nodemcu-flasher-use-01.PNG!pic" alt="image"></p>
-<p><img src="https://zz-res.b0.upaiyun.com/blog/esp8266-wifi-deauther/nodemcu-flasher-use-02.PNG!pic" alt="image"></p>
+<img src="https://blog.asec01.net/esp8266-wifi-deauther/nodemcu-flasher-use-01.PNG" alt="image"></p>
+<p><img src="https://blog.asec01.net/esp8266-wifi-deauther/nodemcu-flasher-use-02.PNG" alt="image"></p>
 <p>打开软件<br>
-<img src="https://zz-res.b0.upaiyun.com/blog/esp8266-wifi-deauther/nodemcu-flasher-use-03.PNG!pic" alt="image"></p>
+<img src="https://blog.asec01.net/esp8266-wifi-deauther/nodemcu-flasher-use-03.PNG" alt="image"></p>
 <p>将 NodeMCU 连接到电脑上<br>
 （我就不告诉你咋装驱动）<br>
-<img src="https://zz-res.b0.upaiyun.com/blog/esp8266-wifi-deauther/nodemcu-flasher-connect.PNG!pic" alt="image"><br>
+<img src="https://blog.asec01.net/esp8266-wifi-deauther/nodemcu-flasher-connect.PNG" alt="image"><br>
 连接成功，放在一边</p>
 <hr>
 <h4>下载 esp8266_deauther</h4>
@@ -145,11 +145,11 @@ CH-340: <a href="https://cnhv.co/2gul" target="_blank" rel="external">https://it
 <hr>
 <h4>开始刷程序</h4>
 <p>Config -&gt; 小齿轮 -&gt; 选择刚刚下载的文件<br>
-<img src="https://zz-res.b0.upaiyun.com/blog/esp8266-wifi-deauther/nodemcu-flasher-use-04.PNG!pic" alt="image"></p>
+<img src="https://blog.asec01.net/esp8266-wifi-deauther/nodemcu-flasher-use-04.PNG" alt="image"></p>
 <p>Operation -&gt; Flash<br>
-<img src="https://zz-res.b0.upaiyun.com/blog/esp8266-wifi-deauther/nodemcu-flasher-use-05.PNG!pic" alt="image"></p>
+<img src="https://blog.asec01.net/esp8266-wifi-deauther/nodemcu-flasher-use-05.PNG" alt="image"></p>
 <p>刷入完成<br>
-<img src="https://zz-res.b0.upaiyun.com/blog/esp8266-wifi-deauther/nodemcu-flasher-use-05.PNG!pic" alt="image"></p>
+<img src="https://blog.asec01.net/esp8266-wifi-deauther/nodemcu-flasher-use-05.PNG" alt="image"></p>
 <hr>
 <h3>本文，完</h3>
 <p>基础使用请看：<a href="https://cnhv.co/2mip" target="_blank" rel="external">https://blog.asec01.net/esp8266-wifi-deauther-basic/</a></p>
