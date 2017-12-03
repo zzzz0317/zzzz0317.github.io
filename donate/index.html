@@ -489,31 +489,34 @@
                 <!-- Post Comments -->
                 
                     
-    <!-- 使用 gitcoment -->
-<div id="gitment-comment">
-    <!-- Gitment 评论框 -->
-<div id="container"></div>
+    <!-- 使用 DISQUS -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'https://blog.asec01.net/donate/index.html';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'https://blog.asec01.net/donate/index.html'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+<script type="text/ls-javascript" id="disqus-thread-script">
+    queue.offer(function() {
+            (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document;
+                var s = d.createElement('script');
+                s.src = '//asec01.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', + new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        });
+</script>
+
 </div>
 <style>
-    #gitment-comment{
+    #disqus-comment{
         background-color: #eee;
         padding: 2pc;
     }
 </style>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-<script>
-    var gitment = new Gitment({
-        //id: '页面 ID', // 可选。默认为 location.href
-        owner: 'zzzz0317',
-        repo: 'blog-gitment',
-        oauth: {
-            client_id: '70b507366729598c8c81',
-            client_secret: 'a5b16c92e562cc3b9c559476633448a74a4ccc0d',
-        },
-    })
-    gitment.render('container')
-</script>
 
                 
             </div>
@@ -877,7 +880,8 @@ It will not impact the appearance and can give developers a lot of support :)
 
 
 
-   <!-- Gitment -->
+   <!-- 使用 DISQUS js 代码 -->
+<script id="dsq-count-scr" src="//asec01.disqus.com/count.js" async></script>
 
 
 
