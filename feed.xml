@@ -8,7 +8,7 @@
     <atom:link href="//feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>某人胡写和瞎想的地方</description>
-    <pubDate>Sun, 03 Dec 2017 10:09:05 GMT</pubDate>
+    <pubDate>Sun, 03 Dec 2017 12:00:42 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -34,11 +34,11 @@
 <p>这块没有啥好说的。。。<br>
 使用手机或者 PC 搜索 WiFi 接入点<br>
 你会发现一个名为 <strong>pwned</strong> 的接入点，此热点默认密码为 <strong>deauther</strong><br>
-<img src="https://blog.asec01.net/esp8266-wifi-deauther-basic/connect-wifi-01.png" alt="image"><br>
-<img src="https://blog.asec01.net/esp8266-wifi-deauther-basic/connect-wifi-02.png" alt="image"></p>
+<img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther-basic/connect-wifi-01.png" alt="image"><br>
+<img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther-basic/connect-wifi-02.png" alt="image"></p>
 <p>然后随便打开个现代一点的浏览器（360滚，谁知道他会搞出什么事）<br>
 在地址栏输入 <strong>192.168.4.1</strong><br>
-<img src="https://blog.asec01.net/esp8266-wifi-deauther-basic/web-warning.png" alt="image"></p>
+<img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther-basic/web-warning.png" alt="image"></p>
 <p>翻译：</p>
 <blockquote>
 <p>此软件仅用于测试802.11 标准中的常见漏洞.<br>
@@ -55,29 +55,29 @@
 <hr>
 <h4>扫描接入点</h4>
 <p>理解了上面的通知会直接把你带到扫描页面（192.168.4.1/apscan.html）<br>
-<img src="https://blog.asec01.net/esp8266-wifi-deauther-basic/web-scan-aps.png" alt="image"></p>
+<img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther-basic/web-scan-aps.png" alt="image"></p>
 <p>等待几秒，扫描完成<br>
-<img src="https://blog.asec01.net/esp8266-wifi-deauther-basic/web-scan-aps-result.png" alt="image"><br>
+<img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther-basic/web-scan-aps-result.png" alt="image"><br>
 选择攻击目标<br>
-<img src="https://blog.asec01.net/esp8266-wifi-deauther-basic/web-scan-aps-select.png" alt="image"></p>
+<img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther-basic/web-scan-aps-select.png" alt="image"></p>
 <hr>
 <h4>攻击</h4>
 <p>切换到攻击页面（192.168.4.1/attack.html）<br>
-<img src="https://blog.asec01.net/esp8266-wifi-deauther-basic/web-attack.png" alt="image"></p>
+<img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther-basic/web-attack.png" alt="image"></p>
 <p>开始攻击<br>
-<img src="https://blog.asec01.net/esp8266-wifi-deauther-basic/web-attack-start.png" alt="image"></p>
+<img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther-basic/web-attack-start.png" alt="image"></p>
 <hr>
 <h4>效果</h4>
 <p>2.4G 就是连不上<br>
-<img src="https://blog.asec01.net/esp8266-wifi-deauther-basic/phone-wifi-01.png" alt="image"><br>
-<img src="https://blog.asec01.net/esp8266-wifi-deauther-basic/phone-wifi-02.png" alt="image"></p>
+<img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther-basic/phone-wifi-01.png" alt="image"><br>
+<img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther-basic/phone-wifi-02.png" alt="image"></p>
 <hr>
 <h4>设置</h4>
 <p>切换到设置页面（192.168.4.1/settings.html）<br>
-<img src="https://blog.asec01.net/esp8266-wifi-deauther-basic/web-settings-1.png" alt="image"><br>
+<img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther-basic/web-settings-1.png" alt="image"><br>
 SSID 是控制板子用的接入点的名称<br>
 Password 是连接密码</p>
-<p><img src="https://blog.asec01.net/esp8266-wifi-deauther-basic/web-settings-2.png" alt="image"><br>
+<p><img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther-basic/web-settings-2.png" alt="image"><br>
 Timeout 是自动停止时间<br>
 调成0为不自动停止</p>
 <p>其他设置不建议新手小白修改。。。</p>
@@ -128,15 +128,15 @@ CH-340: <a href="https://cnhv.co/2gul" target="_blank" rel="external">https://it
 <hr>
 <h4>下载 NodeMCU-Flasher</h4>
 <p><a href="https://cnhv.co/2gv8" target="_blank" rel="external">https://github.com/nodemcu/nodemcu-flasher</a></p>
-<p><img src="https://blog.asec01.net/esp8266-wifi-deauther/nodemcu-flasher-download.PNG" alt="image"></p>
+<p><img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther/nodemcu-flasher-download.PNG" alt="image"></p>
 <p>根据你自己的操作系统版本，这俩文件夹自己选<br>
-<img src="https://blog.asec01.net/esp8266-wifi-deauther/nodemcu-flasher-use-01.PNG" alt="image"></p>
-<p><img src="https://blog.asec01.net/esp8266-wifi-deauther/nodemcu-flasher-use-02.PNG" alt="image"></p>
+<img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther/nodemcu-flasher-use-01.PNG" alt="image"></p>
+<p><img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther/nodemcu-flasher-use-02.PNG" alt="image"></p>
 <p>打开软件<br>
-<img src="https://blog.asec01.net/esp8266-wifi-deauther/nodemcu-flasher-use-03.PNG" alt="image"></p>
+<img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther/nodemcu-flasher-use-03.PNG" alt="image"></p>
 <p>将 NodeMCU 连接到电脑上<br>
 （我就不告诉你咋装驱动）<br>
-<img src="https://blog.asec01.net/esp8266-wifi-deauther/nodemcu-flasher-connect.PNG" alt="image"><br>
+<img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther/nodemcu-flasher-connect.PNG" alt="image"><br>
 连接成功，放在一边</p>
 <hr>
 <h4>下载 esp8266_deauther</h4>
@@ -145,14 +145,14 @@ CH-340: <a href="https://cnhv.co/2gul" target="_blank" rel="external">https://it
 <hr>
 <h4>开始刷程序</h4>
 <p>Config -&gt; 小齿轮 -&gt; 选择刚刚下载的文件<br>
-<img src="https://blog.asec01.net/esp8266-wifi-deauther/nodemcu-flasher-use-04.PNG" alt="image"></p>
+<img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther/nodemcu-flasher-use-04.PNG" alt="image"></p>
 <p>Operation -&gt; Flash<br>
-<img src="https://blog.asec01.net/esp8266-wifi-deauther/nodemcu-flasher-use-05.PNG" alt="image"></p>
+<img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther/nodemcu-flasher-use-05.PNG" alt="image"></p>
 <p>刷入完成<br>
-<img src="https://blog.asec01.net/esp8266-wifi-deauther/nodemcu-flasher-use-05.PNG" alt="image"></p>
+<img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther/nodemcu-flasher-use-05.PNG" alt="image"></p>
 <hr>
 <h3>本文，完</h3>
-<p>基础使用请看：<a href="https://cnhv.co/2mip" target="_blank" rel="external">https://blog.asec01.net/esp8266-wifi-deauther-basic/</a></p>
+<p>基础使用请看：<a href="https://cnhv.co/2mip" target="_blank" rel="external">https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther-basic/</a></p>
 ]]></content:encoded>
       
       <comments>https://blog.asec01.net/esp8266-wifi-deauther/#disqus_thread</comments>
@@ -177,13 +177,13 @@ CH-340: <a href="https://cnhv.co/2gul" target="_blank" rel="external">https://it
 本计划的目标是拍摄武旭主任9年的变化，在计划最后一年在朋友圈中发9张图。</p>
 <h2>成果展示</h2>
 <p>2014 [暂未添加原图]<br>
-<img src="https://blog.asec01.net/nine-years-plan/2014.jpg" alt="image"></p>
+<img src="https://blog.zhangzhe-tech.cn/nine-years-plan/2014.jpg" alt="image"></p>
 <p>2015 [暂未添加原图]<br>
-<img src="https://blog.asec01.net/nine-years-plan/2015.jpg" alt="image"></p>
+<img src="https://blog.zhangzhe-tech.cn/nine-years-plan/2015.jpg" alt="image"></p>
 <p>2016 [暂未添加原图]<br>
-<img src="https://blog.asec01.net/nine-years-plan/2016.jpg" alt="image"></p>
+<img src="https://blog.zhangzhe-tech.cn/nine-years-plan/2016.jpg" alt="image"></p>
 <p>2017 [暂未添加原图]<br>
-<img src="https://blog.asec01.net/nine-years-plan/2017.JPG" alt="image"></p>
+<img src="https://blog.zhangzhe-tech.cn/nine-years-plan/2017.JPG" alt="image"></p>
 <h2>计划成员</h2>
 <ul>
 <li>
@@ -244,7 +244,7 @@ CH-340: <a href="https://cnhv.co/2gul" target="_blank" rel="external">https://it
 还强行改我按键习惯<br>
 短按菜单键不能显示菜单<br>
 那这玩意为何还要叫菜单键<br>
-<img src="https://blog.asec01.net/junk-miui/Screenshot_2017-09-10-23-25-17-255_com.android.settings.png" alt="image"></p>
+<img src="https://blog.zhangzhe-tech.cn/junk-miui/Screenshot_2017-09-10-23-25-17-255_com.android.settings.png" alt="image"></p>
 <p>以后换手机绝对不用国产深度定制系统</p>
 ]]></content:encoded>
       
@@ -274,37 +274,37 @@ CH-340: <a href="https://cnhv.co/2gul" target="_blank" rel="external">https://it
 嗯第一次拆笔记本，喵的键盘还可以卸下来[再次捂脸]<br>
 拆机过程并不重要，重要的是我忘记拍照了[第三次捂脸]</p>
 <p>液晶屏GET√</p>
-<p><img src="https://blog.asec01.net/how-to-modified-laptop-screen-to-monitor/IMG_20170812_225438.jpg" alt="image"></p>
-<p><img src="https://blog.asec01.net/how-to-modified-laptop-screen-to-monitor/IMG_20170811_224208.jpg" alt="image"></p>
+<p><img src="https://blog.zhangzhe-tech.cn/how-to-modified-laptop-screen-to-monitor/IMG_20170812_225438.jpg" alt="image"></p>
+<p><img src="https://blog.zhangzhe-tech.cn/how-to-modified-laptop-screen-to-monitor/IMG_20170811_224208.jpg" alt="image"></p>
 <p>然后是 华强宝</p>
-<p><img src="https://blog.asec01.net/how-to-modified-laptop-screen-to-monitor/IMG_20170812_225912.png" alt="image"></p>
+<p><img src="https://blog.zhangzhe-tech.cn/how-to-modified-laptop-screen-to-monitor/IMG_20170812_225912.png" alt="image"></p>
 <hr>
 <h2>货到啦</h2>
 <h5>2017.08.14</h5>
 <p>忘记拍拆包了[捂脸]</p>
 <p>组装起来试一试<br>
-<img src="https://blog.asec01.net/how-to-modified-laptop-screen-to-monitor/IMG_20170814_155301.jpg" alt="image"><br>
-<img src="https://blog.asec01.net/how-to-modified-laptop-screen-to-monitor/IMG_20170814_155347.jpg" alt="image"><br>
+<img src="https://blog.zhangzhe-tech.cn/how-to-modified-laptop-screen-to-monitor/IMG_20170814_155301.jpg" alt="image"><br>
+<img src="https://blog.zhangzhe-tech.cn/how-to-modified-laptop-screen-to-monitor/IMG_20170814_155347.jpg" alt="image"><br>
 嗯，很好，能用</p>
 <p>然后开始搞外壳<br>
-<img src="https://blog.asec01.net/how-to-modified-laptop-screen-to-monitor/IMG_20170814_160510.jpg" alt="image"></p>
-<p><img src="https://blog.asec01.net/how-to-modified-laptop-screen-to-monitor/IMG_20170814_160914.jpg" alt="image"><br>
+<img src="https://blog.zhangzhe-tech.cn/how-to-modified-laptop-screen-to-monitor/IMG_20170814_160510.jpg" alt="image"></p>
+<p><img src="https://blog.zhangzhe-tech.cn/how-to-modified-laptop-screen-to-monitor/IMG_20170814_160914.jpg" alt="image"><br>
 放到原来的外壳上</p>
-<p><img src="https://blog.asec01.net/how-to-modified-laptop-screen-to-monitor/IMG_20170814_160942.jpg" alt="image"><br>
+<p><img src="https://blog.zhangzhe-tech.cn/how-to-modified-laptop-screen-to-monitor/IMG_20170814_160942.jpg" alt="image"><br>
 某根电源线太短我只能在外壳上打洞了[捂脸]</p>
-<p><img src="https://blog.asec01.net/how-to-modified-laptop-screen-to-monitor/IMG_20170814_161309.jpg" alt="image"><br>
+<p><img src="https://blog.zhangzhe-tech.cn/how-to-modified-laptop-screen-to-monitor/IMG_20170814_161309.jpg" alt="image"><br>
 装上外壳依旧能用</p>
 <h3>这就完了？</h3>
 <h2>才怪嘞！</h2>
 <p>裸着用怎么行<br>
 给线路板加个壳保护一下嘛</p>
-<p><img src="https://blog.asec01.net/how-to-modified-laptop-screen-to-monitor/IMG_20170814_162432.jpg" alt="image"><br>
+<p><img src="https://blog.zhangzhe-tech.cn/how-to-modified-laptop-screen-to-monitor/IMG_20170814_162432.jpg" alt="image"><br>
 快递盒的正确用法</p>
-<p><img src="https://blog.asec01.net/how-to-modified-laptop-screen-to-monitor/IMG_20170814_162550.jpg" alt="image"><br>
+<p><img src="https://blog.zhangzhe-tech.cn/how-to-modified-laptop-screen-to-monitor/IMG_20170814_162550.jpg" alt="image"><br>
 万能的泡棉胶</p>
 <h2>完工！</h2>
-<p><img src="https://blog.asec01.net/how-to-modified-laptop-screen-to-monitor/IMG_20170814_230405.jpg" alt="image"></p>
-<p><img src="https://blog.asec01.net/how-to-modified-laptop-screen-to-monitor/IMG_20170814_164029.jpg" alt="image"></p>
+<p><img src="https://blog.zhangzhe-tech.cn/how-to-modified-laptop-screen-to-monitor/IMG_20170814_230405.jpg" alt="image"></p>
+<p><img src="https://blog.zhangzhe-tech.cn/how-to-modified-laptop-screen-to-monitor/IMG_20170814_164029.jpg" alt="image"></p>
 <p>希望不会被我和蔼的老妈发现[捂脸]</p>
 ]]></content:encoded>
       
@@ -351,13 +351,13 @@ CH-340: <a href="https://cnhv.co/2gul" target="_blank" rel="external">https://it
       <content:encoded><![CDATA[<p>官方说明：<a href="http://hitokoto.cn/api" target="_blank" rel="external">http://hitokoto.cn/api</a></p>
 <a id="more"></a>
 <p>由于会考和中考，又放了一个小长假，无聊嘛，做一些东西</p>
-<p><img src="https://blog.asec01.net/use-yiyan-api-build-something/2662489850.jpg" alt="20170626133226.jpg"></p>
+<p><img src="https://blog.zhangzhe-tech.cn/use-yiyan-api-build-something/2662489850.jpg" alt="20170626133226.jpg"></p>
 <p>比如博客顶部的这个</p>
-<p><img src="https://blog.asec01.net/use-yiyan-api-build-something/1788633181.jpg" alt="20170626133342.jpg"></p>
+<p><img src="https://blog.zhangzhe-tech.cn/use-yiyan-api-build-something/1788633181.jpg" alt="20170626133342.jpg"></p>
 <p>还有这个</p>
 <p>这俩都调用了一言（<a href="http://hitokoto.cn" target="_blank" rel="external">hitokoto.cn</a>）的API。</p>
 <p>第一个源码在here↓<br>
-<a href="https://blog.asec01.net/use-yiyan-api-build-something/3342414833.zip">yiyan.zip</a></p>
+<a href="https://blog.zhangzhe-tech.cn/use-yiyan-api-build-something/3342414833.zip" target="_blank" rel="external">yiyan.zip</a></p>
 <p>第二个就不放源码了哈，实现起来一点都不难<br>
 <a href="http://public.asec01.net/projects/yiyan/" target="_blank" rel="external">http://public.asec01.net/projects/yiyan/</a></p>
 ]]></content:encoded>
@@ -432,18 +432,18 @@ CH-340: <a href="https://cnhv.co/2gul" target="_blank" rel="external">https://it
 <a id="more"></a>
 <hr>
 <p>经过6月10、11两天的激烈角逐，我和明明小组赛三战全胜，半决赛惜败最后的冠军队，止步四强，最后在全市各区县11支代表队中夺得第三名。感谢学校为我们提供这么好的环境。<br>
-<img src="https://blog.asec01.net/robot-competition-2017/2483275344.jpg" alt="1.jpg"></p>
-<p><img src="https://blog.asec01.net/robot-competition-2017/2044858228.jpg" alt="2.jpg"></p>
-<p><img src="https://blog.asec01.net/robot-competition-2017/3208353433.jpg" alt="3.jpg"></p>
-<p><img src="https://blog.asec01.net/robot-competition-2017/381128313.jpg" alt="4.jpg"></p>
-<p><img src="https://blog.asec01.net/robot-competition-2017/2531674439.jpg" alt="5.jpg"></p>
-<p><img src="https://blog.asec01.net/robot-competition-2017/965860375.jpg" alt="6.jpg"></p>
-<p><img src="https://blog.asec01.net/robot-competition-2017/1849840459.jpg" alt="7.jpg"></p>
-<p><img src="https://blog.asec01.net/robot-competition-2017/3985478342.jpg" alt="8.jpg"></p>
-<p><img src="https://blog.asec01.net/robot-competition-2017/2264798567.jpg" alt="9.jpg"></p>
+<img src="https://blog.zhangzhe-tech.cn/robot-competition-2017/2483275344.jpg" alt="1.jpg"></p>
+<p><img src="https://blog.zhangzhe-tech.cn/robot-competition-2017/2044858228.jpg" alt="2.jpg"></p>
+<p><img src="https://blog.zhangzhe-tech.cn/robot-competition-2017/3208353433.jpg" alt="3.jpg"></p>
+<p><img src="https://blog.zhangzhe-tech.cn/robot-competition-2017/381128313.jpg" alt="4.jpg"></p>
+<p><img src="https://blog.zhangzhe-tech.cn/robot-competition-2017/2531674439.jpg" alt="5.jpg"></p>
+<p><img src="https://blog.zhangzhe-tech.cn/robot-competition-2017/965860375.jpg" alt="6.jpg"></p>
+<p><img src="https://blog.zhangzhe-tech.cn/robot-competition-2017/1849840459.jpg" alt="7.jpg"></p>
+<p><img src="https://blog.zhangzhe-tech.cn/robot-competition-2017/3985478342.jpg" alt="8.jpg"></p>
+<p><img src="https://blog.zhangzhe-tech.cn/robot-competition-2017/2264798567.jpg" alt="9.jpg"></p>
 <hr>
 <h3>经验</h3>
-<p><a href="https://blog.asec01.net/robot-competition-2017-exp/">https://blog.asec01.net/robot-competition-2017-exp/</a></p>
+<p><a href="https://blog.zhangzhe-tech.cn/robot-competition-2017-exp/" target="_blank" rel="external">https://blog.zhangzhe-tech.cn/robot-competition-2017-exp/</a></p>
 <h3>部分内容来源</h3>
 <p><a href="https://mp.weixin.qq.com/s?__biz=MzAxODU1ODg2Mg==&amp;mid=2649515921&amp;idx=1&amp;sn=13c130e958b01e94d92f2eeb8a8cd2b9" target="_blank" rel="external">https://mp.weixin.qq.com/s?__biz=MzAxODU1ODg2Mg==&amp;mid=2649515921&amp;idx=1&amp;sn=13c130e958b01e94d92f2eeb8a8cd2b9</a></p>
 ]]></content:encoded>
@@ -480,7 +480,7 @@ CH-340: <a href="https://cnhv.co/2gul" target="_blank" rel="external">https://it
 <pre class="pure-highlightjs"><code class="">server{
     listen 80;
     server_name jump.asec01.net;
-    rewrite ^/(.*) https://blog.asec01.net/$1 permanent;
+    rewrite ^/(.*) https://blog.zhangzhe-tech.cn/$1 permanent;
     access_log off;
 }</code></pre>
 <p> </p>
