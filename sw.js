@@ -1,6 +1,6 @@
 "use strict";
 (function() {
-    var cacheVersion = "201712032158";
+    var cacheVersion = "201712032207";
     var staticImageCacheName = "image" + cacheVersion;
     var staticAssetsCacheName = "assets" + cacheVersion;
     var contentCacheName = "content" + cacheVersion;
@@ -55,6 +55,14 @@
     });
     self.toolbox.router.get("/js/(.*)", self.toolbox.networkFirst, {
         origin: /blog\.zhangzhe-tech\.cn/
+    });
+	self.toolbox.router.get("/myfiles/attachment/(.*)", self.toolbox.networkFirst, {
+        origin: /zz-res\.b0\.upaiyun\.com/,
+        cache: {
+            name: staticAssetsCacheName,
+            maxEntries: maxEntries,
+            offlineFallbackimage: '/offline-r.svg'
+        }
     });
     self.toolbox.router.get("/next/config.json", self.toolbox.networkOnly, {
         origin: /disqus\.com/
