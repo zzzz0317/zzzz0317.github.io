@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.asec01.net/bj54zx-2017-summer/</loc>
+    
+    <lastmod>2017-12-03T14:17:45.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.asec01.net/404.html</loc>
     
     <lastmod>2017-12-03T13:03:24.000Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>https://blog.asec01.net/hello-world/index.html</loc>
     
     <lastmod>2017-12-03T12:05:33.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.asec01.net/use-html-and-nginx-to-redirect/</loc>
-    
-    <lastmod>2017-12-03T12:00:42.000Z</lastmod>
     
   </url>
   
@@ -86,7 +86,7 @@
   </url>
   
   <url>
-    <loc>https://blog.asec01.net/bj54zx-2017-summer/</loc>
+    <loc>https://blog.asec01.net/use-html-and-nginx-to-redirect/</loc>
     
     <lastmod>2017-12-03T12:00:42.000Z</lastmod>
     
