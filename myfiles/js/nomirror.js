@@ -1,4 +1,4 @@
-var allowedHost = ['blog.asec01.net','blog2.asec01.net','archive.org'];
+var allowedHost = ['blog.asec01.net','blog2.asec01.net','blog-aws.asec01.net','zzzz0317.github.io','archive.org','localhost:4000','127.0.0.1:4000','localhost','127.0.0.1','45.32.89.253:4000'];
 function loadSwal() {
     var loaddyncss = document.createElement('link');
     loaddyncss.setAttribute('rel','stylesheet');

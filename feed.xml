@@ -8,8 +8,180 @@
     <atom:link href="//feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>某人胡写和瞎想的地方</description>
-    <pubDate>Sun, 03 Dec 2017 12:00:42 GMT</pubDate>
+    <pubDate>Sun, 17 Jun 2018 07:14:38 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>成人仪式</title>
+      <link>https://blog.asec01.net/bj54zx-coming-of-age-ceremony-2018/</link>
+      <guid>https://blog.asec01.net/bj54zx-coming-of-age-ceremony-2018/</guid>
+      <pubDate>Thu, 26 Apr 2018 15:17:18 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;嗯，已经过去一个月了&lt;/p&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>嗯，已经过去一个月了</p>
+<a id="more"></a>
+<p><s>高三</s> 我真的很 <s>忙</s> 懒，懒得写文章记录我都干了啥，过了一个月还是觉得有必要写写技术方面的东西哈(不然博客都长草了!)</p>
+<p>首先感谢 <a href="https://liyin.date/" target="_blank" rel="external">神楽坂 立音</a> 告诉我 <a href="https://obsproject.com/" target="_blank" rel="external">OBS</a> 有个叫<strong>工作室模式</strong>的东西，可以拿来当<strong>切换台</strong>用，再加上 <a href="https://obsproject.com/forum/resources/obs-ndi-newtek-ndi%E2%84%A2-integration-into-obs-studio.528/" target="_blank" rel="external">obs-ndi插件</a> 和手机端的 <a href="https://play.google.com/store/apps/details?id=com.newtek.ndicamera" target="_blank" rel="external">NewTek NDI Camera™</a>，就可以让手机变成无线摄像头，还是低延时的哟</p>
+<p><img src="https://blog.asec01.net/bj54zx-coming-of-age-ceremony-2018/obs1.png" alt="OBS"><br>
+<img src="https://blog.asec01.net/bj54zx-coming-of-age-ceremony-2018/obs2.png" alt="OBS Multiview"><br>
+<img src="https://blog.asec01.net/bj54zx-coming-of-age-ceremony-2018/ndi.png" alt="NewTek NDI Camera™"></p>
+<blockquote>
+<p><strong>Network Device Interface (NDI)</strong> is a royalty free standard developed by NewTek to enable video-compatible products to communicate, deliver, and receive broadcast quality video in a high quality, low latency manner that is frame-accurate and suitable for switching in a live production environment. The protocol is designed to be highly robust and is used in many network-connected video devices.</p>
+</blockquote>
+<p>本次活动后台共使用了三台笔记本，一台放幻灯片，另一台用 OBS 处理视频信号并输出到大屏幕上，最后一台备用(然而并没有用上)</p>
+<p>放幻灯片那台笔记本 -&gt; MiniDP -&gt; HDMI -&gt; 一个特 low 的采集卡 -&gt; OBS<br>
+嗯，就这么简单</p>
+<p>经过前期测试，NDI这个东西是真的烧带宽啊，2.4G基本带不起来，5G勉勉强强能带起来一个(或许是因为已有的路由器太烂?)，于是乎弄了个 <strong>LinkSYS EA6900</strong>，嗯，效果还不错，俩手机20米内基本不会卡顿.</p>
+<p>声音呢？把家里的小混音台搬过去了，后台只负责视频的声音，那玩意大概没啥用。</p>
+<p>技术上面嘛，大概就是这么多。</p>
+<p><img src="https://blog.asec01.net/bj54zx-coming-of-age-ceremony-2018/photo_2018-04-27_00-14-37.jpg" alt="image"></p>
+<p><img src="https://blog.asec01.net/bj54zx-coming-of-age-ceremony-2018/photo_2018-04-27_00-14-09-m.jpg" alt="image"></p>
+<p>某个肥宅要求：“下次记得发照片把周围人的脸全打上码就留自己的”<br>
+emmmm</p>
+]]></content:encoded>
+      
+      <comments>https://blog.asec01.net/bj54zx-coming-of-age-ceremony-2018/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>成年了</title>
+      <link>https://blog.asec01.net/18-years-old/</link>
+      <guid>https://blog.asec01.net/18-years-old/</guid>
+      <pubDate>Sat, 17 Mar 2018 15:05:45 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;时间过的挺快，18年一晃就过去了，终于能干一些原来干不了的事了。。。。&lt;br&gt;
+今天生日，过得挺无聊的。。&lt;br&gt;
+上午英语听力高考，到现在也不知道那个 tomato 到底要不要加 es 。。。&lt;br&gt;
+回家吃饭，因为周一要体检，不敢大鱼大肉。。。&lt;br&gt;
+下午不知道该干啥
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>时间过的挺快，18年一晃就过去了，终于能干一些原来干不了的事了。。。。<br>
+今天生日，过得挺无聊的。。<br>
+上午英语听力高考，到现在也不知道那个 tomato 到底要不要加 es 。。。<br>
+回家吃饭，因为周一要体检，不敢大鱼大肉。。。<br>
+下午不知道该干啥，GTAV 快玩腻了，懒得开，趴了一会儿，睡不着，起来收拾学校照片，折腾视频。。。各种无聊。。。<br>
+收到的生日祝福似乎比去年多了挺多。。。</p>
+<hr>
+<h2><img src="photo_2018-03-17_23-14-26.jpg" alt="咸鱼cht"></h2>
+<h2><img src="photo_2018-03-17_23-14-28.jpg" alt="我最爱的小咸鱼~"></h2>
+<h2><img src="photo_2018-03-17_23-14-30.jpg" alt="明明"></h2>
+<h2><img src="photo_2018-03-17_23-14-32.jpg" alt="某学姐"></h2>
+<h2><img src="photo_2018-03-17_23-14-33.jpg" alt="。。。"></h2>
+<h2><img src="photo_2018-03-17_23-14-34.jpg" alt="。。。"></h2>
+<h2><img src="photo_2018-03-17_23-14-35.jpg" alt="。。。"></h2>
+<h2><img src="photo_2018-03-17_23-14-36.jpg" alt="。。。"></h2>
+<h2><img src="photo_2018-03-17_23-14-38.jpg" alt="PY圈"></h2>
+<p>某个小咸鱼半个多月没理我。。略激动，不造该说啥了都。。<br>
+某人说我情商低。。。Emmm低又能怎样啊。。也就这样吧。。<br>
+嗯。。我还小</p>
+]]></content:encoded>
+      
+      <comments>https://blog.asec01.net/18-years-old/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>絮叨 | 2018年2月</title>
+      <link>https://blog.asec01.net/talk-2018-02/</link>
+      <guid>https://blog.asec01.net/talk-2018-02/</guid>
+      <pubDate>Sat, 24 Feb 2018 16:46:01 GMT</pubDate>
+      <description>
+      
+        &lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;100%&quot; height=&quot;86&quot; src=&quot;//music.163.com/outchain/player?type=2&amp;id
+      
+      </description>
+      
+      <content:encoded><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="86" src="//music.163.com/outchain/player?type=2&id=27510174&auto=1&height=66"></iframe>
+<p>最近各种不顺啊…刚放假，就发烧了一个星期…摊在床上边搞事情边被英语老师崔作业…不过最后作业还是写的差不多了[捂脸]</p>
+<hr>
+<p>也有点略开心的事<br>
+从 XDA 上找到了个 LineageOS UNOFFICIAL 15.1 for Libra/Aqua<br>
+我这凑活用了半年4c系统的4s终于能用指纹啦</p>
+<hr>
+<p>过完了一个无聊的寒假…又双叒叕开学了……<br>
+高三了，也许该听听话好好学习，但本人很反感这种教育制度，于是所以把学习的时间都扔到兴趣上了……<br>
+没了某主任的支持……靠自己却玩的更high了…也许天生不适合学习吧…<br>
+天朝的制度…不上大学就没有好工作…没有好工作就没钱搞事情…<br>
+啊啊啊啊啊</p>
+<hr>
+<p>把某人重新加了回来，希望这个不知道咋就蹦出来的想法是对的吧…<br>
+然后就是我的社交障碍估计没得治了，唉…圈子小还清净呢，但xxx对我这么冷淡我！很！不！开！心！不想凭直觉判断什么…但我这直觉只要不用在考试上每次都 <s>TMD</s> 挺准啊！</p>
+<hr>
+<p>就这样吧… 发个博文证明自己还活着… <s>我大概没有自杀倾向…</s> 有小伙伴陪着自杀个锤子</p>
+]]></content:encoded>
+      
+      <comments>https://blog.asec01.net/talk-2018-02/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>再见 2017 ，你好 2018</title>
+      <link>https://blog.asec01.net/hello-2018/</link>
+      <guid>https://blog.asec01.net/hello-2018/</guid>
+      <pubDate>Mon, 01 Jan 2018 15:06:11 GMT</pubDate>
+      <description>
+      
+        &lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;100%&quot; height=&quot;86&quot; src=&quot;//music.163.com/outchain/player?type=2&amp;id
+      
+      </description>
+      
+      <content:encoded><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="86" src="//music.163.com/outchain/player?type=2&id=40249016&auto=1&height=66"></iframe>
+<p>时光飞逝，转眼间博主快18咯<br>
+这一年发生了许多许多<br>
+记性不好，这些能记住的都算印象深刻了吧。。。<br>
+这是我的第一篇“年终总结”</p>
+<hr>
+<h4>年初</h4>
+<p>刚开完一个令我印象深刻的联欢会，</p>
+<blockquote>
+<p>为啥印象深刻呢？校级联欢，老师托我搞了个微信墙。。。Exciting</p>
+<p>&lt;-- 这行记录的事情被我隐藏了，知道这些事的人并不多。。 --&gt;<!--在之前一个多月的排练时间中。。。出了点感情问题。。。从隐隐喜欢，到害怕被控制，再到强行断开。。现在想想。。有点对不住人家。。。--></p>
+</blockquote>
+<p>就被主任托给各个会考科目的老师折腾会考去了。。。一个元旦折腾过去，会考过了。</p>
+<p>入坑Ingress，成了北绿一个小小的特工。</p>
+<hr>
+<h4>寒假</h4>
+<p>参与了北京南站的志愿者活动，在一个小团体过得挺舒服，也看到了一些社会上的不良现象。</p>
+<hr>
+<h4>三月</h4>
+<p>上一届的高三成人礼，再次在后台干活。<br>
+急脾气该改改了，我坚持自己的方案，差点与某个没理解我思路的老师吵起来。。。<br>
+成人礼最后，想用奶油整一下某个学长，最后却被他按在地上抹了一脸[捂脸]</p>
+<p>生日那天，明明送了我一组 USB充电的AA电池 ，之前一直念叨让学校买点试试，结果他先买了（似乎现在学校还没买。。。），现在一个在鼠标里，两个在包里备着，还有一个在家里吃灰。。。</p>
+<hr>
+<h4>四月</h4>
+<p>游学，去西安，各种折腾，晚上睡觉前要收手机，第一天交了一个，第二天年级组长看我在接近收手机时发了个朋友圈，于是断定我有俩手机，于是晚上交了俩（我带了四个哈哈哈）<br>
+&lt;-- 感情问题。。。继续隐藏。。。 --&gt;<!-- 与某人聊的很开心。。。又有了一段麻烦的感情。。。价值观不同在一起是个错误的决定。。。。喜欢她笑的样子，却又没信心继续。。。--></p>
+<hr>
+<h4>接近夏天</h4>
+<p>和明明一起参加了个 <a href="https://blog.asec01.net/robot-competition-2017/">机器人足球比赛</a> ，非常懵逼的干趴下好几队。。。在最后一轮输给了冠军。。。然后似乎全校老师都认识我和明明了。。。</p>
+<p>放假前和明明<a href="https://blog.asec01.net/bj54zx-2017-summer/">帮学校弄视频</a>，第一次用 AE 做动画（套模板）</p>
+<hr>
+<h4>暑假</h4>
+<p>刚放假就去石家庄“玩”，被老姐按在她屋里学了两周，回京继续被她按着学。。。</p>
+<p>老妈收走了我的显示器。。于是我这个熊孩子找了个废笔记本屏幕<a href="https://blog.asec01.net/how-to-modified-laptop-screen-to-monitor/">组装了个显示器</a>。。。</p>
+<hr>
+<h4>秋季开学</h4>
+<p>没啥好说的，学吧（我这重度电子依赖症终于能一整天离开手机了）<br>
+搬到 分校后基本没得玩了。。。<br>
+班里电脑 没有网，于是接了无线网卡，后来觉得无线网卡不好使又换了路由器。。。</p>
+<hr>
+<h4>年末</h4>
+<p>新年联欢，主任出差，设备靠自己，照样玩得挺High</p>
+<hr>
+<p>其他事件等我想起来再加吧 。。。。</p>
+<hr>
+<h4>最后</h4>
+<p>希望自己在高考前少碰点电子设备吧。。。</p>
+]]></content:encoded>
+      
+      <comments>https://blog.asec01.net/hello-2018/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>ESP8266 断网神器 基础使用</title>
@@ -335,169 +507,6 @@ CH-340: <a href="https://cnhv.co/2gul" target="_blank" rel="external">https://it
 ]]></content:encoded>
       
       <comments>https://blog.asec01.net/bj54zx-2017-summer/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>使用一言API做些东西</title>
-      <link>https://blog.asec01.net/use-yiyan-api-build-something/</link>
-      <guid>https://blog.asec01.net/use-yiyan-api-build-something/</guid>
-      <pubDate>Mon, 26 Jun 2017 05:33:00 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;官方说明：&lt;a href=&quot;http://hitokoto.cn/api&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://hitokoto.cn/api&lt;/a&gt;&lt;/p&gt;
-      
-      </description>
-      
-      <content:encoded><![CDATA[<p>官方说明：<a href="http://hitokoto.cn/api" target="_blank" rel="external">http://hitokoto.cn/api</a></p>
-<a id="more"></a>
-<p>由于会考和中考，又放了一个小长假，无聊嘛，做一些东西</p>
-<p><img src="https://blog.zhangzhe-tech.cn/use-yiyan-api-build-something/2662489850.jpg" alt="20170626133226.jpg"></p>
-<p>比如博客顶部的这个</p>
-<p><img src="https://blog.zhangzhe-tech.cn/use-yiyan-api-build-something/1788633181.jpg" alt="20170626133342.jpg"></p>
-<p>还有这个</p>
-<p>这俩都调用了一言（<a href="http://hitokoto.cn" target="_blank" rel="external">hitokoto.cn</a>）的API。</p>
-<p>第一个源码在here↓<br>
-<a href="https://blog.zhangzhe-tech.cn/use-yiyan-api-build-something/3342414833.zip" target="_blank" rel="external">yiyan.zip</a></p>
-<p>第二个就不放源码了哈，实现起来一点都不难<br>
-<a href="http://public.asec01.net/projects/yiyan/" target="_blank" rel="external">http://public.asec01.net/projects/yiyan/</a></p>
-]]></content:encoded>
-      
-      <comments>https://blog.asec01.net/use-yiyan-api-build-something/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>第十八届机器人竞赛 - 经验与总结</title>
-      <link>https://blog.asec01.net/robot-competition-2017-exp/</link>
-      <guid>https://blog.asec01.net/robot-competition-2017-exp/</guid>
-      <pubDate>Sat, 24 Jun 2017 09:20:00 GMT</pubDate>
-      <description>
-      
-        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h3&gt;程序与硬件方面&lt;/h3&gt;
-&lt;h5&gt;在厂家提供的程序上做出修改，添加拨码开关用于快速调整开球战术。&lt;/h5&gt;
-&lt;ol&gt;
-&lt;li&gt;重新测量距离数据，使程序判断车在赛场中的位置更加精准。&lt;/li&gt;
-&lt;li&gt;修改添加开球战术。&lt;/li&gt;
-&lt;/o
-      
-      </description>
-      
-      <content:encoded><![CDATA[<a id="more"></a>
-<h3>程序与硬件方面</h3>
-<h5>在厂家提供的程序上做出修改，添加拨码开关用于快速调整开球战术。</h5>
-<ol>
-<li>重新测量距离数据，使程序判断车在赛场中的位置更加精准。</li>
-<li>修改添加开球战术。</li>
-</ol>
-<ul>
-<li>战术1:启动后0.3s内不受追球程序控制，前0.05s以40%的功率进行直冲，后0.25s以100%的功率直冲。这是最常用的战术，用于冲破对方防线 。</li>
-<li>战术2:(仅用于开球)启动后0.3s内不受追球程序控制，前0.05s以40%的功率进行直冲，之后带球向右偏转，最后启动追球模块尝试射门。</li>
-<li>战术3:启动后0.5s内不受追球程序控制，前0.05s以40%的功率进行直冲，后0.45s以100%的功率直冲。此战术可在开球时扰乱对方机器人的进攻路线，使另一台机器人获得优势。</li>
-</ul>
-<h3>比赛</h3>
-<ol>
-<li>对方机器人并排放在球门前，中间留空，我方开球，直接启用战术1，进球成功率99％</li>
-<li>对方开球，我方防守，一个机器人正对对方机器人，开启冲撞战术，有很大几率抢到球。</li>
-<li>开球时机器人不正对球，用前部偏左或偏右撞击机器人，可使机器人在开球时向右偏，绕开对方防线。</li>
-<li>(有待验证)对方机器比我方功率大时，可将我方一台机器人的功率调制80%，以柔克刚。</li>
-<li>(有待验证)对方一台机器人由于各种原因下场时，我方也应停用一台机器人，由于场地小，数量优势在这里可能是劣势。</li>
-<li>中场休息时用风扇给电机散热。</li>
-</ol>
-<hr>
-<h3>写在最后</h3>
-<p>付出总会有收获。</p>
-<hr>
-<h4>未完待续 by 哲</h4>
-]]></content:encoded>
-      
-      <comments>https://blog.asec01.net/robot-competition-2017-exp/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>第十八届机器人竞赛</title>
-      <link>https://blog.asec01.net/robot-competition-2017/</link>
-      <guid>https://blog.asec01.net/robot-competition-2017/</guid>
-      <pubDate>Sat, 24 Jun 2017 09:09:00 GMT</pubDate>
-      <description>
-      
-        &lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot; src=&quot;//music.163.com/outchain/player?type=2&amp;id=430026356&amp;auto=1&amp;height=66&quot;&gt;&lt;/iframe&gt;
-&lt;hr&gt;
-&lt;p&gt;好几天前就该写了。。。&lt;/p&gt;
-      
-      </description>
-      
-      <content:encoded><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=430026356&auto=1&height=66"></iframe>
-<hr>
-<p>好几天前就该写了。。。</p>
-<a id="more"></a>
-<hr>
-<p>经过6月10、11两天的激烈角逐，我和明明小组赛三战全胜，半决赛惜败最后的冠军队，止步四强，最后在全市各区县11支代表队中夺得第三名。感谢学校为我们提供这么好的环境。<br>
-<img src="https://blog.zhangzhe-tech.cn/robot-competition-2017/2483275344.jpg" alt="1.jpg"></p>
-<p><img src="https://blog.zhangzhe-tech.cn/robot-competition-2017/2044858228.jpg" alt="2.jpg"></p>
-<p><img src="https://blog.zhangzhe-tech.cn/robot-competition-2017/3208353433.jpg" alt="3.jpg"></p>
-<p><img src="https://blog.zhangzhe-tech.cn/robot-competition-2017/381128313.jpg" alt="4.jpg"></p>
-<p><img src="https://blog.zhangzhe-tech.cn/robot-competition-2017/2531674439.jpg" alt="5.jpg"></p>
-<p><img src="https://blog.zhangzhe-tech.cn/robot-competition-2017/965860375.jpg" alt="6.jpg"></p>
-<p><img src="https://blog.zhangzhe-tech.cn/robot-competition-2017/1849840459.jpg" alt="7.jpg"></p>
-<p><img src="https://blog.zhangzhe-tech.cn/robot-competition-2017/3985478342.jpg" alt="8.jpg"></p>
-<p><img src="https://blog.zhangzhe-tech.cn/robot-competition-2017/2264798567.jpg" alt="9.jpg"></p>
-<hr>
-<h3>经验</h3>
-<p><a href="https://blog.zhangzhe-tech.cn/robot-competition-2017-exp/" target="_blank" rel="external">https://blog.zhangzhe-tech.cn/robot-competition-2017-exp/</a></p>
-<h3>部分内容来源</h3>
-<p><a href="https://mp.weixin.qq.com/s?__biz=MzAxODU1ODg2Mg==&amp;mid=2649515921&amp;idx=1&amp;sn=13c130e958b01e94d92f2eeb8a8cd2b9" target="_blank" rel="external">https://mp.weixin.qq.com/s?__biz=MzAxODU1ODg2Mg==&amp;mid=2649515921&amp;idx=1&amp;sn=13c130e958b01e94d92f2eeb8a8cd2b9</a></p>
-]]></content:encoded>
-      
-      <comments>https://blog.asec01.net/robot-competition-2017/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>使用html和nginx配置文件实现页面跳转</title>
-      <link>https://blog.asec01.net/use-html-and-nginx-to-redirect/</link>
-      <guid>https://blog.asec01.net/use-html-and-nginx-to-redirect/</guid>
-      <pubDate>Tue, 06 Jun 2017 07:29:00 GMT</pubDate>
-      <description>
-      
-        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;p&gt;&lt;/p&gt;&lt;h2&gt;html方式&lt;/h2&gt;&lt;br&gt;
-等待5秒，跳转到https://www.google.com/&lt;p&gt;&lt;/p&gt;
-&lt;pre class=&quot;pure-highlightjs&quot;&gt;&lt;code class=&quot;&quot;&gt;&amp;lt;meta ht
-      
-      </description>
-      
-      <content:encoded><![CDATA[<a id="more"></a>
-<p></p><h2>html方式</h2><br>
-等待5秒，跳转到https://www.google.com/<p></p>
-<pre class="pure-highlightjs"><code class="">&lt;meta http-equiv="refresh" content="5;url=https://www.google.com/"&gt;</code></pre>
-<p>插入至&lt;head&gt;标签中即可</p>
-<p></p><h2>nginx 301/302 页面重定向</h2><br>
-<h3>301</h3><p></p>
-<pre class="pure-highlightjs"><code class="">rewrite ^/(.*) http://exp.com/$1 permanent;</code></pre>
-<p></p><h3>302</h3><p></p>
-<pre class="pure-highlightjs"><code class="">rewrite ^/(.*) http://exp.com/$1 redirect;</code></pre>
-<p><span style="color: #333333; font-family: Arial, 'Microsoft YaHei'; font-size: 15.75px; background-color: #ffffff;">插入至 server{ 与 } 之间即可</span></p>
-<p><span style="color: #333333; font-family: Arial, 'Microsoft YaHei';"><span style="font-size: 15.75px; background-color: #ffffff;">示例：</span></span></p>
-<pre class="pure-highlightjs"><code class="">server{
-    listen 80;
-    server_name jump.asec01.net;
-    rewrite ^/(.*) https://blog.zhangzhe-tech.cn/$1 permanent;
-    access_log off;
-}</code></pre>
-<p> </p>
-<p> </p>
-<p><span style="color: #333333; font-family: Arial, 'Microsoft YaHei'; font-size: 15.75px; background-color: #ffffff;">注:301为永久跳转，302为临时跳转。<br>
-</span><br>
-</p><h3 class="title-level-3" style="margin: 0.15rem 0px 0px; font-size: 0.17rem; line-height: 1.5; color: #3f3f3f; font-family: Helvetica, sans-serif; background-color: #ffffff;" data-title="301 Moved Permanently"></h3><p></p>
-<blockquote>
-<h3 class="title-level-3" data-title="301 Moved Permanently"></h3>
-<h3 class="title-level-3" data-title="301 Moved Permanently">301 Moved Permanently</h3>
-<p class="para">被请求的资源已永久移动到新位置，并且将来任何对此资源的引用都应该使用本响应返回的若干个 URI 之一。如果可能，拥有链接编辑功能的客户端应当自动把请求的地址修改为从服务器反馈回来的地址。除非额外指定，否则这个响应也是可缓存的。</p>
-<p></p><h3 class="title-level-3" data-title="302 Move temporarily">302 Move temporarily</h3><p></p>
-<p class="para">请求的资源临时从不同的 URI响应请求。由于这样的重定向是临时的，客户端应当继续向原有地址发送以后的请求。只有在Cache-Control或Expires中进行了指定的情况下，这个响应才是可缓存的。</p>
-</blockquote>
-]]></content:encoded>
-      
-      <comments>https://blog.asec01.net/use-html-and-nginx-to-redirect/#disqus_thread</comments>
     </item>
     
   </channel>
