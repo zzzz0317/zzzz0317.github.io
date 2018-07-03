@@ -8,8 +8,73 @@
     <atom:link href="//feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>某人胡写和瞎想的地方</description>
-    <pubDate>Sun, 17 Jun 2018 07:14:38 GMT</pubDate>
+    <pubDate>Tue, 03 Jul 2018 16:32:11 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>把 NFC 标签放进 Bio Card</title>
+      <link>https://blog.asec01.net/biocard-with-rfid-tag/</link>
+      <guid>https://blog.asec01.net/biocard-with-rfid-tag/</guid>
+      <pubDate>Tue, 03 Jul 2018 16:06:51 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;哈 好久没有写博客了&lt;/p&gt;
+&lt;p&gt;分享一个很久以前有弄出来的点子: 把 NFC 标签放进 Bio Card 中&lt;/p&gt;
+&lt;p&gt;这个点子的来源呢，跟游戏一点关系都没有。&lt;br&gt;
+学校网络机房安装了门禁系统，而门禁系统支持刷卡验证。。。&lt;br&gt;
+然后。。。然后我就买了一堆白卡
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>哈 好久没有写博客了</p>
+<p>分享一个很久以前有弄出来的点子: 把 NFC 标签放进 Bio Card 中</p>
+<p>这个点子的来源呢，跟游戏一点关系都没有。<br>
+学校网络机房安装了门禁系统，而门禁系统支持刷卡验证。。。<br>
+然后。。。然后我就买了一堆白卡玩<br>
+后来觉得白卡太丑，于是乎想到了 Bio Card<br>
+于是乎脑残一样的把两张 Bio Card 粘在了白卡两边(此处应有个捂脸表情)，这效果并不好。。。<br>
+然后在华强宝上发现了这个东西👇<br>
+<img src="taobao.png" alt="taobao.png"><br>
+NFC 标签，很薄，功能和白卡的功能一样，当然也可以写很多其他的数据。<br>
+但是…制作呢，似乎就不能找厂家做了，手工吧</p>
+<h2>下面是制作过程咯</h2>
+<h3>第一次尝试</h3>
+<p>直接把 Bio Card 打印在普通 A4 纸上，然后把纸叠的厚一点，把 NFC标签放进去，用胶棒粘好每一层，然而做出来的效果。。巨烂。。。似乎用胶棒干这个不太好。。。会把纸弄潮。。。然后就。。弯了</p>
+<h3>第二次尝试</h3>
+<p>买卡纸咯，直接打印在卡纸上<br>
+结果。。。喵了个咪的喷墨打印机的墨怎么这么难干啊！</p>
+<h3>第三次尝试</h3>
+<p>打印在普通 A4 纸上，然后粘到卡纸上<br>
+效果好多啦，就是胶不太好抹</p>
+<hr>
+<p>然后我就买了一包自带背胶的纸，问题解决。</p>
+<h2>数据写入部分</h2>
+<h3>用途一: 对方刷一下就可以看到你写入的数据</h3>
+<p>你大概需要一个有 NFC 功能的手机和一个叫 &quot;<a href="https://play.google.com/store/apps/details?id=com.wakdev.wdnfc" target="_blank" rel="external">NFC Tools</a>&quot;的软件(应用包名 com.wakdev.wdnfc )<br>
+它可以写入各种类型的数据，比如</p>
+<ul>
+<li>链接(用手机刷一下就能打开)</li>
+<li>联系人(用手机刷一下就能加联系人)</li>
+<li>Wi-Fi 接入点信息(用手机刷一下就能接上)</li>
+<li>然后还有一堆就不在这里列了</li>
+</ul>
+<p>然后还可以设置密码使标签变成只读防止恶意修改</p>
+<h3>用途二: 做门禁卡</h3>
+<p>一般普通的门禁控制器只会验证卡序列号，也就是 <strong>0扇区</strong> 的部分数据，如果不是。。。大概就不用往下看了。。</p>
+<p>如果你可以在门禁控制器上操作，可以直接拿做好的 Bio Card 当白卡用，录入即可( CPU卡大概不行 )</p>
+<p>不行的话…市面上大概没有支持修改0扇区的NFC标签，你大概需要买一些 UID/CUID 白卡，然后把芯片和线圈无损的弄出来，或许也可以用两张 Bio Card 夹着白卡。。。</p>
+<p>注: UID白卡大概需要专用的写卡器来修改0扇区，而大部分手机都可以修改CUID卡的0扇区数据</p>
+<p>这里有个视频 <a href="https://t.me/mdzzmdzz/850" target="_blank" rel="external">https://t.me/mdzzmdzz/850</a></p>
+<h3>用途三: 飞着玩</h3>
+<p>您好，请挂机</p>
+<hr>
+<p>然后…我大概就讲完了…大概还会继续更新and补图<br>
+欢迎评论～</p>
+<p>再然后…这似乎是我字最多的一篇博文…？</p>
+]]></content:encoded>
+      
+      <comments>https://blog.asec01.net/biocard-with-rfid-tag/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>成人仪式</title>
@@ -481,32 +546,6 @@ CH-340: <a href="https://cnhv.co/2gul" target="_blank" rel="external">https://it
 ]]></content:encoded>
       
       <comments>https://blog.asec01.net/how-to-modified-laptop-screen-to-monitor/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>做好精致教育 成就共同梦想</title>
-      <link>https://blog.asec01.net/bj54zx-2017-summer/</link>
-      <guid>https://blog.asec01.net/bj54zx-2017-summer/</guid>
-      <pubDate>Wed, 12 Jul 2017 09:48:00 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;​北京市第五十四中学 2017·夏&lt;/p&gt;
-      
-      </description>
-      
-      <content:encoded><![CDATA[<p>​北京市第五十四中学 2017·夏</p>
-<a id="more"></a>
-<p>高清未压缩视频下载：链接: <a href="https://pan.baidu.com/s/1bpGRDNL" target="_blank" rel="external">https://pan.baidu.com/s/1bpGRDNL</a> 密码: e77u</p>
-<iframe frameborder="0" width="640" height="498" src="https://v.qq.com/iframe/player.html?vid=k0524y6pq4g&tiny=0&auto=0" allowfullscreen></iframe>
-<p>制作：<br>
-张哲 周慧明</p>
-<p>策划：<br>
-北京市第五十四中学 科宣处</p>
-<p>技术支持：<br>
-北京市第五十四中学 信息中心</p>
-]]></content:encoded>
-      
-      <comments>https://blog.asec01.net/bj54zx-2017-summer/#disqus_thread</comments>
     </item>
     
   </channel>
