@@ -8,8 +8,65 @@
     <atom:link href="//feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>某人胡写和瞎想的地方</description>
-    <pubDate>Mon, 31 Dec 2018 13:25:06 GMT</pubDate>
+    <pubDate>Mon, 31 Dec 2018 15:53:43 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>再见2018，你好2019</title>
+      <link>https://blog.asec01.net/hello-2019/</link>
+      <guid>https://blog.asec01.net/hello-2019/</guid>
+      <pubDate>Mon, 31 Dec 2018 16:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;↑ 这张图来自我的小姐姐，禁止盗图！&lt;/p&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>↑ 这张图来自我的小姐姐，禁止盗图！</p>
+<a id="more"></a>
+<hr>
+<p>2018年过去咯，咕咕咕了很多事情，来我们来列一下[捂脸]</p>
+<ul>
+<li>更新博客：小米Aqara智能开关零火单键版拆解</li>
+<li>更新博客：wifi-deauter更新</li>
+<li>自用项目：紧急模式</li>
+<li>高考复习（其实复习了点，无奈已经大一了）[捂脸]</li>
+<li>帮学校弄视频</li>
+<li>咕咕咕 想不起来了咕咕咕</li>
+</ul>
+<hr>
+<p>然后再列一下搞了啥大事情</p>
+<ul>
+<li>在分校机房各种浪浪浪</li>
+<li><a href="https://blog.asec01.net/18-years-old/">成年了</a></li>
+<li><a href="https://blog.asec01.net/bj54zx-coming-of-age-ceremony-2018/">成人仪式说服各种老师让我待在后台</a></li>
+<li>高考</li>
+<li>高考那两天在住的酒店炸监控</li>
+<li>高考完去找小姐姐</li>
+<li>陪小姐姐吃饭</li>
+<li>陪小姐姐出去玩</li>
+<li>这行注释掉 <font color="#FCFCFC">&lt;!–被小姐姐抱着睡觉觉–&gt;</font></li>
+<li>陪小姐姐干各种事</li>
+<li>不行了再说要被打死了 <font color="#FCFCFC">啦啦啦啦气死你们一群单身狗</font></li>
+<li>暑假入职了一个手游公司当运维</li>
+<li>大学加入了学生会宣传部</li>
+<li>干掉了学校食堂明厨亮灶的屏幕（谁让他们把Teamviewer的密码写屏幕上的。。。）</li>
+<li>被宣传部大佬拉去做项目</li>
+<li>被宣传部大佬拉去吃饭</li>
+<li>一个不是单身狗的我被宣传部大佬塞的狗粮撑死了</li>
+<li>在饭局上给项目负责人做表情包</li>
+<li>参加了高中的新年联欢</li>
+<li>家里装修，用pfsense做了套路由系统，然而年底了还没装完。。。</li>
+</ul>
+<hr>
+<p>总结一下这一年：高考前浪不起来，高考之后开始皮的不行</p>
+<p>然后<br>
+2019 请善待我</p>
+<p>好啦 就这么多w</p>
+]]></content:encoded>
+      
+      <comments>https://blog.asec01.net/hello-2019/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>把 NFC 标签放进 Bio Card</title>
@@ -486,66 +543,6 @@ CH-340: <a href="https://cnhv.co/2gul" target="_blank" rel="external">https://it
 ]]></content:encoded>
       
       <comments>https://blog.asec01.net/junk-miui/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>用笔记本屏幕造个显示器</title>
-      <link>https://blog.asec01.net/how-to-modified-laptop-screen-to-monitor/</link>
-      <guid>https://blog.asec01.net/how-to-modified-laptop-screen-to-monitor/</guid>
-      <pubDate>Sat, 12 Aug 2017 15:18:12 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;嗯，高三了，老妈没收了我的显示器[捂脸] （虽然以前也不给我吧）&lt;/p&gt;
-&lt;p&gt;暑假还有点时间，搞事！&lt;/p&gt;
-&lt;h2&gt;
-      
-      </description>
-      
-      <content:encoded><![CDATA[<p>嗯，高三了，老妈没收了我的显示器[捂脸] （虽然以前也不给我吧）</p>
-<p>暑假还有点时间，搞事！</p>
-<h2><a id="more"></a></h2>
-<h2>前期准备</h2>
-<h5>2017.8.10-11</h5>
-<p>手头有个巨老的笔记本 NEC Versa S3000<br>
-拆了拆了<br>
-嗯第一次拆笔记本，喵的键盘还可以卸下来[再次捂脸]<br>
-拆机过程并不重要，重要的是我忘记拍照了[第三次捂脸]</p>
-<p>液晶屏GET√</p>
-<p><img src="https://blog.zhangzhe-tech.cn/how-to-modified-laptop-screen-to-monitor/IMG_20170812_225438.jpg" alt="image"></p>
-<p><img src="https://blog.zhangzhe-tech.cn/how-to-modified-laptop-screen-to-monitor/IMG_20170811_224208.jpg" alt="image"></p>
-<p>然后是 华强宝</p>
-<p><img src="https://blog.zhangzhe-tech.cn/how-to-modified-laptop-screen-to-monitor/IMG_20170812_225912.png" alt="image"></p>
-<hr>
-<h2>货到啦</h2>
-<h5>2017.08.14</h5>
-<p>忘记拍拆包了[捂脸]</p>
-<p>组装起来试一试<br>
-<img src="https://blog.zhangzhe-tech.cn/how-to-modified-laptop-screen-to-monitor/IMG_20170814_155301.jpg" alt="image"><br>
-<img src="https://blog.zhangzhe-tech.cn/how-to-modified-laptop-screen-to-monitor/IMG_20170814_155347.jpg" alt="image"><br>
-嗯，很好，能用</p>
-<p>然后开始搞外壳<br>
-<img src="https://blog.zhangzhe-tech.cn/how-to-modified-laptop-screen-to-monitor/IMG_20170814_160510.jpg" alt="image"></p>
-<p><img src="https://blog.zhangzhe-tech.cn/how-to-modified-laptop-screen-to-monitor/IMG_20170814_160914.jpg" alt="image"><br>
-放到原来的外壳上</p>
-<p><img src="https://blog.zhangzhe-tech.cn/how-to-modified-laptop-screen-to-monitor/IMG_20170814_160942.jpg" alt="image"><br>
-某根电源线太短我只能在外壳上打洞了[捂脸]</p>
-<p><img src="https://blog.zhangzhe-tech.cn/how-to-modified-laptop-screen-to-monitor/IMG_20170814_161309.jpg" alt="image"><br>
-装上外壳依旧能用</p>
-<h3>这就完了？</h3>
-<h2>才怪嘞！</h2>
-<p>裸着用怎么行<br>
-给线路板加个壳保护一下嘛</p>
-<p><img src="https://blog.zhangzhe-tech.cn/how-to-modified-laptop-screen-to-monitor/IMG_20170814_162432.jpg" alt="image"><br>
-快递盒的正确用法</p>
-<p><img src="https://blog.zhangzhe-tech.cn/how-to-modified-laptop-screen-to-monitor/IMG_20170814_162550.jpg" alt="image"><br>
-万能的泡棉胶</p>
-<h2>完工！</h2>
-<p><img src="https://blog.zhangzhe-tech.cn/how-to-modified-laptop-screen-to-monitor/IMG_20170814_230405.jpg" alt="image"></p>
-<p><img src="https://blog.zhangzhe-tech.cn/how-to-modified-laptop-screen-to-monitor/IMG_20170814_164029.jpg" alt="image"></p>
-<p>希望不会被我和蔼的老妈发现[捂脸]</p>
-]]></content:encoded>
-      
-      <comments>https://blog.asec01.net/how-to-modified-laptop-screen-to-monitor/#disqus_thread</comments>
     </item>
     
   </channel>
