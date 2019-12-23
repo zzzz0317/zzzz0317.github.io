@@ -8,8 +8,47 @@
     <atom:link href="//feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>某人胡写和瞎想的地方</description>
-    <pubDate>Mon, 31 Dec 2018 15:53:43 GMT</pubDate>
+    <pubDate>Mon, 23 Dec 2019 18:14:55 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>絮叨 | 2019年 年底</title>
+      <link>https://blog.asec01.net/my-xuan/</link>
+      <guid>https://blog.asec01.net/my-xuan/</guid>
+      <pubDate>Mon, 23 Dec 2019 17:04:02 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;不知道该不该写这篇，也不知道她会不会看到&lt;/p&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>不知道该不该写这篇，也不知道她会不会看到</p>
+<a id="more"></a>
+<link rel="stylesheet" href="/myfiles/APlayer.min.css">
+<script src="/myfiles/APlayer.min.js"></script>
+<div id="aplayer"></div>
+<script>
+const ap = new APlayer({
+    container: document.getElementById('aplayer'),
+	autoplay: true,
+	loop: 'one',
+    audio: [{
+        name: '空山新雨后',
+        artist: '音阙诗听 / 锦零',
+        url: 'ksxyh.mp3',
+        cover: 'ksxyh.jpg'
+    }]
+});
+</script>
+<p>她是我的初恋，她高一，我初三，那时候啥也不懂，就是觉得在一起好开心。后来因为我太能吃醋，分开了。</p>
+<p>到了高三，我们又有联系了，这次我们谈了五百多天，有开心的事，也有不开心的事。她让我体验到了生活的感觉，在很长一段时间里，她的存在就是我的动力。几乎天天见面，不见到她就浑身难受。</p>
+<p>这段感情，大概有点不正常，有点扭曲吧。。。可能我们本来就不合适，可是发现的时候已经很难分开了。。唉</p>
+<p>分开一个月了，祝她幸福吧</p>
+<p>她是我的大姐姐，从前是，现在是，以后也是，即使她很烦我。</p>
+]]></content:encoded>
+      
+      <comments>https://blog.asec01.net/my-xuan/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>再见2018，你好2019</title>
@@ -18,11 +57,11 @@
       <pubDate>Mon, 31 Dec 2018 16:00:00 GMT</pubDate>
       <description>
       
-        &lt;p&gt;↑ 这张图来自我的小姐姐，禁止盗图！&lt;/p&gt;
+        &lt;p&gt;↑ &lt;font color=&quot;#FCFCFC&quot;&gt;&amp;lt;!–这张图来自我的小姐姐，–&amp;gt;&lt;/font&gt;禁止盗图！&lt;/p&gt;
       
       </description>
       
-      <content:encoded><![CDATA[<p>↑ 这张图来自我的小姐姐，禁止盗图！</p>
+      <content:encoded><![CDATA[<p>↑ <font color="#FCFCFC">&lt;!–这张图来自我的小姐姐，–&gt;</font>禁止盗图！</p>
 <a id="more"></a>
 <hr>
 <p>2018年过去咯，咕咕咕了很多事情，来我们来列一下[捂脸]</p>
@@ -42,12 +81,12 @@
 <li><a href="https://blog.asec01.net/bj54zx-coming-of-age-ceremony-2018/">成人仪式说服各种老师让我待在后台</a></li>
 <li>高考</li>
 <li>高考那两天在住的酒店炸监控</li>
-<li>高考完去找小姐姐</li>
-<li>陪小姐姐吃饭</li>
-<li>陪小姐姐出去玩</li>
-<li>这行注释掉 <font color="#FCFCFC">&lt;!–被小姐姐抱着睡觉觉–&gt;</font></li>
-<li>陪小姐姐干各种事</li>
-<li>不行了再说要被打死了 <font color="#FCFCFC">啦啦啦啦气死你们一群单身狗</font></li>
+<li>下面的都注释掉吧 <font color="#FCFCFC">&lt;!–高考完去找小姐姐–&gt;</font></li>
+<li><font color="#FCFCFC">&lt;!–陪小姐姐吃饭–&gt;</font></li>
+<li><font color="#FCFCFC">&lt;!–陪小姐姐出去玩–&gt;</font></li>
+<li><font color="#FCFCFC">&lt;!–被小姐姐抱着睡觉觉–&gt;</font></li>
+<li><font color="#FCFCFC">&lt;!–陪小姐姐干各种事–&gt;</font></li>
+<li><font color="#FCFCFC">&lt;!–不行了再说要被打死了 <font color="#FCFCFC">啦啦啦啦气死你们一群单身狗</font>–&gt;</font></li>
 <li>暑假入职了一个手游公司当运维</li>
 <li>大学加入了学生会宣传部</li>
 <li>干掉了学校食堂明厨亮灶的屏幕（谁让他们把Teamviewer的密码写屏幕上的。。。）</li>
@@ -107,7 +146,7 @@ NFC 标签，很薄，功能和白卡的功能一样，当然也可以写很多�
 <p>然后我就买了一包自带背胶的纸，问题解决。</p>
 <h2>数据写入部分</h2>
 <h3>用途一: 对方刷一下就可以看到你写入的数据</h3>
-<p>你大概需要一个有 NFC 功能的手机和一个叫 &quot;<a href="https://play.google.com/store/apps/details?id=com.wakdev.wdnfc" target="_blank" rel="external">NFC Tools</a>&quot;的软件(应用包名 com.wakdev.wdnfc )<br>
+<p>你大概需要一个有 NFC 功能的手机和一个叫 &quot;<a href="https://play.google.com/store/apps/details?id=com.wakdev.wdnfc" target="_blank" rel="noopener">NFC Tools</a>&quot;的软件(应用包名 com.wakdev.wdnfc )<br>
 它可以写入各种类型的数据，比如</p>
 <ul>
 <li>链接(用手机刷一下就能打开)</li>
@@ -121,7 +160,7 @@ NFC 标签，很薄，功能和白卡的功能一样，当然也可以写很多�
 <p>如果你可以在门禁控制器上操作，可以直接拿做好的 Bio Card 当白卡用，录入即可( CPU卡大概不行 )</p>
 <p>不行的话…市面上大概没有支持修改0扇区的NFC标签，你大概需要买一些 UID/CUID 白卡，然后把芯片和线圈无损的弄出来，或许也可以用两张 Bio Card 夹着白卡。。。</p>
 <p>注: UID白卡大概需要专用的写卡器来修改0扇区，而大部分手机都可以修改CUID卡的0扇区数据</p>
-<p>这里有个视频 <a href="https://t.me/mdzzmdzz/850" target="_blank" rel="external">https://t.me/mdzzmdzz/850</a></p>
+<p>这里有个视频 <a href="https://t.me/mdzzmdzz/850" target="_blank" rel="noopener">https://t.me/mdzzmdzz/850</a></p>
 <h3>用途三: 飞着玩</h3>
 <p>您好，请挂机</p>
 <hr>
@@ -147,7 +186,7 @@ NFC 标签，很薄，功能和白卡的功能一样，当然也可以写很多�
       <content:encoded><![CDATA[<p>嗯，已经过去一个月了</p>
 <a id="more"></a>
 <p><s>高三</s> 我真的很 <s>忙</s> 懒，懒得写文章记录我都干了啥，过了一个月还是觉得有必要写写技术方面的东西哈(不然博客都长草了!)</p>
-<p>首先感谢 <a href="https://liyin.date/" target="_blank" rel="external">神楽坂 立音</a> 告诉我 <a href="https://obsproject.com/" target="_blank" rel="external">OBS</a> 有个叫<strong>工作室模式</strong>的东西，可以拿来当<strong>切换台</strong>用，再加上 <a href="https://obsproject.com/forum/resources/obs-ndi-newtek-ndi%E2%84%A2-integration-into-obs-studio.528/" target="_blank" rel="external">obs-ndi插件</a> 和手机端的 <a href="https://play.google.com/store/apps/details?id=com.newtek.ndicamera" target="_blank" rel="external">NewTek NDI Camera™</a>，就可以让手机变成无线摄像头，还是低延时的哟</p>
+<p>首先感谢 <a href="https://liyin.date/" target="_blank" rel="noopener">神楽坂 立音</a> 告诉我 <a href="https://obsproject.com/" target="_blank" rel="noopener">OBS</a> 有个叫<strong>工作室模式</strong>的东西，可以拿来当<strong>切换台</strong>用，再加上 <a href="https://obsproject.com/forum/resources/obs-ndi-newtek-ndi%E2%84%A2-integration-into-obs-studio.528/" target="_blank" rel="noopener">obs-ndi插件</a> 和手机端的 <a href="https://play.google.com/store/apps/details?id=com.newtek.ndicamera" target="_blank" rel="noopener">NewTek NDI Camera™</a>，就可以让手机变成无线摄像头，还是低延时的哟</p>
 <p><img src="https://blog.asec01.net/bj54zx-coming-of-age-ceremony-2018/obs1.png" alt="OBS"><br>
 <img src="https://blog.asec01.net/bj54zx-coming-of-age-ceremony-2018/obs2.png" alt="OBS Multiview"><br>
 <img src="https://blog.asec01.net/bj54zx-coming-of-age-ceremony-2018/ndi.png" alt="NewTek NDI Camera™"></p>
@@ -343,7 +382,7 @@ emmmm</p>
 <p>你要为你所做的一切包括这个程序负责!<br>
 它将记录所有针对任何网络和设备的操作.</p>
 <p>请不要将此项目命名为干扰器，他没有扰乱任何频率。<br>
-去 <a href="http://github.com/spacehuhn/esp8266_deauther" target="_blank" rel="external">github.com/spacehuhn/esp8266_deauther</a> 获得更多信息</p>
+去 <a href="http://github.com/spacehuhn/esp8266_deauther" target="_blank" rel="noopener">github.com/spacehuhn/esp8266_deauther</a> 获得更多信息</p>
 </blockquote>
 <p>当然果断理解啦</p>
 <hr>
@@ -407,8 +446,8 @@ Timeout 是自动停止时间<br>
 <h3>搞事情第一步当然是采购</h3>
 <p>某宝上面淘一块，推荐NodeMCU<br>
 推荐选择CP2102版本的，CH340的那个大了点。。。<br>
-CP2102: <a href="https://cnhv.co/2gua" target="_blank" rel="external">https://item.taobao.com/item.htm?id=530734023642</a><br>
-CH-340: <a href="https://cnhv.co/2gul" target="_blank" rel="external">https://item.taobao.com/item.htm?id=531755241333</a></p>
+CP2102: <a href="https://cnhv.co/2gua" target="_blank" rel="noopener">https://item.taobao.com/item.htm?id=530734023642</a><br>
+CH-340: <a href="https://cnhv.co/2gul" target="_blank" rel="noopener">https://item.taobao.com/item.htm?id=531755241333</a></p>
 <hr>
 <h3>然后货到了开搞</h3>
 <h4>两种搞事情的方式</h4>
@@ -421,7 +460,7 @@ CH-340: <a href="https://cnhv.co/2gul" target="_blank" rel="external">https://it
 以后再写吧</p>
 <hr>
 <h4>下载 NodeMCU-Flasher</h4>
-<p><a href="https://cnhv.co/2gv8" target="_blank" rel="external">https://github.com/nodemcu/nodemcu-flasher</a></p>
+<p><a href="https://cnhv.co/2gv8" target="_blank" rel="noopener">https://github.com/nodemcu/nodemcu-flasher</a></p>
 <p><img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther/nodemcu-flasher-download.PNG" alt="image"></p>
 <p>根据你自己的操作系统版本，这俩文件夹自己选<br>
 <img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther/nodemcu-flasher-use-01.PNG" alt="image"></p>
@@ -434,8 +473,8 @@ CH-340: <a href="https://cnhv.co/2gul" target="_blank" rel="external">https://it
 连接成功，放在一边</p>
 <hr>
 <h4>下载 esp8266_deauther</h4>
-<p>发布地址: <a href="https://cnhv.co/2gx7" target="_blank" rel="external">https://github.com/spacehuhn/esp8266_deauther/releases</a><br>
-直接下载: <a href="https://cnhv.co/2gxo" target="_blank" rel="external">https://github.com/spacehuhn/esp8266_deauther/releases/download/v.1.6/esp8266_deauther_1mb.bin</a></p>
+<p>发布地址: <a href="https://cnhv.co/2gx7" target="_blank" rel="noopener">https://github.com/spacehuhn/esp8266_deauther/releases</a><br>
+直接下载: <a href="https://cnhv.co/2gxo" target="_blank" rel="noopener">https://github.com/spacehuhn/esp8266_deauther/releases/download/v.1.6/esp8266_deauther_1mb.bin</a></p>
 <hr>
 <h4>开始刷程序</h4>
 <p>Config -&gt; 小齿轮 -&gt; 选择刚刚下载的文件<br>
@@ -446,7 +485,7 @@ CH-340: <a href="https://cnhv.co/2gul" target="_blank" rel="external">https://it
 <img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther/nodemcu-flasher-use-05.PNG" alt="image"></p>
 <hr>
 <h3>本文，完</h3>
-<p>基础使用请看：<a href="https://cnhv.co/2mip" target="_blank" rel="external">https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther-basic/</a></p>
+<p>基础使用请看：<a href="https://cnhv.co/2mip" target="_blank" rel="noopener">https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther-basic/</a></p>
 ]]></content:encoded>
       
       <comments>https://blog.asec01.net/esp8266-wifi-deauther/#disqus_thread</comments>
@@ -478,7 +517,7 @@ CH-340: <a href="https://cnhv.co/2gul" target="_blank" rel="external">https://it
 <img src="https://blog.zhangzhe-tech.cn/nine-years-plan/2016.jpg" alt="image"></p>
 <p>2017 [暂未添加原图]<br>
 <img src="https://blog.zhangzhe-tech.cn/nine-years-plan/2017.JPG" alt="image"></p>
-<p>2018 <a href="https://blog.zhangzhe-tech.cn/nine-years-plan/2018-o.jpg" target="_blank" rel="external">原图</a><br>
+<p>2018 <a href="https://blog.zhangzhe-tech.cn/nine-years-plan/2018-o.jpg" target="_blank" rel="noopener">原图</a><br>
 <img src="https://blog.zhangzhe-tech.cn/nine-years-plan/2018-s.jpg" alt="image"></p>
 <h2>计划成员</h2>
 <ul>
@@ -508,44 +547,6 @@ CH-340: <a href="https://cnhv.co/2gul" target="_blank" rel="external">https://it
 ]]></content:encoded>
       
       <comments>https://blog.asec01.net/nine-years-plan/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>辣鸡MIUI</title>
-      <link>https://blog.asec01.net/junk-miui/</link>
-      <guid>https://blog.asec01.net/junk-miui/</guid>
-      <pubDate>Sun, 10 Sep 2017 15:55:19 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;MIUI9 快如闪电&lt;br&gt;
-快你个锤子&lt;/p&gt;
-      
-      </description>
-      
-      <content:encoded><![CDATA[<p>MIUI9 快如闪电<br>
-快你个锤子</p>
-<a id="more"></a>
-<p>不小心把Magisk框架弄崩了<br>
-然后爽死我<br>
-绿色守护没自动休眠应用<br>
-冰箱把国产毒瘤都放出来了<br>
-开个摩拜小车要5分钟<br>
-网易云音乐开始慢放</p>
-<p>Magisk死了的时候内存最多能剩1.3G<br>
-卡的要命<br>
-修好了只剩不到700M<br>
-一点都不卡<br>
-谁能给我解释一下这是啥个意思</p>
-<p>更新到开发板 7.9.7<br>
-依旧装不上Magisk v14.0<br>
-还强行改我按键习惯<br>
-短按菜单键不能显示菜单<br>
-那这玩意为何还要叫菜单键<br>
-<img src="https://blog.zhangzhe-tech.cn/junk-miui/Screenshot_2017-09-10-23-25-17-255_com.android.settings.png" alt="image"></p>
-<p>以后换手机绝对不用国产深度定制系统</p>
-]]></content:encoded>
-      
-      <comments>https://blog.asec01.net/junk-miui/#disqus_thread</comments>
     </item>
     
   </channel>
