@@ -8,8 +8,44 @@
     <atom:link href="//feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>某人胡写和瞎想的地方</description>
-    <pubDate>Mon, 23 Dec 2019 18:34:20 GMT</pubDate>
+    <pubDate>Tue, 24 Dec 2019 05:58:22 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>net::ERR_HTTP2_PROTOCOL_ERROR 200</title>
+      <link>https://blog.asec01.net/Nginx-HTTP2-PROTOCOL-ERROR-200/</link>
+      <guid>https://blog.asec01.net/Nginx-HTTP2-PROTOCOL-ERROR-200/</guid>
+      <pubDate>Tue, 24 Dec 2019 05:18:58 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;早上，打开自己的Gogs准备开干&lt;br&gt;
+&lt;img src=&quot;1.jpg&quot; alt&gt;&lt;br&gt;
+？？？&lt;br&gt;
+emmmm&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;lan.jpg&quot; alt&gt;&lt;br&gt;
+局域网正常&lt;/p&gt;
+&lt;p&gt;难道因为反代的锅。。？&lt;/p&gt;
+&lt;p&gt;网上查资料emmm
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>早上，打开自己的Gogs准备开干<br>
+<img src="1.jpg" alt><br>
+？？？<br>
+emmmm</p>
+<p><img src="lan.jpg" alt><br>
+局域网正常</p>
+<p>难道因为反代的锅。。？</p>
+<p>网上查资料emmmm<br>
+<a href="https://mashiro.top/post/nginx-faq/" title="https://mashiro.top/post/nginx-faq/" target="_blank" rel="noopener"><img src="mashiro.top-post-nginx-faq.jpg" alt></a></p>
+<p>意思是说往Nginx配置文件的Server段加一句 <code>proxy_max_temp_file_size 0;</code> 就好了<br>
+<img src="nginx-config.jpg" alt></p>
+<p>嗯，我好了<br>
+<img src="gogs.jpg" alt></p>
+]]></content:encoded>
+      
+      <comments>https://blog.asec01.net/Nginx-HTTP2-PROTOCOL-ERROR-200/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>絮叨 | 2019年 年底</title>
@@ -24,8 +60,8 @@
       
       <content:encoded><![CDATA[<p>不知道该不该写这篇，也不知道她会不会看到</p>
 <a id="more"></a>
-<link rel="stylesheet" href="/myfiles/APlayer.min.css">
-<script src="/myfiles/APlayer.min.js"></script>
+<link rel="stylesheet" href="/myfiles/APlayer/APlayer.min.css">
+<script src="/myfiles/APlayer/APlayer.min.js"></script>
 <div id="aplayer"></div>
 <script>
 const ap = new APlayer({
@@ -40,6 +76,7 @@ const ap = new APlayer({
     }]
 });
 </script>
+<br>
 <p>她是我的初恋，她高一，我初三，那时候啥也不懂，就是觉得在一起好开心。后来因为我太能吃醋，分开了。</p>
 <p>到了高三，我们又有联系了，这次我们谈了五百多天，有开心的事，也有不开心的事。她让我体验到了生活的感觉，在很长一段时间里，她的存在就是我的动力。几乎天天见面，不见到她就浑身难受。</p>
 <p>这段感情，大概有点不正常，有点扭曲吧。。。可能我们本来就不合适，可是发现的时候已经很难分开了。。唉</p>
@@ -47,6 +84,13 @@ const ap = new APlayer({
 <p>想起来小学老师说的一句话：“这孩子，身边朋友什么样他就会变成什么样。”<br>
 没错，我变得像她了，不知道还能不能变回我原来的样子了。。。</p>
 <p>她是我的大姐姐，从前是，现在是，以后也是，即使她很烦我。</p>
+<blockquote>
+<p>有事情，还得和我说<br>
+无关爱情<br>
+如果能做到<br>
+我永远陪着你<br>
+一辈子</p>
+</blockquote>
 ]]></content:encoded>
       
       <comments>https://blog.asec01.net/my-xuan/#disqus_thread</comments>
@@ -491,64 +535,6 @@ CH-340: <a href="https://cnhv.co/2gul" target="_blank" rel="noopener">https://it
 ]]></content:encoded>
       
       <comments>https://blog.asec01.net/esp8266-wifi-deauther/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>九年计划</title>
-      <link>https://blog.asec01.net/nine-years-plan/</link>
-      <guid>https://blog.asec01.net/nine-years-plan/</guid>
-      <pubDate>Thu, 21 Sep 2017 05:08:00 GMT</pubDate>
-      <description>
-      
-        &lt;h2&gt;简单说明&lt;/h2&gt;
-&lt;p&gt;在北京市第五十四中学的秋季运动会上，武旭主任屡次担当女子实心球裁判。&lt;/p&gt;
-      
-      </description>
-      
-      <content:encoded><![CDATA[<h2>简单说明</h2>
-<p>在北京市第五十四中学的秋季运动会上，武旭主任屡次担当女子实心球裁判。</p>
-<a id="more"></a>  
-<p>每年计划的执行者都会拍下一张武旭主任坐在那里的照片[滑稽]<br>
-本计划的目标是拍摄武旭主任9年的变化，在计划最后一年在朋友圈中发9张图。</p>
-<h2>成果展示</h2>
-<p>2014 [暂未添加原图]<br>
-<img src="https://blog.zhangzhe-tech.cn/nine-years-plan/2014.jpg" alt="image"></p>
-<p>2015 [暂未添加原图]<br>
-<img src="https://blog.zhangzhe-tech.cn/nine-years-plan/2015.jpg" alt="image"></p>
-<p>2016 [暂未添加原图]<br>
-<img src="https://blog.zhangzhe-tech.cn/nine-years-plan/2016.jpg" alt="image"></p>
-<p>2017 [暂未添加原图]<br>
-<img src="https://blog.zhangzhe-tech.cn/nine-years-plan/2017.JPG" alt="image"></p>
-<p>2018 <a href="https://blog.zhangzhe-tech.cn/nine-years-plan/2018-o.jpg" target="_blank" rel="noopener">原图</a><br>
-<img src="https://blog.zhangzhe-tech.cn/nine-years-plan/2018-s.jpg" alt="image"></p>
-<h2>计划成员</h2>
-<ul>
-<li>
-<p><strong>江昊楠</strong>：本计划的发起者。<br>
-拍摄2014-2016年，共三张<br>
-当时的职务：DV社团社长（2014-2016）</p>
-</li>
-<li>
-<p><strong>张哲</strong>：拍摄2017 2018<br>
-当时的职务：科技社团社长（2016-2017）</p>
-</li>
-<li>
-<p><strong>周慧明</strong>： 拍摄2017<br>
-当时的职务：科技社团副社长（2016-2017）</p>
-</li>
-<li>
-<p><strong>蒋思怡</strong>：拍摄2018<br>
-当时的职务：跑路的预备社长</p>
-</li>
-</ul>
-<h2>备注</h2>
-<ul>
-<li>本计划由 2017届毕业生 <strong>江昊楠</strong> 发起。</li>
-<li>本计划共需要9年，已执行5年。</li>
-</ul>
-]]></content:encoded>
-      
-      <comments>https://blog.asec01.net/nine-years-plan/#disqus_thread</comments>
     </item>
     
   </channel>
