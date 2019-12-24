@@ -243,7 +243,7 @@
 
     
         <meta property="article:published_time" content="Tue Dec 24 2019 13:18:58 GMT+0800">
-        <meta property="article:modified_time" content="Tue Dec 24 2019 13:58:22 GMT+0800">
+        <meta property="article:modified_time" content="Tue Dec 24 2019 15:54:48 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -266,7 +266,7 @@
     "mainEntityOfPage": "https://blog.asec01.net/Nginx-HTTP2-PROTOCOL-ERROR-200/index.html",
     "headline": "net::ERR_HTTP2_PROTOCOL_ERROR 200",
     "datePublished": "Tue Dec 24 2019 13:18:58 GMT+0800",
-    "dateModified": "Tue Dec 24 2019 13:58:22 GMT+0800",
+    "dateModified": "Tue Dec 24 2019 15:54:48 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "张哲",
@@ -503,7 +503,7 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <p>早上，打开自己的Gogs准备开干<br>
+        <p><s>早上</s> 中午，打开自己的Gogs准备开干<br>
 <img src="1.jpg" alt><br>
 ？？？<br>
 emmmm</p>
@@ -512,8 +512,8 @@ emmmm</p>
 <p>难道因为反代的锅。。？</p>
 <p>网上查资料emmmm<br>
 <a href="https://mashiro.top/post/nginx-faq/" title="https://mashiro.top/post/nginx-faq/" target="_blank" rel="noopener"><img src="mashiro.top-post-nginx-faq.jpg" alt></a></p>
-<p>意思是说往Nginx配置文件的Server段加一句 <code>proxy_max_temp_file_size 0;</code> 就好了<br>
-<img src="nginx-config.jpg" alt></p>
+<p>意思是说往Nginx配置文件的Server段加一句 <code>proxy_max_temp_file_size 0;</code> 就好了</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">    listen 443 ssl http2;</span><br><span class="line">    listen [::]:443 ssl http2;</span><br><span class="line">    server_name emm.emmm.cn;</span><br><span class="line">    include ssl/emm.emmm.cn.conf;</span><br><span class="line">    gzip off;</span><br><span class="line">    proxy_max_temp_file_size 0;</span><br><span class="line">    location / &#123;</span><br><span class="line">        proxy_pass http://127.0.0.1:3000/;</span><br><span class="line">        proxy_set_header Host $host;</span><br><span class="line">        proxy_set_header X-Real-IP $remote_addr;</span><br><span class="line">        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;</span><br><span class="line">        proxy_http_version 1.1;</span><br><span class="line">        proxy_set_header Upgrade $http_upgrade;</span><br><span class="line">        proxy_set_header Connection &quot;upgrade&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>嗯，我好了<br>
 <img src="gogs.jpg" alt></p>
 
