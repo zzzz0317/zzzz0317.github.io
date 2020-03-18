@@ -1,12 +1,13 @@
 "use strict";
-(function() {
-    var cacheVersion = "201712032220";
+(function () {
+    var cacheVersion = "202003190050";
     var staticImageCacheName = "image" + cacheVersion;
     var staticAssetsCacheName = "assets" + cacheVersion;
     var contentCacheName = "content" + cacheVersion;
     var vendorCacheName = "vendor" + cacheVersion;
     var maxEntries = 100;
-    self.importScripts("https://cdnjs.cat.net/ajax/libs/sw-toolbox/3.6.1/sw-toolbox.js");
+    //self.importScripts("https://cdnjs.cat.net/ajax/libs/sw-toolbox/3.6.1/sw-toolbox.js");
+    self.importScripts("https://cdnjs.cloudflare.com/ajax/libs/sw-toolbox/3.6.1/sw-toolbox.js");
     self.toolbox.options.debug = false;
     self.toolbox.options.networkTimeoutSeconds = 5;
     self.toolbox.precache([
@@ -26,8 +27,16 @@
             offlineFallbackimage: '/offline-r.svg'
         }
     });
+    //self.toolbox.router.get("/(.*)", self.toolbox.cacheFirst, {
+    //    origin: /cdnjs\.cat\.net/,
+    //    cache: {
+    //        name: staticAssetsCacheName,
+    //        maxEntries: maxEntries,
+    //        offlineFallbackimage: '/offline-r.svg'
+    //    }
+    //});
     self.toolbox.router.get("/(.*)", self.toolbox.cacheFirst, {
-        origin: /cdnjs\.cat\.net/,
+        origin: /cdnjs\.cloudflare\.com/,
         cache: {
             name: staticAssetsCacheName,
             maxEntries: maxEntries,
@@ -41,7 +50,7 @@
             offlineFallbackimage: '/offline-r.svg'
         }
     });
-	self.toolbox.router.get("/(.*)", self.toolbox.networkFirst, {
+    self.toolbox.router.get("/(.*)", self.toolbox.networkFirst, {
         cache: {
             name: contentCacheName,
             maxEntries: maxEntries,
@@ -54,7 +63,7 @@
     self.toolbox.router.get("/js/(.*)", self.toolbox.networkFirst, {
         origin: /blog\.zhangzhe-tech\.cn/
     });
-	self.toolbox.router.get("/img/(.*)", self.toolbox.networkFirst, {
+    self.toolbox.router.get("/img/(.*)", self.toolbox.networkFirst, {
         origin: /zz-res\.b0\.upaiyun\.com/,
         cache: {
             name: staticAssetsCacheName,
@@ -117,20 +126,20 @@
             maxEntries: maxEntries
         }
     });
-    self.toolbox.router.get('/(.*)', function(req, vals, opts) {
-      return toolbox.networkFirst(req, vals, opts)
-        .catch(function(error) {
-          if (req.method === 'GET' && req.headers.get('accept').includes('text/html')) {
-            return toolbox.cacheOnly(new Request('/offline-001.html'), vals, opts);
-          }
-          throw error;
-        });
+    self.toolbox.router.get('/(.*)', function (req, vals, opts) {
+        return toolbox.networkFirst(req, vals, opts)
+            .catch(function (error) {
+                if (req.method === 'GET' && req.headers.get('accept').includes('text/html')) {
+                    return toolbox.cacheOnly(new Request('/offline-001.html'), vals, opts);
+                }
+                throw error;
+            });
     });
     self.toolbox.router.get("/(.*).php(.*)", self.toolbox.networkOnly);
-    self.toolbox.router.get("/sw.js", self.toolbox.networkFirst), self.toolbox.router.get("/(.*).php(.*)", self.toolbox.networkOnly), self.addEventListener("install", function(event) {
+    self.toolbox.router.get("/sw.js", self.toolbox.networkFirst), self.toolbox.router.get("/(.*).php(.*)", self.toolbox.networkOnly), self.addEventListener("install", function (event) {
         return event.waitUntil(self.skipWaiting())
     });
-    self.addEventListener("activate", function(event) {
+    self.addEventListener("activate", function (event) {
         return event.waitUntil(self.clients.claim())
     })
 })();
