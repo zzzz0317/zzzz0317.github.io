@@ -1,6 +1,6 @@
 "use strict";
 (function () {
-    var cacheVersion = "202003190050";
+    var cacheVersion = "202003190123";
     var staticImageCacheName = "image" + cacheVersion;
     var staticAssetsCacheName = "assets" + cacheVersion;
     var contentCacheName = "content" + cacheVersion;
@@ -65,6 +65,14 @@
     });
     self.toolbox.router.get("/img/(.*)", self.toolbox.networkFirst, {
         origin: /zz-res\.b0\.upaiyun\.com/,
+        cache: {
+            name: staticAssetsCacheName,
+            maxEntries: maxEntries,
+            offlineFallbackimage: '/offline-r.svg'
+        }
+    });
+    self.toolbox.router.get("/img/(.*)", self.toolbox.networkFirst, {
+        origin: /res\.asec01\.net/,
         cache: {
             name: staticAssetsCacheName,
             maxEntries: maxEntries,
