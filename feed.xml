@@ -8,7 +8,7 @@
     <atom:link href="//feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>某人胡写和瞎想的地方</description>
-    <pubDate>Thu, 19 Mar 2020 10:15:24 GMT</pubDate>
+    <pubDate>Thu, 19 Mar 2020 10:18:33 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -28,6 +28,7 @@
 <ul>
 <li>这是一个<strong>需要root</strong>的操作！</li>
 <li>适用于 <strong>Android 10</strong> 系统预装 <strong>卡券</strong> 应用的 <strong>一加</strong> 手机</li>
+<li>在这之前如果已经添加了加密的卡，没有成功写入数据，建议删掉</li>
 </ul>
 <h2>先说下这么操作的用处</h2>
 <ul>
