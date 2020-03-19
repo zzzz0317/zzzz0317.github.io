@@ -8,8 +8,63 @@
     <atom:link href="//feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>某人胡写和瞎想的地方</description>
-    <pubDate>Tue, 31 Dec 2019 15:31:14 GMT</pubDate>
+    <pubDate>Thu, 19 Mar 2020 10:04:09 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>一加手机添加加密门禁卡(填好一加埋的坑)</title>
+      <link>https://blog.asec01.net/oneplus-add-encrypted-card/</link>
+      <guid>https://blog.asec01.net/oneplus-add-encrypted-card/</guid>
+      <pubDate>Thu, 19 Mar 2020 07:45:46 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;写入时提示Auth Error之类的认证错误可以看看这篇&lt;/p&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>写入时提示Auth Error之类的认证错误可以看看这篇</p>
+<a id="more"></a>
+<h2>写在前面</h2>
+<ul>
+<li>这是一个<strong>需要root</strong>的操作！</li>
+<li>适用于 <strong>Android 10</strong> 系统预装 <strong>卡券</strong> 应用的 <strong>一加</strong> 手机</li>
+</ul>
+<h2>先说下这么操作的用处</h2>
+<ul>
+<li>不用做一张ID相同的空卡去模拟</li>
+<li>目前来看，不这么操作会出现写卡器无法写入的问题（如Proxmark3提示Auth Error）<br>
+<img src="/oneplus-add-encrypted-card/13EC9E5D-764E-4f65-BEE7-CF1B85C2A6FC.png" alt="AuthError"></li>
+</ul>
+<h2>开始操作</h2>
+<p>打开ADB，接到电脑上</p>
+<ul>
+<li>
+<p>确认手机是否连接成功<br>
+<code>adb devices</code></p>
+</li>
+<li>
+<p>进入shell模式<br>
+<code>adb shell</code></p>
+</li>
+<li>
+<p>获取root权限<br>
+<code>su</code></p>
+</li>
+<li>
+<p>启动一加某调试用App<br>
+<code>am start -n cn.oneplus.wallet/.MenuActivity</code></p>
+</li>
+</ul>
+<p>然后你应该得到了这样的页面<br>
+<img src="/oneplus-add-encrypted-card/Screenshot_20200319-173936.jpg" alt="MenuActivity"></p>
+<p>点击“加密卡开关按钮”，提示“允许加密卡写入”即可<br>
+<img src="/oneplus-add-encrypted-card/Screenshot_20200319-174039.jpg" alt="AllowEncryptedCard"></p>
+<p>然后直接在卡券应用中添加门禁卡，直接把有数据的原卡贴在手机NFC天线上即可，不用再做一张ID相同的空卡去模拟了</p>
+<p>再然后，切换到刚刚创建的新卡，用写卡器把原卡数据写进去就OK了，网上教程一搜一大把，写卡器不同使用方法也不同，在这里就不说了</p>
+]]></content:encoded>
+      
+      <comments>https://blog.asec01.net/oneplus-add-encrypted-card/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>再见2019，你好2020 :)</title>
@@ -509,75 +564,6 @@ Timeout 是自动停止时间<br>
 ]]></content:encoded>
       
       <comments>https://blog.asec01.net/esp8266-wifi-deauther-basic/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>ESP8266 断网神器 淘板子与刷入程序</title>
-      <link>https://blog.asec01.net/esp8266-wifi-deauther/</link>
-      <guid>https://blog.asec01.net/esp8266-wifi-deauther/</guid>
-      <pubDate>Tue, 03 Oct 2017 17:38:09 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;我们都是熊孩纸~~~&lt;/p&gt;
-      
-      </description>
-      
-      <content:encoded><![CDATA[<p>我们都是熊孩纸~~~</p>
-<a id="more"></a>
-<h4>实现原理：</h4>
-<blockquote>
-<p>Deauth（去认证）攻击<br>
-任何客户端进入一个无线网络前必须先获得一个AP接入点的认证，在这之后跟这个AP相关联。当一个客户端离开时，他会发送一个去除认证信息去不再和AP进行关联。攻击者可以向绑定到客户端IP地址的接入点发送去除认证消息，从而使用户离线并且需要重新认证，从而让攻击者可以观察到重新认证握手时候的有价值的信息。<br>
-为了防御这种攻击，可以设置接入点延迟解除认证或者解除关联请求（比如这样的请求需要排队等待5到10秒），从而给接入点机会来观测客户端后续发送过来的数据包。如果一个数据包在一个解除认证或者解除关联请求被放入等待队列之后到达，那么该请求会被丢弃，因为合法客户端将不会以该顺序生成数据包。</p>
-<p>来自 维基百科 网络接口层安全 （“Deauth（去认证）攻击”章节）</p>
-</blockquote>
-<hr>
-<h3>搞事情第一步当然是采购</h3>
-<p>某宝上面淘一块，推荐NodeMCU<br>
-推荐选择CP2102版本的，CH340的那个大了点。。。<br>
-CP2102: <a href="https://cnhv.co/2gua" target="_blank" rel="noopener">https://item.taobao.com/item.htm?id=530734023642</a><br>
-CH-340: <a href="https://cnhv.co/2gul" target="_blank" rel="noopener">https://item.taobao.com/item.htm?id=531755241333</a></p>
-<hr>
-<h3>然后货到了开搞</h3>
-<h4>两种搞事情的方式</h4>
-<ol>
-<li>直接刷大佬编译好的程序</li>
-<li>把大佬的源码拉过来自己编译</li>
-</ol>
-<p>本文先介绍第一种方式<br>
-第二种似乎。。没有什么必要<br>
-以后再写吧</p>
-<hr>
-<h4>下载 NodeMCU-Flasher</h4>
-<p><a href="https://cnhv.co/2gv8" target="_blank" rel="noopener">https://github.com/nodemcu/nodemcu-flasher</a></p>
-<p><img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther/nodemcu-flasher-download.PNG" alt="image"></p>
-<p>根据你自己的操作系统版本，这俩文件夹自己选<br>
-<img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther/nodemcu-flasher-use-01.PNG" alt="image"></p>
-<p><img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther/nodemcu-flasher-use-02.PNG" alt="image"></p>
-<p>打开软件<br>
-<img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther/nodemcu-flasher-use-03.PNG" alt="image"></p>
-<p>将 NodeMCU 连接到电脑上<br>
-（我就不告诉你咋装驱动）<br>
-<img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther/nodemcu-flasher-connect.PNG" alt="image"><br>
-连接成功，放在一边</p>
-<hr>
-<h4>下载 esp8266_deauther</h4>
-<p>发布地址: <a href="https://cnhv.co/2gx7" target="_blank" rel="noopener">https://github.com/spacehuhn/esp8266_deauther/releases</a><br>
-直接下载: <a href="https://cnhv.co/2gxo" target="_blank" rel="noopener">https://github.com/spacehuhn/esp8266_deauther/releases/download/v.1.6/esp8266_deauther_1mb.bin</a></p>
-<hr>
-<h4>开始刷程序</h4>
-<p>Config -&gt; 小齿轮 -&gt; 选择刚刚下载的文件<br>
-<img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther/nodemcu-flasher-use-04.PNG" alt="image"></p>
-<p>Operation -&gt; Flash<br>
-<img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther/nodemcu-flasher-use-05.PNG" alt="image"></p>
-<p>刷入完成<br>
-<img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther/nodemcu-flasher-use-05.PNG" alt="image"></p>
-<hr>
-<h3>本文，完</h3>
-<p>基础使用请看：<a href="https://cnhv.co/2mip" target="_blank" rel="noopener">https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther-basic/</a></p>
-]]></content:encoded>
-      
-      <comments>https://blog.asec01.net/esp8266-wifi-deauther/#disqus_thread</comments>
     </item>
     
   </channel>
