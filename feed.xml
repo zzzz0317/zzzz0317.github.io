@@ -8,7 +8,7 @@
     <atom:link href="//feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>某人胡写和瞎想的地方</description>
-    <pubDate>Thu, 19 Mar 2020 10:04:09 GMT</pubDate>
+    <pubDate>Thu, 19 Mar 2020 10:07:54 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -55,6 +55,7 @@
 <code>am start -n cn.oneplus.wallet/.MenuActivity</code></p>
 </li>
 </ul>
+<p>或者也可以使用类似<a href="https://www.coolapk.com/apk/com.x7890.shortcutcreator" target="_blank" rel="noopener">创建快捷方式</a>之类的应用启动这个Activity</p>
 <p>然后你应该得到了这样的页面<br>
 <img src="/oneplus-add-encrypted-card/Screenshot_20200319-173936.jpg" alt="MenuActivity"></p>
 <p>点击“加密卡开关按钮”，提示“允许加密卡写入”即可<br>
