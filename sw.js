@@ -1,12 +1,11 @@
 "use strict";
 (function () {
-    var cacheVersion = "202003190123";
+    var cacheVersion = "202003242004";
     var staticImageCacheName = "image" + cacheVersion;
     var staticAssetsCacheName = "assets" + cacheVersion;
     var contentCacheName = "content" + cacheVersion;
     var vendorCacheName = "vendor" + cacheVersion;
     var maxEntries = 100;
-    //self.importScripts("https://cdnjs.cat.net/ajax/libs/sw-toolbox/3.6.1/sw-toolbox.js");
     self.importScripts("https://cdnjs.cloudflare.com/ajax/libs/sw-toolbox/3.6.1/sw-toolbox.js");
     self.toolbox.options.debug = false;
     self.toolbox.options.networkTimeoutSeconds = 5;
@@ -16,31 +15,35 @@
         '/Lucca-Regular.otf'
     ]);
     self.toolbox.router.get("/myfiles/js/(.*)", self.toolbox.networkFirst, {
-        origin: /blog\.zhangzhe-tech\.cn/,
     });
-    self.toolbox.router.get("/", self.toolbox.networkFirst, {});
-    self.toolbox.router.get("/myfiles/img/(.*)", self.toolbox.networkFirst, {
-        origin: /blog\.zhangzhe-tech\.cn/,
+    self.toolbox.router.get("/myfiles/img/(.*)", self.toolbox.cacheFirst, {
         cache: {
             name: staticAssetsCacheName,
             maxEntries: maxEntries,
             offlineFallbackimage: '/offline-r.svg'
         }
     });
-    //self.toolbox.router.get("/(.*)", self.toolbox.cacheFirst, {
-    //    origin: /cdnjs\.cat\.net/,
-    //    cache: {
-    //        name: staticAssetsCacheName,
-    //        maxEntries: maxEntries,
-    //        offlineFallbackimage: '/offline-r.svg'
-    //    }
-    //});
+    self.toolbox.router.get("/", self.toolbox.networkFirst, {});
+    self.toolbox.router.get("/(.*)", self.toolbox.networkFirst, {
+        origin: /home\.asec01\.net/,
+        cache: {
+            name: staticAssetsCacheName,
+            maxEntries: maxEntries
+        }
+    });
     self.toolbox.router.get("/(.*)", self.toolbox.cacheFirst, {
         origin: /cdnjs\.cloudflare\.com/,
         cache: {
             name: staticAssetsCacheName,
             maxEntries: maxEntries,
             offlineFallbackimage: '/offline-r.svg'
+        }
+    });
+    self.toolbox.router.get("/(.*)", self.toolbox.cacheFirst, {
+        origin: /cdnjs\.jsdelivr\.net/,
+        cache: {
+            name: staticAssetsCacheName,
+            maxEntries: maxEntries
         }
     });
     self.toolbox.router.get("/", self.toolbox.networkFirst, {
@@ -53,28 +56,6 @@
     self.toolbox.router.get("/(.*)", self.toolbox.networkFirst, {
         cache: {
             name: contentCacheName,
-            maxEntries: maxEntries,
-            offlineFallbackimage: '/offline-r.svg'
-        }
-    });
-    self.toolbox.router.get("/css/(.*)", self.toolbox.networkFirst, {
-        origin: /blog\.zhangzhe-tech\.cn/
-    });
-    self.toolbox.router.get("/js/(.*)", self.toolbox.networkFirst, {
-        origin: /blog\.zhangzhe-tech\.cn/
-    });
-    self.toolbox.router.get("/img/(.*)", self.toolbox.networkFirst, {
-        origin: /zz-res\.b0\.upaiyun\.com/,
-        cache: {
-            name: staticAssetsCacheName,
-            maxEntries: maxEntries,
-            offlineFallbackimage: '/offline-r.svg'
-        }
-    });
-    self.toolbox.router.get("/img/(.*)", self.toolbox.networkFirst, {
-        origin: /res\.asec01\.net/,
-        cache: {
-            name: staticAssetsCacheName,
             maxEntries: maxEntries,
             offlineFallbackimage: '/offline-r.svg'
         }
