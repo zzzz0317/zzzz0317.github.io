@@ -8,8 +8,60 @@
     <atom:link href="//feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>某人胡写和瞎想的地方</description>
-    <pubDate>Tue, 24 Mar 2020 12:35:13 GMT</pubDate>
+    <pubDate>Tue, 24 Mar 2020 15:21:49 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>安装 Jellyfin 开始肥宅生活</title>
+      <link>https://blog.asec01.net/install-jellyfin/</link>
+      <guid>https://blog.asec01.net/install-jellyfin/</guid>
+      <pubDate>Tue, 24 Mar 2020 08:18:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;Emby的开源替代品，操作基本一致&lt;/p&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>Emby的开源替代品，操作基本一致</p>
+<a id="more"></a>
+
+<h1 id="先放两张效果图"><a href="#先放两张效果图" class="headerlink" title="先放两张效果图"></a>先放两张效果图</h1><p><img src="2B5D79D7-0D48-4098-952F-E2535940D9E8.png" alt></p>
+<p><img src="A27879CD-5C35-48a6-8489-DFC1FD22520E.png" alt></p>
+<p>完美的宅家生活 不就是这样嘛</p>
+<h1 id="在-Windows-系统上安装"><a href="#在-Windows-系统上安装" class="headerlink" title="在 Windows 系统上安装"></a>在 Windows 系统上安装</h1><p>直接去 <a href="https://jellyfin.org/downloads/#windows" target="_blank" rel="noopener">官网</a> 下载安装包就好，我才懒得讲怎么装（</p>
+<h1 id="Ubuntu-Debian-安装"><a href="#Ubuntu-Debian-安装" class="headerlink" title="Ubuntu/Debian 安装"></a>Ubuntu/Debian 安装</h1><h2 id="从官方源中安装"><a href="#从官方源中安装" class="headerlink" title="从官方源中安装"></a>从官方源中安装</h2><ol>
+<li><p>Debian</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span>添加 Jellyfin Team 的签名  </span><br><span class="line">wget -O - https://repo.jellyfin.org/debian/jellyfin_team.gpg.key | sudo apt-key add -</span><br><span class="line"><span class="meta">#</span>添加源</span><br><span class="line">echo "deb [arch=$( dpkg --print-architecture )] https://repo.jellyfin.org/debian $( lsb_release -c -s ) main" | sudo tee /etc/apt/sources.list.d/jellyfin.list</span><br><span class="line"><span class="meta">#</span>更新缓存</span><br><span class="line">sudo apt update</span><br><span class="line"><span class="meta">#</span>安装 Jellyfin</span><br><span class="line">sudo apt install jellyfin</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Ubuntu</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span>启用 Universe repository</span><br><span class="line">add-apt-repository universe</span><br><span class="line"><span class="meta">#</span>添加 Jellyfin Team 的签名  </span><br><span class="line">wget -O - https://repo.jellyfin.org/ubuntu/jellyfin_team.gpg.key | sudo apt-key add -</span><br><span class="line"><span class="meta">#</span>添加源</span><br><span class="line">echo "deb [arch=$( dpkg --print-architecture )] https://repo.jellyfin.org/ubuntu $( lsb_release -c -s ) main" | sudo tee /etc/apt/sources.list.d/jellyfin.list</span><br><span class="line"><span class="meta">#</span>更新缓存</span><br><span class="line">sudo apt update</span><br><span class="line"><span class="meta">#</span>安装 Jellyfin</span><br><span class="line">sudo apt install jellyfin</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h2 id="获取-deb-包方式安装-如果前面哪种方法很慢可以试试这种"><a href="#获取-deb-包方式安装-如果前面哪种方法很慢可以试试这种" class="headerlink" title="获取 deb 包方式安装 (如果前面哪种方法很慢可以试试这种)"></a>获取 deb 包方式安装 (如果前面哪种方法很慢可以试试这种)</h2><ul>
+<li>中国大陆地区建议找个代理来进行下面操作</li>
+<li>从 <a href="https://repo.jellyfin.org/releases/server/debian/versions/" target="_blank" rel="noopener">这里(Debian)</a> 或者 <a href="https://repo.jellyfin.org/releases/server/ubuntu/versions/" target="_blank" rel="noopener">这里(Ubuntu)</a> 下载最新版本的 Jellyfin 主程序</li>
+<li>从 <a href="https://repo.jellyfin.org/releases/server/debian/versions/jellyfin-ffmpeg/" target="_blank" rel="noopener">这里(Debian)</a> 或者 <a href="https://repo.jellyfin.org/releases/server/ubuntu/versions/jellyfin-ffmpeg/" target="_blank" rel="noopener">这里(Ubuntu)</a> 下载最新版本的 jellyfin-ffmpeg</li>
+<li>将两个deb文件发送到服务器上</li>
+<li>安装依赖(Debian) <code>sudo apt install at libass9 libbluray2 libfl2 libmp3lame0 libnuma1 libogg0 libopus0 libtheora0 libva-drm2 libva2 libvdpau1 libvorbis0a libvorbisenc2 libwebpmux3 libx264-155 libx265-165 libzvbi-common libzvbi0</code></li>
+<li>安装依赖(Ubuntu) <code>sudo apt install sudo apt install at libsqlite3-0 libfontconfig1 libfreetype6 libssl1.0.0</code></li>
+<li>安装 Jellyfin <code>sudo dpkg -i jellyfin_*.deb jellyfin-ffmpeg_*.deb</code>  </li>
+<li>解决剩下的依赖问题 <code>sudo apt -f install</code></li>
+</ul>
+<h1 id="开始使用"><a href="#开始使用" class="headerlink" title="开始使用"></a>开始使用</h1><p>打开浏览器，进入 <code>http://ip:8096/</code>，选择中文</p>
+<p><img src="D6DAD723-3B60-4c53-AF6C-73B4CC4B089D.png" alt="选择显示语言"></p>
+<p><img src="2BE1B4F5-9FC4-4abc-B7BB-FB92816D41EF.png" alt="设置用户名密码"></p>
+<p><img src="50B8D61F-2AFA-459d-92A5-CFDF7B11A218.png" alt="添加媒体库"></p>
+<p><img src="3CF9398A-78C8-4b9e-A366-862A6326BDB0.png" alt="设置首选元数据语言，注意中国在这里显示的是People&#39;s Republic of China"></p>
+<p><img src="C911A1BA-1FF8-489e-A993-2EF746AD8C3B.png" alt="允许远程访问，如果要使用反向代理之类的建议不选择第二项"></p>
+<p><img src="2A7CBA97-7AC4-436e-95DF-822FA72E47C6.png" alt="完成！"></p>
+<h1 id="反向代理"><a href="#反向代理" class="headerlink" title="反向代理"></a>反向代理</h1><p>根据官方贴出来的配置修改</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">    listen 端口号 ssl http2;</span><br><span class="line">    server_name 你的域名;</span><br><span class="line">    ssl_certificate 证书路径;</span><br><span class="line">    ssl_certificate_key 密钥路径;</span><br><span class="line">    ssl_stapling on;</span><br><span class="line">    ssl_stapling_verify on;</span><br><span class="line">    # Security / XSS Mitigation Headers</span><br><span class="line">    add_header X-Frame-Options &quot;SAMEORIGIN&quot;;</span><br><span class="line">    add_header X-XSS-Protection &quot;1; mode=block&quot;;</span><br><span class="line">    add_header X-Content-Type-Options &quot;nosniff&quot;;</span><br><span class="line">    # Content Security Policy</span><br><span class="line">    # See: https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP</span><br><span class="line">    # Enforces https content and restricts JS/CSS to origin</span><br><span class="line">    # External Javascript (such as cast_sender.js for Chromecast) must be whitelisted.</span><br><span class="line">    add_header Content-Security-Policy &quot;default-src https: data: blob:; style-src &apos;self&apos; &apos;unsafe-inline&apos;; script-src &apos;self&apos; &apos;unsafe-inline&apos; https://www.gstatic.com/cv/js/sender/v1/cast_sender.js; worker-src &apos;self&apos; blob:; connect-src &apos;self&apos;; object-src &apos;none&apos;; frame-ancestors &apos;self&apos;&quot;;</span><br><span class="line">    location / &#123;</span><br><span class="line">        # Proxy main Jellyfin traffic</span><br><span class="line">        proxy_pass http://127.0.0.1:8096/;</span><br><span class="line">        proxy_set_header Host $host;</span><br><span class="line">        proxy_set_header X-Real-IP $remote_addr;</span><br><span class="line">        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;</span><br><span class="line">        proxy_set_header X-Forwarded-Proto $scheme;</span><br><span class="line">        proxy_set_header X-Forwarded-Protocol $scheme;</span><br><span class="line">        proxy_set_header X-Forwarded-Host $http_host;</span><br><span class="line">        # Disable buffering when the nginx proxy gets very resource heavy upon streaming</span><br><span class="line">        proxy_buffering off;</span><br><span class="line">    &#125;</span><br><span class="line">    location /socket &#123;</span><br><span class="line">        # Proxy Jellyfin Websockets traffic</span><br><span class="line">        proxy_pass http://127.0.0.1:8096/socket;</span><br><span class="line">        proxy_http_version 1.1;</span><br><span class="line">        proxy_set_header Upgrade $http_upgrade;</span><br><span class="line">        proxy_set_header Connection &quot;upgrade&quot;;</span><br><span class="line">        proxy_set_header Host $host;</span><br><span class="line">        proxy_set_header X-Real-IP $remote_addr;</span><br><span class="line">        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;</span><br><span class="line">        proxy_set_header X-Forwarded-Proto $scheme;</span><br><span class="line">        proxy_set_header X-Forwarded-Protocol $scheme;</span><br><span class="line">        proxy_set_header X-Forwarded-Host $http_host;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+]]></content:encoded>
+      
+      <comments>https://blog.asec01.net/install-jellyfin/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>PHP报错：open_basedir restriction in effect</title>
@@ -334,54 +386,6 @@
 ]]></content:encoded>
       
       <comments>https://blog.asec01.net/talk-2018-02/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>再见 2017 ，你好 2018</title>
-      <link>https://blog.asec01.net/hello-2018/</link>
-      <guid>https://blog.asec01.net/hello-2018/</guid>
-      <pubDate>Mon, 01 Jan 2018 15:06:11 GMT</pubDate>
-      <description>
-      
-        &lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;100%&quot; height=&quot;86&quot; src=&quot;//music.163.com/outchain/player?type=2&amp;id
-      
-      </description>
-      
-      <content:encoded><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="86" src="//music.163.com/outchain/player?type=2&id=40249016&auto=1&height=66"></iframe>
-
-<p>时光飞逝，转眼间博主快18咯<br>这一年发生了许多许多<br>记性不好，这些能记住的都算印象深刻了吧。。。<br>这是我的第一篇“年终总结”  </p>
-<hr>
-<h4 id="年初"><a href="#年初" class="headerlink" title="年初"></a>年初</h4><p>刚开完一个令我印象深刻的联欢会，</p>
-<blockquote>
-<p>为啥印象深刻呢？校级联欢，老师托我搞了个微信墙。。。Exciting</p>
-<p>&lt;– 这行记录的事情被我隐藏了，知道这些事的人并不多。。 –&gt;<!--在之前一个多月的排练时间中。。。出了点感情问题。。。从隐隐喜欢，到害怕被控制，再到强行断开。。现在想想。。有点对不住人家。。。--></p>
-</blockquote>
-<p>就被主任托给各个会考科目的老师折腾会考去了。。。一个元旦折腾过去，会考过了。</p>
-<p>入坑Ingress，成了北绿一个小小的特工。</p>
-<hr>
-<h4 id="寒假"><a href="#寒假" class="headerlink" title="寒假"></a>寒假</h4><p>参与了北京南站的志愿者活动，在一个小团体过得挺舒服，也看到了一些社会上的不良现象。</p>
-<hr>
-<h4 id="三月"><a href="#三月" class="headerlink" title="三月"></a>三月</h4><p>上一届的高三成人礼，再次在后台干活。<br>急脾气该改改了，我坚持自己的方案，差点与某个没理解我思路的老师吵起来。。。<br>成人礼最后，想用奶油整一下某个学长，最后却被他按在地上抹了一脸[捂脸]  </p>
-<p>生日那天，明明送了我一组 USB充电的AA电池 ，之前一直念叨让学校买点试试，结果他先买了（似乎现在学校还没买。。。），现在一个在鼠标里，两个在包里备着，还有一个在家里吃灰。。。</p>
-<hr>
-<h4 id="四月"><a href="#四月" class="headerlink" title="四月"></a>四月</h4><p>游学，去西安，各种折腾，晚上睡觉前要收手机，第一天交了一个，第二天年级组长看我在接近收手机时发了个朋友圈，于是断定我有俩手机，于是晚上交了俩（我带了四个哈哈哈）<br>&lt;– 感情问题。。。继续隐藏。。。 –&gt;<!-- 与某人聊的很开心。。。又有了一段麻烦的感情。。。价值观不同在一起是个错误的决定。。。。喜欢她笑的样子，却又没信心继续。。。--></p>
-<hr>
-<h4 id="接近夏天"><a href="#接近夏天" class="headerlink" title="接近夏天"></a>接近夏天</h4><p>和明明一起参加了个 <a href="https://blog.asec01.net/robot-competition-2017/">机器人足球比赛</a> ，非常懵逼的干趴下好几队。。。在最后一轮输给了冠军。。。然后似乎全校老师都认识我和明明了。。。</p>
-<p>放假前和明明<a href="https://blog.asec01.net/bj54zx-2017-summer/">帮学校弄视频</a>，第一次用 AE 做动画（套模板）</p>
-<hr>
-<h4 id="暑假"><a href="#暑假" class="headerlink" title="暑假"></a>暑假</h4><p>刚放假就去石家庄“玩”，被老姐按在她屋里学了两周，回京继续被她按着学。。。</p>
-<p>老妈收走了我的显示器。。于是我这个熊孩子找了个废笔记本屏幕<a href="https://blog.asec01.net/how-to-modified-laptop-screen-to-monitor/">组装了个显示器</a>。。。</p>
-<hr>
-<h4 id="秋季开学"><a href="#秋季开学" class="headerlink" title="秋季开学"></a>秋季开学</h4><p>没啥好说的，学吧（我这重度电子依赖症终于能一整天离开手机了）<br>搬到 分校后基本没得玩了。。。<br>班里电脑 没有网，于是接了无线网卡，后来觉得无线网卡不好使又换了路由器。。。</p>
-<hr>
-<h4 id="年末"><a href="#年末" class="headerlink" title="年末"></a>年末</h4><p>新年联欢，主任出差，设备靠自己，照样玩得挺High</p>
-<hr>
-<p>其他事件等我想起来再加吧 。。。。</p>
-<hr>
-<h4 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h4><p>希望自己在高考前少碰点电子设备吧。。。</p>
-]]></content:encoded>
-      
-      <comments>https://blog.asec01.net/hello-2018/#disqus_thread</comments>
     </item>
     
   </channel>

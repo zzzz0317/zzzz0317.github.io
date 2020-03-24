@@ -3,6 +3,21 @@
 
 
     
+  <url>
+    <loc>https://blog.asec01.net/install-jellyfin/</loc>
+    <lastmod>2020-03-24T15:21:49.834Z</lastmod>
+    <data>
+        <display>
+        <title>安装 Jellyfin 开始肥宅生活</title>
+        <pubTime>2020-03-24T08:18:00.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
     
     
     
@@ -14,12 +29,12 @@
     
     
   <url>
-    <loc>https://blog.asec01.net/use-yiyan-api-build-something/</loc>
+    <loc>https://blog.asec01.net/use-html-and-nginx-to-redirect/</loc>
     <lastmod>2020-03-24T12:35:13.217Z</lastmod>
     <data>
         <display>
-        <title>使用一言API做些东西</title>
-        <pubTime>2017-06-26T05:33:00.000Z</pubTime>
+        <title>使用html和nginx配置文件实现页面跳转</title>
+        <pubTime>2017-06-06T07:29:00.000Z</pubTime>
         
          
            
@@ -29,12 +44,12 @@
 
     
   <url>
-    <loc>https://blog.asec01.net/use-html-and-nginx-to-redirect/</loc>
+    <loc>https://blog.asec01.net/use-yiyan-api-build-something/</loc>
     <lastmod>2020-03-24T12:35:13.217Z</lastmod>
     <data>
         <display>
-        <title>使用html和nginx配置文件实现页面跳转</title>
-        <pubTime>2017-06-06T07:29:00.000Z</pubTime>
+        <title>使用一言API做些东西</title>
+        <pubTime>2017-06-26T05:33:00.000Z</pubTime>
         
          
            
