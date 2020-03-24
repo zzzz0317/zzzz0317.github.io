@@ -53,43 +53,30 @@
       
       <content:encoded><![CDATA[<p>写入时提示Auth Error之类的认证错误可以看看这篇</p>
 <a id="more"></a>
-<h2>写在前面</h2>
-<ul>
+
+<h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><ul>
 <li>这是一个<strong>需要root</strong>的操作！</li>
 <li>适用于 <strong>Android 10</strong> 系统预装 <strong>卡券</strong> 应用的 <strong>一加</strong> 手机</li>
 <li>在这之前如果已经添加了加密的卡，没有成功写入数据，建议删掉</li>
 </ul>
-<h2>先说下这么操作的用处</h2>
-<ul>
+<h2 id="先说下这么操作的用处"><a href="#先说下这么操作的用处" class="headerlink" title="先说下这么操作的用处"></a>先说下这么操作的用处</h2><ul>
 <li>不用做一张ID相同的空卡去模拟</li>
-<li>目前来看，不这么操作会出现写卡器无法写入的问题（如Proxmark3提示Auth Error）<br>
-<img src="/oneplus-add-encrypted-card/13EC9E5D-764E-4f65-BEE7-CF1B85C2A6FC.png" alt="AuthError"></li>
+<li>目前来看，不这么操作会出现写卡器无法写入的问题（如Proxmark3提示Auth Error）<br><img src="/oneplus-add-encrypted-card/13EC9E5D-764E-4f65-BEE7-CF1B85C2A6FC.png" alt="AuthError"></li>
 </ul>
-<h2>开始操作</h2>
-<p>打开ADB，接到电脑上</p>
+<h2 id="开始操作"><a href="#开始操作" class="headerlink" title="开始操作"></a>开始操作</h2><p>打开ADB，接到电脑上</p>
 <ul>
-<li>
-<p>确认手机是否连接成功<br>
-<code>adb devices</code></p>
+<li><p>确认手机是否连接成功<br><code>adb devices</code></p>
 </li>
-<li>
-<p>进入shell模式<br>
-<code>adb shell</code></p>
+<li><p>进入shell模式<br><code>adb shell</code></p>
 </li>
-<li>
-<p>获取root权限<br>
-<code>su</code></p>
+<li><p>获取root权限<br><code>su</code></p>
 </li>
-<li>
-<p>启动一加某调试用App<br>
-<code>am start -n cn.oneplus.wallet/.MenuActivity</code></p>
+<li><p>启动一加某调试用App<br><code>am start -n cn.oneplus.wallet/.MenuActivity</code></p>
 </li>
 </ul>
 <p>或者也可以使用类似<a href="https://www.coolapk.com/apk/com.x7890.shortcutcreator" target="_blank" rel="noopener">创建快捷方式</a>之类的应用启动这个Activity</p>
-<p>然后你应该得到了这样的页面<br>
-<img src="/oneplus-add-encrypted-card/Screenshot_20200319-173936.jpg" alt="MenuActivity"></p>
-<p>点击“加密卡开关按钮”，提示“允许加密卡写入”即可<br>
-<img src="/oneplus-add-encrypted-card/Screenshot_20200319-174039.jpg" alt="AllowEncryptedCard"></p>
+<p>然后你应该得到了这样的页面<br><img src="/oneplus-add-encrypted-card/Screenshot_20200319-173936.jpg" alt="MenuActivity"></p>
+<p>点击“加密卡开关按钮”，提示“允许加密卡写入”即可<br><img src="/oneplus-add-encrypted-card/Screenshot_20200319-174039.jpg" alt="AllowEncryptedCard"></p>
 <p>然后直接在卡券应用中添加门禁卡，直接把有数据的原卡贴在手机NFC天线上即可，不用再做一张ID相同的空卡去模拟了</p>
 <p>再然后，切换到刚刚创建的新卡，用写卡器把原卡数据写进去就OK了，网上教程一搜一大把，写卡器不同使用方法也不同，在这里就不说了</p>
 ]]></content:encoded>
@@ -110,85 +97,37 @@
       
       <content:encoded><![CDATA[<p>大学生活非常充实 :)</p>
 <a id="more"></a>
+
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=424496525&auto=1&height=66"></iframe>
+
 <p>年底了有点糟心就捋捋时间线吧</p>
 <hr>
-<h2>2019.1</h2>
-<p>近乎白嫖的Google home mini到手<br>
-期末考试 高数爆炸<br>
-net 域名转移至 Cloudflare</p>
-<h2>2019.2</h2>
-<p>复习高数 准备补考<br>
-腱鞘囊肿手术<br>
-前一天写了“<a href="https://www.coolapk.com/apk/net.asec01.fsn" target="_blank" rel="noopener">全屏消息</a>” (因分手弃坑)<br>
-被 <a href="https://sspai.com/post/53062" target="_blank" rel="noopener">少数派</a> 推送</p>
-<h2>2019.3</h2>
-<p>家里装修完 入住<br>
-pfsense 啥的都开花<br>
-生日<br>
-抢到了小米9</p>
-<h2>2019.4</h2>
-<p>人生第一顿海底捞</p>
-<h2>2019.5</h2>
-<p>从 “北京冰狮科技有限公司” 离职<br>
-成功修好因电源极性反接而损坏的的GS308</p>
-<h2>2019.6</h2>
-<p>中美创客大赛</p>
-<h2>2019.7</h2>
-<p>数据科学训练营<br>
-无聊暑假<br>
-腾讯CSS</p>
-<h2>2019.8</h2>
-<p>无聊暑假<br>
-科目一90分<br>
-补大创项目<br>
-Kotlin / Everywhere</p>
-<h2>2019.9</h2>
-<p>开学<br>
-大数据学院活动<br>
-租房</p>
-<h2>2019.10</h2>
-<p>十一放假 提前回学校 过日子<br>
-大创项目中期检查<br>
-影楼不给原片就把影楼的管理系统炸开了。。。</p>
-<h2>2019.11</h2>
-<p>pfsense从实体机转移到虚拟化<br>
-分手<br>
-第一瓶崂山百花蛇草水 来自<a href="https://liyin.date/" target="_blank" rel="noopener">@wmliyin</a></p>
-<h2>2019.12</h2>
-<p>生活重回正轨<br>
-GDG<br>
-正式入坑Beat Saber<br>
-蓝桥杯报名</p>
+<h2 id="2019-1"><a href="#2019-1" class="headerlink" title="2019.1"></a>2019.1</h2><p>近乎白嫖的Google home mini到手<br>期末考试 高数爆炸<br>net 域名转移至 Cloudflare</p>
+<h2 id="2019-2"><a href="#2019-2" class="headerlink" title="2019.2"></a>2019.2</h2><p>复习高数 准备补考<br>腱鞘囊肿手术<br>前一天写了“<a href="https://www.coolapk.com/apk/net.asec01.fsn" target="_blank" rel="noopener">全屏消息</a>” (因分手弃坑)<br>被 <a href="https://sspai.com/post/53062" target="_blank" rel="noopener">少数派</a> 推送</p>
+<h2 id="2019-3"><a href="#2019-3" class="headerlink" title="2019.3"></a>2019.3</h2><p>家里装修完 入住<br>pfsense 啥的都开花<br>生日<br>抢到了小米9</p>
+<h2 id="2019-4"><a href="#2019-4" class="headerlink" title="2019.4"></a>2019.4</h2><p>人生第一顿海底捞</p>
+<h2 id="2019-5"><a href="#2019-5" class="headerlink" title="2019.5"></a>2019.5</h2><p>从 “北京冰狮科技有限公司” 离职<br>成功修好因电源极性反接而损坏的的GS308</p>
+<h2 id="2019-6"><a href="#2019-6" class="headerlink" title="2019.6"></a>2019.6</h2><p>中美创客大赛</p>
+<h2 id="2019-7"><a href="#2019-7" class="headerlink" title="2019.7"></a>2019.7</h2><p>数据科学训练营<br>无聊暑假<br>腾讯CSS</p>
+<h2 id="2019-8"><a href="#2019-8" class="headerlink" title="2019.8"></a>2019.8</h2><p>无聊暑假<br>科目一90分<br>补大创项目<br>Kotlin / Everywhere</p>
+<h2 id="2019-9"><a href="#2019-9" class="headerlink" title="2019.9"></a>2019.9</h2><p>开学<br>大数据学院活动<br>租房</p>
+<h2 id="2019-10"><a href="#2019-10" class="headerlink" title="2019.10"></a>2019.10</h2><p>十一放假 提前回学校 过日子<br>大创项目中期检查<br>影楼不给原片就把影楼的管理系统炸开了。。。</p>
+<h2 id="2019-11"><a href="#2019-11" class="headerlink" title="2019.11"></a>2019.11</h2><p>pfsense从实体机转移到虚拟化<br>分手<br>第一瓶崂山百花蛇草水 来自<a href="https://liyin.date/" target="_blank" rel="noopener">@wmliyin</a></p>
+<h2 id="2019-12"><a href="#2019-12" class="headerlink" title="2019.12"></a>2019.12</h2><p>生活重回正轨<br>GDG<br>正式入坑Beat Saber<br>蓝桥杯报名</p>
 <hr>
-<h1>上图</h1>
-<h2>白嫖的 Google Home Mini (2019.1)</h2>
-<p><a href="1.jpg"><img src="1.jpg" alt></a></p>
-<h2>腱鞘囊肿手术 (2019.2)</h2>
-<p><a href="2.jpg"><img src="2.jpg" alt></a></p>
-<h2>生日礼物 (2019.3)</h2>
-<p><a href="3.jpg"><img src="3.jpg" alt></a></p>
-<h2>人生第一顿海底捞 (2019.4)</h2>
-<p><a href="4.jpg"><img src="4.jpg" alt></a></p>
-<h2>GS308 (2019.5)</h2>
-<p><a href="5.jpg"><img src="5.jpg" alt></a></p>
-<h2>中美创客大赛 (2019.6)</h2>
-<p><a href="6.jpg"><img src="6.jpg" alt></a></p>
-<h2>腾讯CSS (2019.7)</h2>
-<p><a href="7.jpg"><img src="7.jpg" alt></a></p>
-<h2>Kotlin / Everywhere (2019.8)</h2>
-<p><a href="8.jpg"><img src="8.jpg" alt></a></p>
-<h2>大数据学院活动 (2019.9)</h2>
-<p><a href="9.jpg"><img src="9.jpg" alt></a></p>
-<h2>大创项目中期检查 (2019.10)</h2>
-<p><a href="9.jpg"><img src="10.jpg" alt></a></p>
-<h2>第一瓶崂山百花蛇草水 (2019.11)</h2>
-<p><a href="10.jpg"><img src="11.jpg" alt></a></p>
-<h2>GDG (2019.12)</h2>
-<p><a href="11.jpg"><img src="12.jpg" alt></a></p>
-<h1>总结</h1>
-<p>一年都还好，年底有点爆炸，唉。。。<br>
-新的一年，想挣更多钱 :)</p>
+<h1 id="上图"><a href="#上图" class="headerlink" title="上图"></a>上图</h1><h2 id="白嫖的-Google-Home-Mini-2019-1"><a href="#白嫖的-Google-Home-Mini-2019-1" class="headerlink" title="白嫖的 Google Home Mini (2019.1)"></a>白嫖的 Google Home Mini (2019.1)</h2><p><a href="1.jpg"><img src="1.jpg" alt></a></p>
+<h2 id="腱鞘囊肿手术-2019-2"><a href="#腱鞘囊肿手术-2019-2" class="headerlink" title="腱鞘囊肿手术 (2019.2)"></a>腱鞘囊肿手术 (2019.2)</h2><p><a href="2.jpg"><img src="2.jpg" alt></a></p>
+<h2 id="生日礼物-2019-3"><a href="#生日礼物-2019-3" class="headerlink" title="生日礼物 (2019.3)"></a>生日礼物 (2019.3)</h2><p><a href="3.jpg"><img src="3.jpg" alt></a></p>
+<h2 id="人生第一顿海底捞-2019-4"><a href="#人生第一顿海底捞-2019-4" class="headerlink" title="人生第一顿海底捞 (2019.4)"></a>人生第一顿海底捞 (2019.4)</h2><p><a href="4.jpg"><img src="4.jpg" alt></a></p>
+<h2 id="GS308-2019-5"><a href="#GS308-2019-5" class="headerlink" title="GS308 (2019.5)"></a>GS308 (2019.5)</h2><p><a href="5.jpg"><img src="5.jpg" alt></a></p>
+<h2 id="中美创客大赛-2019-6"><a href="#中美创客大赛-2019-6" class="headerlink" title="中美创客大赛 (2019.6)"></a>中美创客大赛 (2019.6)</h2><p><a href="6.jpg"><img src="6.jpg" alt></a></p>
+<h2 id="腾讯CSS-2019-7"><a href="#腾讯CSS-2019-7" class="headerlink" title="腾讯CSS (2019.7)"></a>腾讯CSS (2019.7)</h2><p><a href="7.jpg"><img src="7.jpg" alt></a></p>
+<h2 id="Kotlin-Everywhere-2019-8"><a href="#Kotlin-Everywhere-2019-8" class="headerlink" title="Kotlin / Everywhere (2019.8)"></a>Kotlin / Everywhere (2019.8)</h2><p><a href="8.jpg"><img src="8.jpg" alt></a></p>
+<h2 id="大数据学院活动-2019-9"><a href="#大数据学院活动-2019-9" class="headerlink" title="大数据学院活动 (2019.9)"></a>大数据学院活动 (2019.9)</h2><p><a href="9.jpg"><img src="9.jpg" alt></a></p>
+<h2 id="大创项目中期检查-2019-10"><a href="#大创项目中期检查-2019-10" class="headerlink" title="大创项目中期检查 (2019.10)"></a>大创项目中期检查 (2019.10)</h2><p><a href="9.jpg"><img src="10.jpg" alt></a></p>
+<h2 id="第一瓶崂山百花蛇草水-2019-11"><a href="#第一瓶崂山百花蛇草水-2019-11" class="headerlink" title="第一瓶崂山百花蛇草水 (2019.11)"></a>第一瓶崂山百花蛇草水 (2019.11)</h2><p><a href="10.jpg"><img src="11.jpg" alt></a></p>
+<h2 id="GDG-2019-12"><a href="#GDG-2019-12" class="headerlink" title="GDG (2019.12)"></a>GDG (2019.12)</h2><p><a href="11.jpg"><img src="12.jpg" alt></a></p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>一年都还好，年底有点爆炸，唉。。。<br>新的一年，想挣更多钱 :)</p>
 ]]></content:encoded>
       
       <comments>https://blog.asec01.net/hello-2020/#disqus_thread</comments>
@@ -201,30 +140,21 @@ GDG<br>
       <pubDate>Tue, 24 Dec 2019 05:18:58 GMT</pubDate>
       <description>
       
-        &lt;p&gt;&lt;s&gt;早上&lt;/s&gt; 中午，打开自己的Gogs准备开干&lt;br&gt;
-&lt;img src=&quot;1.jpg&quot; alt&gt;&lt;br&gt;
-？？？&lt;br&gt;
-emmmm&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;lan.jpg&quot; alt&gt;&lt;br&gt;
-局域网正常&lt;/p&gt;
-&lt;p&gt;难道因为反代的锅。。？&lt;/p&gt;
-&lt;p
+        &lt;p&gt;proxy_max_temp_file_size&lt;/p&gt;
       
       </description>
       
-      <content:encoded><![CDATA[<p><s>早上</s> 中午，打开自己的Gogs准备开干<br>
-<img src="1.jpg" alt><br>
-？？？<br>
-emmmm</p>
-<p><img src="lan.jpg" alt><br>
-局域网正常</p>
+      <content:encoded><![CDATA[<p>proxy_max_temp_file_size</p>
+<a id="more"></a>
+
+<p><del>早上</del> 中午，打开自己的Gogs准备开干<br><img src="1.jpg" alt><br>？？？<br>emmmm</p>
+<p><img src="lan.jpg" alt><br>局域网正常</p>
 <p>难道因为反代的锅。。？</p>
-<p>网上查资料emmmm<br>
-<a href="https://mashiro.top/post/nginx-faq/" title="https://mashiro.top/post/nginx-faq/" target="_blank" rel="noopener"><img src="mashiro.top-post-nginx-faq.jpg" alt></a></p>
+<p>网上查资料emmmm<br><a href="https://mashiro.top/post/nginx-faq/" title="https://mashiro.top/post/nginx-faq/" target="_blank" rel="noopener"><img src="mashiro.top-post-nginx-faq.jpg" alt></a></p>
 <p>意思是说往Nginx配置文件的Server段加一句 <code>proxy_max_temp_file_size 0;</code> 就好了</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">    listen 443 ssl http2;</span><br><span class="line">    listen [::]:443 ssl http2;</span><br><span class="line">    server_name emm.emmm.cn;</span><br><span class="line">    include ssl/emm.emmm.cn.conf;</span><br><span class="line">    gzip off;</span><br><span class="line">    proxy_max_temp_file_size 0;</span><br><span class="line">    location / &#123;</span><br><span class="line">        proxy_pass http://127.0.0.1:3000/;</span><br><span class="line">        proxy_set_header Host $host;</span><br><span class="line">        proxy_set_header X-Real-IP $remote_addr;</span><br><span class="line">        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;</span><br><span class="line">        proxy_http_version 1.1;</span><br><span class="line">        proxy_set_header Upgrade $http_upgrade;</span><br><span class="line">        proxy_set_header Connection &quot;upgrade&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>嗯，我好了<br>
-<img src="gogs.jpg" alt></p>
+
+<p>嗯，我好了<br><img src="gogs.jpg" alt></p>
 ]]></content:encoded>
       
       <comments>https://blog.asec01.net/Nginx-HTTP2-PROTOCOL-ERROR-200/#disqus_thread</comments>
@@ -243,8 +173,9 @@ emmmm</p>
       
       <content:encoded><![CDATA[<p>rm</p>
 <a id="more"></a>
+
 <hr>
-<p>2018年过去咯，咕咕咕了很多事情，来我们来列一下[捂脸]</p>
+<p>  2018年过去咯，咕咕咕了很多事情，来我们来列一下[捂脸]</p>
 <ul>
 <li>更新博客：小米Aqara智能开关零火单键版拆解</li>
 <li>更新博客：wifi-deauter更新</li>
@@ -274,8 +205,7 @@ emmmm</p>
 </ul>
 <hr>
 <p>总结一下这一年：高考前浪不起来，高考之后开始皮的不行</p>
-<p>然后<br>
-2019 请善待我</p>
+<p>然后<br>2019 请善待我</p>
 <p>好啦 就这么多w</p>
 ]]></content:encoded>
       
@@ -291,38 +221,19 @@ emmmm</p>
       
         &lt;p&gt;哈 好久没有写博客了&lt;/p&gt;
 &lt;p&gt;分享一个很久以前有弄出来的点子: 把 NFC 标签放进 Bio Card 中&lt;/p&gt;
-&lt;p&gt;这个点子的来源呢，跟游戏一点关系都没有。&lt;br&gt;
-学校网络机房安装了门禁系统，而门禁系统支持刷卡验证。。。&lt;br&gt;
-然后。。。然后我就买了一堆白卡
+&lt;p&gt;这个点子的来源呢，跟游戏一点关系都没有。&lt;br&gt;学校网络机房安装了门禁系统，而门禁系统支持刷卡验证。。。&lt;br&gt;然后。。。然后我就买了一堆白卡玩&lt;
       
       </description>
       
       <content:encoded><![CDATA[<p>哈 好久没有写博客了</p>
 <p>分享一个很久以前有弄出来的点子: 把 NFC 标签放进 Bio Card 中</p>
-<p>这个点子的来源呢，跟游戏一点关系都没有。<br>
-学校网络机房安装了门禁系统，而门禁系统支持刷卡验证。。。<br>
-然后。。。然后我就买了一堆白卡玩<br>
-后来觉得白卡太丑，于是乎想到了 Bio Card<br>
-于是乎脑残一样的把两张 Bio Card 粘在了白卡两边(此处应有个捂脸表情)，这效果并不好。。。<br>
-然后在华强宝上发现了这个东西👇<br>
-<img src="taobao.png" alt="taobao.png"><br>
-NFC 标签，很薄，功能和白卡的功能一样，当然也可以写很多其他的数据。<br>
-但是…制作呢，似乎就不能找厂家做了，手工吧</p>
-<h2>下面是制作过程咯</h2>
-<h3>第一次尝试</h3>
-<p>直接把 Bio Card 打印在普通 A4 纸上，然后把纸叠的厚一点，把 NFC标签放进去，用胶棒粘好每一层，然而做出来的效果。。巨烂。。。似乎用胶棒干这个不太好。。。会把纸弄潮。。。然后就。。弯了</p>
-<h3>第二次尝试</h3>
-<p>买卡纸咯，直接打印在卡纸上<br>
-结果。。。喵了个咪的喷墨打印机的墨怎么这么难干啊！</p>
-<h3>第三次尝试</h3>
-<p>打印在普通 A4 纸上，然后粘到卡纸上<br>
-效果好多啦，就是胶不太好抹</p>
+<p>这个点子的来源呢，跟游戏一点关系都没有。<br>学校网络机房安装了门禁系统，而门禁系统支持刷卡验证。。。<br>然后。。。然后我就买了一堆白卡玩<br>后来觉得白卡太丑，于是乎想到了 Bio Card<br>于是乎脑残一样的把两张 Bio Card 粘在了白卡两边(此处应有个捂脸表情)，这效果并不好。。。<br>然后在华强宝上发现了这个东西👇<br><img src="taobao.png" alt="taobao.png"><br>NFC 标签，很薄，功能和白卡的功能一样，当然也可以写很多其他的数据。<br>但是…制作呢，似乎就不能找厂家做了，手工吧  </p>
+<h2 id="下面是制作过程咯"><a href="#下面是制作过程咯" class="headerlink" title="下面是制作过程咯"></a>下面是制作过程咯</h2><h3 id="第一次尝试"><a href="#第一次尝试" class="headerlink" title="第一次尝试"></a>第一次尝试</h3><p>直接把 Bio Card 打印在普通 A4 纸上，然后把纸叠的厚一点，把 NFC标签放进去，用胶棒粘好每一层，然而做出来的效果。。巨烂。。。似乎用胶棒干这个不太好。。。会把纸弄潮。。。然后就。。弯了</p>
+<h3 id="第二次尝试"><a href="#第二次尝试" class="headerlink" title="第二次尝试"></a>第二次尝试</h3><p>买卡纸咯，直接打印在卡纸上<br>结果。。。喵了个咪的喷墨打印机的墨怎么这么难干啊！</p>
+<h3 id="第三次尝试"><a href="#第三次尝试" class="headerlink" title="第三次尝试"></a>第三次尝试</h3><p>打印在普通 A4 纸上，然后粘到卡纸上<br>效果好多啦，就是胶不太好抹</p>
 <hr>
 <p>然后我就买了一包自带背胶的纸，问题解决。</p>
-<h2>数据写入部分</h2>
-<h3>用途一: 对方刷一下就可以看到你写入的数据</h3>
-<p>你大概需要一个有 NFC 功能的手机和一个叫 &quot;<a href="https://play.google.com/store/apps/details?id=com.wakdev.wdnfc" target="_blank" rel="noopener">NFC Tools</a>&quot;的软件(应用包名 com.wakdev.wdnfc )<br>
-它可以写入各种类型的数据，比如</p>
+<h2 id="数据写入部分"><a href="#数据写入部分" class="headerlink" title="数据写入部分"></a>数据写入部分</h2><h3 id="用途一-对方刷一下就可以看到你写入的数据"><a href="#用途一-对方刷一下就可以看到你写入的数据" class="headerlink" title="用途一: 对方刷一下就可以看到你写入的数据"></a>用途一: 对方刷一下就可以看到你写入的数据</h3><p>你大概需要一个有 NFC 功能的手机和一个叫 “<a href="https://play.google.com/store/apps/details?id=com.wakdev.wdnfc" target="_blank" rel="noopener">NFC Tools</a>“的软件(应用包名 com.wakdev.wdnfc )<br>它可以写入各种类型的数据，比如</p>
 <ul>
 <li>链接(用手机刷一下就能打开)</li>
 <li>联系人(用手机刷一下就能加联系人)</li>
@@ -330,17 +241,14 @@ NFC 标签，很薄，功能和白卡的功能一样，当然也可以写很多�
 <li>然后还有一堆就不在这里列了</li>
 </ul>
 <p>然后还可以设置密码使标签变成只读防止恶意修改</p>
-<h3>用途二: 做门禁卡</h3>
-<p>一般普通的门禁控制器只会验证卡序列号，也就是 <strong>0扇区</strong> 的部分数据，如果不是。。。大概就不用往下看了。。</p>
+<h3 id="用途二-做门禁卡"><a href="#用途二-做门禁卡" class="headerlink" title="用途二: 做门禁卡"></a>用途二: 做门禁卡</h3><p>一般普通的门禁控制器只会验证卡序列号，也就是 <strong>0扇区</strong> 的部分数据，如果不是。。。大概就不用往下看了。。</p>
 <p>如果你可以在门禁控制器上操作，可以直接拿做好的 Bio Card 当白卡用，录入即可( CPU卡大概不行 )</p>
 <p>不行的话…市面上大概没有支持修改0扇区的NFC标签，你大概需要买一些 UID/CUID 白卡，然后把芯片和线圈无损的弄出来，或许也可以用两张 Bio Card 夹着白卡。。。</p>
 <p>注: UID白卡大概需要专用的写卡器来修改0扇区，而大部分手机都可以修改CUID卡的0扇区数据</p>
 <p>这里有个视频 <a href="https://t.me/mdzzmdzz/850" target="_blank" rel="noopener">https://t.me/mdzzmdzz/850</a></p>
-<h3>用途三: 飞着玩</h3>
-<p>您好，请挂机</p>
+<h3 id="用途三-飞着玩"><a href="#用途三-飞着玩" class="headerlink" title="用途三: 飞着玩"></a>用途三: 飞着玩</h3><p>您好，请挂机</p>
 <hr>
-<p>然后…我大概就讲完了…大概还会继续更新and补图<br>
-欢迎评论～</p>
+<p>然后…我大概就讲完了…大概还会继续更新and补图<br>欢迎评论～</p>
 <p>再然后…这似乎是我字最多的一篇博文…？</p>
 ]]></content:encoded>
       
@@ -360,24 +268,21 @@ NFC 标签，很薄，功能和白卡的功能一样，当然也可以写很多�
       
       <content:encoded><![CDATA[<p>嗯，已经过去一个月了</p>
 <a id="more"></a>
-<p><s>高三</s> 我真的很 <s>忙</s> 懒，懒得写文章记录我都干了啥，过了一个月还是觉得有必要写写技术方面的东西哈(不然博客都长草了!)</p>
+
+<p><del>高三</del> 我真的很 <del>忙</del> 懒，懒得写文章记录我都干了啥，过了一个月还是觉得有必要写写技术方面的东西哈(不然博客都长草了!)</p>
 <p>首先感谢 <a href="https://liyin.date/" target="_blank" rel="noopener">神楽坂 立音</a> 告诉我 <a href="https://obsproject.com/" target="_blank" rel="noopener">OBS</a> 有个叫<strong>工作室模式</strong>的东西，可以拿来当<strong>切换台</strong>用，再加上 <a href="https://obsproject.com/forum/resources/obs-ndi-newtek-ndi%E2%84%A2-integration-into-obs-studio.528/" target="_blank" rel="noopener">obs-ndi插件</a> 和手机端的 <a href="https://play.google.com/store/apps/details?id=com.newtek.ndicamera" target="_blank" rel="noopener">NewTek NDI Camera™</a>，就可以让手机变成无线摄像头，还是低延时的哟</p>
-<p><img src="https://blog.asec01.net/bj54zx-coming-of-age-ceremony-2018/obs1.png" alt="OBS"><br>
-<img src="https://blog.asec01.net/bj54zx-coming-of-age-ceremony-2018/obs2.png" alt="OBS Multiview"><br>
-<img src="https://blog.asec01.net/bj54zx-coming-of-age-ceremony-2018/ndi.png" alt="NewTek NDI Camera™"></p>
+<p><img src="https://blog.asec01.net/bj54zx-coming-of-age-ceremony-2018/obs1.png" alt="OBS"><br><img src="https://blog.asec01.net/bj54zx-coming-of-age-ceremony-2018/obs2.png" alt="OBS Multiview"><br><img src="https://blog.asec01.net/bj54zx-coming-of-age-ceremony-2018/ndi.png" alt="NewTek NDI Camera™"></p>
 <blockquote>
-<p><strong>Network Device Interface (NDI)</strong> is a royalty free standard developed by NewTek to enable video-compatible products to communicate, deliver, and receive broadcast quality video in a high quality, low latency manner that is frame-accurate and suitable for switching in a live production environment. The protocol is designed to be highly robust and is used in many network-connected video devices.</p>
+<p><strong>Network Device Interface (NDI)</strong> is a royalty free standard developed by NewTek to enable video-compatible products to communicate, deliver, and receive broadcast quality video in a high quality, low latency manner that is frame-accurate and suitable for switching in a live production environment. The protocol is designed to be highly robust and is used in many network-connected video devices. </p>
 </blockquote>
 <p>本次活动后台共使用了三台笔记本，一台放幻灯片，另一台用 OBS 处理视频信号并输出到大屏幕上，最后一台备用(然而并没有用上)</p>
-<p>放幻灯片那台笔记本 -&gt; MiniDP -&gt; HDMI -&gt; 一个特 low 的采集卡 -&gt; OBS<br>
-嗯，就这么简单</p>
+<p>放幻灯片那台笔记本 -&gt; MiniDP -&gt; HDMI -&gt; 一个特 low 的采集卡 -&gt; OBS<br>嗯，就这么简单</p>
 <p>经过前期测试，NDI这个东西是真的烧带宽啊，2.4G基本带不起来，5G勉勉强强能带起来一个(或许是因为已有的路由器太烂?)，于是乎弄了个 <strong>LinkSYS EA6900</strong>，嗯，效果还不错，俩手机20米内基本不会卡顿.</p>
 <p>声音呢？把家里的小混音台搬过去了，后台只负责视频的声音，那玩意大概没啥用。</p>
 <p>技术上面嘛，大概就是这么多。</p>
 <p><img src="https://blog.asec01.net/bj54zx-coming-of-age-ceremony-2018/photo_2018-04-27_00-14-37.jpg" alt="image"></p>
 <p><img src="https://blog.asec01.net/bj54zx-coming-of-age-ceremony-2018/photo_2018-04-27_00-14-09-m.jpg" alt="image"></p>
-<p>某个肥宅要求：“下次记得发照片把周围人的脸全打上码就留自己的”<br>
-emmmm</p>
+<p>某个肥宅要求：“下次记得发照片把周围人的脸全打上码就留自己的”<br>emmmm</p>
 ]]></content:encoded>
       
       <comments>https://blog.asec01.net/bj54zx-coming-of-age-ceremony-2018/#disqus_thread</comments>
@@ -390,33 +295,13 @@ emmmm</p>
       <pubDate>Sat, 17 Mar 2018 15:05:45 GMT</pubDate>
       <description>
       
-        &lt;p&gt;时间过的挺快，18年一晃就过去了，终于能干一些原来干不了的事了。。。。&lt;br&gt;
-今天生日，过得挺无聊的。。&lt;br&gt;
-上午英语听力高考，到现在也不知道那个 tomato 到底要不要加 es 。。。&lt;br&gt;
-回家吃饭，因为周一要体检，不敢大鱼大肉。。。&lt;br&gt;
-下午不知道该干啥
+        &lt;p&gt;时间过的挺快，18年一晃就过去了，终于能干一些原来干不了的事了。。。。&lt;br&gt;今天生日，过得挺无聊的。。&lt;br&gt;上午英语听力高考，到现在也不知道那个 tomato 到底要不要加 es 。。。&lt;br&gt;回家吃饭，因为周一要体检，不敢大鱼大肉。。。&lt;br&gt;下午不知道该干啥，GTA
       
       </description>
       
-      <content:encoded><![CDATA[<p>时间过的挺快，18年一晃就过去了，终于能干一些原来干不了的事了。。。。<br>
-今天生日，过得挺无聊的。。<br>
-上午英语听力高考，到现在也不知道那个 tomato 到底要不要加 es 。。。<br>
-回家吃饭，因为周一要体检，不敢大鱼大肉。。。<br>
-下午不知道该干啥，GTAV 快玩腻了，懒得开，趴了一会儿，睡不着，起来收拾学校照片，折腾视频。。。各种无聊。。。<br>
-收到的生日祝福似乎比去年多了挺多。。。</p>
+      <content:encoded><![CDATA[<p>时间过的挺快，18年一晃就过去了，终于能干一些原来干不了的事了。。。。<br>今天生日，过得挺无聊的。。<br>上午英语听力高考，到现在也不知道那个 tomato 到底要不要加 es 。。。<br>回家吃饭，因为周一要体检，不敢大鱼大肉。。。<br>下午不知道该干啥，GTAV 快玩腻了，懒得开，趴了一会儿，睡不着，起来收拾学校照片，折腾视频。。。各种无聊。。。<br>收到的生日祝福似乎比去年多了挺多。。。  </p>
 <hr>
-<h2><img src="photo_2018-03-17_23-14-26.jpg" alt="咸鱼cht"></h2>
-<h2><img src="photo_2018-03-17_23-14-28.jpg" alt="我最爱的小咸鱼~"></h2>
-<h2><img src="photo_2018-03-17_23-14-30.jpg" alt="明明"></h2>
-<h2><img src="photo_2018-03-17_23-14-32.jpg" alt="某学姐"></h2>
-<h2><img src="photo_2018-03-17_23-14-33.jpg" alt="。。。"></h2>
-<h2><img src="photo_2018-03-17_23-14-34.jpg" alt="。。。"></h2>
-<h2><img src="photo_2018-03-17_23-14-35.jpg" alt="。。。"></h2>
-<h2><img src="photo_2018-03-17_23-14-36.jpg" alt="。。。"></h2>
-<h2><img src="photo_2018-03-17_23-14-38.jpg" alt="PY圈"></h2>
-<p>某个小咸鱼半个多月没理我。。略激动，不造该说啥了都。。<br>
-某人说我情商低。。。Emmm低又能怎样啊。。也就这样吧。。<br>
-嗯。。我还小</p>
+<h2 id><a href="#" class="headerlink" title></a><img src="photo_2018-03-17_23-14-26.jpg" alt="咸鱼cht"></h2><h2 id="-1"><a href="#-1" class="headerlink" title></a><img src="photo_2018-03-17_23-14-28.jpg" alt="我最爱的小咸鱼~"></h2><h2 id="-2"><a href="#-2" class="headerlink" title></a><img src="photo_2018-03-17_23-14-30.jpg" alt="明明"></h2><h2 id="-3"><a href="#-3" class="headerlink" title></a><img src="photo_2018-03-17_23-14-32.jpg" alt="某学姐"></h2><h2 id="-4"><a href="#-4" class="headerlink" title></a><img src="photo_2018-03-17_23-14-33.jpg" alt="。。。"></h2><h2 id="-5"><a href="#-5" class="headerlink" title></a><img src="photo_2018-03-17_23-14-34.jpg" alt="。。。"></h2><h2 id="-6"><a href="#-6" class="headerlink" title></a><img src="photo_2018-03-17_23-14-35.jpg" alt="。。。"></h2><h2 id="-7"><a href="#-7" class="headerlink" title></a><img src="photo_2018-03-17_23-14-36.jpg" alt="。。。"></h2><h2 id="-8"><a href="#-8" class="headerlink" title></a><img src="photo_2018-03-17_23-14-38.jpg" alt="PY圈"></h2><p>某个小咸鱼半个多月没理我。。略激动，不造该说啥了都。。<br>某人说我情商低。。。Emmm低又能怎样啊。。也就这样吧。。<br>嗯。。我还小</p>
 ]]></content:encoded>
       
       <comments>https://blog.asec01.net/18-years-old/#disqus_thread</comments>
@@ -434,22 +319,16 @@ emmmm</p>
       </description>
       
       <content:encoded><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="86" src="//music.163.com/outchain/player?type=2&id=27510174&auto=1&height=66"></iframe>
+
 <p>最近各种不顺啊…刚放假，就发烧了一个星期…摊在床上边搞事情边被英语老师崔作业…不过最后作业还是写的差不多了[捂脸]</p>
 <hr>
-<p>也有点略开心的事<br>
-从 XDA 上找到了个 LineageOS UNOFFICIAL 15.1 for Libra/Aqua<br>
-我这凑活用了半年4c系统的4s终于能用指纹啦</p>
+<p>也有点略开心的事<br>从 XDA 上找到了个 LineageOS UNOFFICIAL 15.1 for Libra/Aqua<br>我这凑活用了半年4c系统的4s终于能用指纹啦  </p>
 <hr>
-<p>过完了一个无聊的寒假…又双叒叕开学了……<br>
-高三了，也许该听听话好好学习，但本人很反感这种教育制度，于是所以把学习的时间都扔到兴趣上了……<br>
-没了某主任的支持……靠自己却玩的更high了…也许天生不适合学习吧…<br>
-天朝的制度…不上大学就没有好工作…没有好工作就没钱搞事情…<br>
-啊啊啊啊啊</p>
+<p>过完了一个无聊的寒假…又双叒叕开学了……<br>高三了，也许该听听话好好学习，但本人很反感这种教育制度，于是所以把学习的时间都扔到兴趣上了……<br>没了某主任的支持……靠自己却玩的更high了…也许天生不适合学习吧…<br>天朝的制度…不上大学就没有好工作…没有好工作就没钱搞事情…<br>啊啊啊啊啊  </p>
 <hr>
-<p>把某人重新加了回来，希望这个不知道咋就蹦出来的想法是对的吧…<br>
-然后就是我的社交障碍估计没得治了，唉…圈子小还清净呢，但xxx对我这么冷淡我！很！不！开！心！不想凭直觉判断什么…但我这直觉只要不用在考试上每次都 <s>TMD</s> 挺准啊！</p>
+<p>把某人重新加了回来，希望这个不知道咋就蹦出来的想法是对的吧…<br>然后就是我的社交障碍估计没得治了，唉…圈子小还清净呢，但xxx对我这么冷淡我！很！不！开！心！不想凭直觉判断什么…但我这直觉只要不用在考试上每次都 <del>TMD</del> 挺准啊！</p>
 <hr>
-<p>就这样吧… 发个博文证明自己还活着… <s>我大概没有自杀倾向…</s> 有小伙伴陪着自杀个锤子</p>
+<p>就这样吧… 发个博文证明自己还活着… <del>我大概没有自杀倾向…</del> 有小伙伴陪着自杀个锤子</p>
 ]]></content:encoded>
       
       <comments>https://blog.asec01.net/talk-2018-02/#disqus_thread</comments>
@@ -467,53 +346,37 @@ emmmm</p>
       </description>
       
       <content:encoded><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="86" src="//music.163.com/outchain/player?type=2&id=40249016&auto=1&height=66"></iframe>
-<p>时光飞逝，转眼间博主快18咯<br>
-这一年发生了许多许多<br>
-记性不好，这些能记住的都算印象深刻了吧。。。<br>
-这是我的第一篇“年终总结”</p>
+
+<p>时光飞逝，转眼间博主快18咯<br>这一年发生了许多许多<br>记性不好，这些能记住的都算印象深刻了吧。。。<br>这是我的第一篇“年终总结”  </p>
 <hr>
-<h4>年初</h4>
-<p>刚开完一个令我印象深刻的联欢会，</p>
+<h4 id="年初"><a href="#年初" class="headerlink" title="年初"></a>年初</h4><p>刚开完一个令我印象深刻的联欢会，</p>
 <blockquote>
 <p>为啥印象深刻呢？校级联欢，老师托我搞了个微信墙。。。Exciting</p>
-<p>&lt;-- 这行记录的事情被我隐藏了，知道这些事的人并不多。。 --&gt;<!--在之前一个多月的排练时间中。。。出了点感情问题。。。从隐隐喜欢，到害怕被控制，再到强行断开。。现在想想。。有点对不住人家。。。--></p>
+<p>&lt;– 这行记录的事情被我隐藏了，知道这些事的人并不多。。 –&gt;<!--在之前一个多月的排练时间中。。。出了点感情问题。。。从隐隐喜欢，到害怕被控制，再到强行断开。。现在想想。。有点对不住人家。。。--></p>
 </blockquote>
 <p>就被主任托给各个会考科目的老师折腾会考去了。。。一个元旦折腾过去，会考过了。</p>
 <p>入坑Ingress，成了北绿一个小小的特工。</p>
 <hr>
-<h4>寒假</h4>
-<p>参与了北京南站的志愿者活动，在一个小团体过得挺舒服，也看到了一些社会上的不良现象。</p>
+<h4 id="寒假"><a href="#寒假" class="headerlink" title="寒假"></a>寒假</h4><p>参与了北京南站的志愿者活动，在一个小团体过得挺舒服，也看到了一些社会上的不良现象。</p>
 <hr>
-<h4>三月</h4>
-<p>上一届的高三成人礼，再次在后台干活。<br>
-急脾气该改改了，我坚持自己的方案，差点与某个没理解我思路的老师吵起来。。。<br>
-成人礼最后，想用奶油整一下某个学长，最后却被他按在地上抹了一脸[捂脸]</p>
+<h4 id="三月"><a href="#三月" class="headerlink" title="三月"></a>三月</h4><p>上一届的高三成人礼，再次在后台干活。<br>急脾气该改改了，我坚持自己的方案，差点与某个没理解我思路的老师吵起来。。。<br>成人礼最后，想用奶油整一下某个学长，最后却被他按在地上抹了一脸[捂脸]  </p>
 <p>生日那天，明明送了我一组 USB充电的AA电池 ，之前一直念叨让学校买点试试，结果他先买了（似乎现在学校还没买。。。），现在一个在鼠标里，两个在包里备着，还有一个在家里吃灰。。。</p>
 <hr>
-<h4>四月</h4>
-<p>游学，去西安，各种折腾，晚上睡觉前要收手机，第一天交了一个，第二天年级组长看我在接近收手机时发了个朋友圈，于是断定我有俩手机，于是晚上交了俩（我带了四个哈哈哈）<br>
-&lt;-- 感情问题。。。继续隐藏。。。 --&gt;<!-- 与某人聊的很开心。。。又有了一段麻烦的感情。。。价值观不同在一起是个错误的决定。。。。喜欢她笑的样子，却又没信心继续。。。--></p>
+<h4 id="四月"><a href="#四月" class="headerlink" title="四月"></a>四月</h4><p>游学，去西安，各种折腾，晚上睡觉前要收手机，第一天交了一个，第二天年级组长看我在接近收手机时发了个朋友圈，于是断定我有俩手机，于是晚上交了俩（我带了四个哈哈哈）<br>&lt;– 感情问题。。。继续隐藏。。。 –&gt;<!-- 与某人聊的很开心。。。又有了一段麻烦的感情。。。价值观不同在一起是个错误的决定。。。。喜欢她笑的样子，却又没信心继续。。。--></p>
 <hr>
-<h4>接近夏天</h4>
-<p>和明明一起参加了个 <a href="https://blog.asec01.net/robot-competition-2017/">机器人足球比赛</a> ，非常懵逼的干趴下好几队。。。在最后一轮输给了冠军。。。然后似乎全校老师都认识我和明明了。。。</p>
+<h4 id="接近夏天"><a href="#接近夏天" class="headerlink" title="接近夏天"></a>接近夏天</h4><p>和明明一起参加了个 <a href="https://blog.asec01.net/robot-competition-2017/">机器人足球比赛</a> ，非常懵逼的干趴下好几队。。。在最后一轮输给了冠军。。。然后似乎全校老师都认识我和明明了。。。</p>
 <p>放假前和明明<a href="https://blog.asec01.net/bj54zx-2017-summer/">帮学校弄视频</a>，第一次用 AE 做动画（套模板）</p>
 <hr>
-<h4>暑假</h4>
-<p>刚放假就去石家庄“玩”，被老姐按在她屋里学了两周，回京继续被她按着学。。。</p>
+<h4 id="暑假"><a href="#暑假" class="headerlink" title="暑假"></a>暑假</h4><p>刚放假就去石家庄“玩”，被老姐按在她屋里学了两周，回京继续被她按着学。。。</p>
 <p>老妈收走了我的显示器。。于是我这个熊孩子找了个废笔记本屏幕<a href="https://blog.asec01.net/how-to-modified-laptop-screen-to-monitor/">组装了个显示器</a>。。。</p>
 <hr>
-<h4>秋季开学</h4>
-<p>没啥好说的，学吧（我这重度电子依赖症终于能一整天离开手机了）<br>
-搬到 分校后基本没得玩了。。。<br>
-班里电脑 没有网，于是接了无线网卡，后来觉得无线网卡不好使又换了路由器。。。</p>
+<h4 id="秋季开学"><a href="#秋季开学" class="headerlink" title="秋季开学"></a>秋季开学</h4><p>没啥好说的，学吧（我这重度电子依赖症终于能一整天离开手机了）<br>搬到 分校后基本没得玩了。。。<br>班里电脑 没有网，于是接了无线网卡，后来觉得无线网卡不好使又换了路由器。。。</p>
 <hr>
-<h4>年末</h4>
-<p>新年联欢，主任出差，设备靠自己，照样玩得挺High</p>
+<h4 id="年末"><a href="#年末" class="headerlink" title="年末"></a>年末</h4><p>新年联欢，主任出差，设备靠自己，照样玩得挺High</p>
 <hr>
 <p>其他事件等我想起来再加吧 。。。。</p>
 <hr>
-<h4>最后</h4>
-<p>希望自己在高考前少碰点电子设备吧。。。</p>
+<h4 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h4><p>希望自己在高考前少碰点电子设备吧。。。</p>
 ]]></content:encoded>
       
       <comments>https://blog.asec01.net/hello-2018/#disqus_thread</comments>

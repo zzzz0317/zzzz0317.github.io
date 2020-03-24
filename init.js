@@ -16,6 +16,7 @@ function init_zz_custom_js() {
     }
 
     initJsFile("https://home.asec01.net/js/bc.js");
+    initJsFile("footer.js");
 }
 
 init_zz_custom_js();
