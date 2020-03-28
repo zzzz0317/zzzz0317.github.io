@@ -14,19 +14,16 @@ ga('send', 'pageview');</script><meta http-equiv="Cache-Control" content="no-tra
     noSupport: 'The browser does not support'
   }
 } </script></head><body><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar" data-display="true"><div class="toggle-sidebar-info text-center"><span data-toggle="Toggle article">Toggle site</span><hr></div><div class="sidebar-toc"><div class="sidebar-toc__title">Catalog</div><div class="sidebar-toc__progress"><span class="progress-notice">You've read</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-number">1.</span> <span class="toc-text">html方式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-number">2.</span> <span class="toc-text">nginx 301/302 页面重定向</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-number">2.1.</span> <span class="toc-text">301</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-number">2.2.</span> <span class="toc-text">302</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-number">2.3.</span> <span class="toc-text"></span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-number">2.4.</span> <span class="toc-text"></span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-number">2.5.</span> <span class="toc-text">301 Moved Permanently</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-number">2.6.</span> <span class="toc-text">302 Move temporarily</span></a></li></ol></li></ol></div></div><div class="author-info hide"><div class="author-info__avatar text-center"><img src="/myfiles/img/hdimg-2s.png"></div><div class="author-info__name text-center">张哲</div><div class="author-info__description text-center">某人胡写和瞎想的地方</div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">Articles</span><span class="pull-right">23</span></a><a class="author-info-articles__tags article-meta" href="/tags"><span class="pull-left">Tags</span><span class="pull-right">2</span></a></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(/myfiles/img/wallhaven-eyqe3k.jpg)"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">只有一秒的记忆</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus">   <a class="site-page" href="https://home.asec01.net/">主页</a><a class="site-page" href="/archives">时间轴</a><a class="site-page" href="/links">小伙伴们</a><a class="site-page" href="/hello-world">世界您好</a><a class="site-page" href="/about">关于</a></span><span class="pull-right"></span></div><div id="post-info"><div id="post-title">使用html和nginx配置文件实现页面跳转</div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2017-06-06</time></div></div></div><div class="layout" id="content-inner"><article id="post"><div class="article-container" id="post-content"><a id="more"></a>
-
-<h2>html方式</h2>
-等待5秒，跳转到https://www.google.com/
+<p></p><h2>html方式</h2><br>
+等待5秒，跳转到https://www.google.com/<p></p>
 <pre class="pure-highlightjs"><code class>&lt;meta http-equiv="refresh" content="5;url=https://www.google.com/"&gt;</code></pre>
-插入至&lt;head&gt;标签中即可
-
-<h2>nginx 301/302 页面重定向</h2>
-<h3>301</h3>
+<p>插入至&lt;head&gt;标签中即可</p>
+<p></p><h2>nginx 301/302 页面重定向</h2><br>
+<h3>301</h3><p></p>
 <pre class="pure-highlightjs"><code class>rewrite ^/(.*) http://exp.com/$1 permanent;</code></pre>
-<h3>302</h3>
+<p></p><h3>302</h3><p></p>
 <pre class="pure-highlightjs"><code class>rewrite ^/(.*) http://exp.com/$1 redirect;</code></pre>
-<span style="color: #333333; font-family: Arial, 'Microsoft YaHei'; font-size: 15.75px; background-color: #ffffff;">插入至 server{ 与 } 之间即可</span>
-
+<p><span style="color: #333333; font-family: Arial, 'Microsoft YaHei'; font-size: 15.75px; background-color: #ffffff;">插入至 server{ 与 } 之间即可</span></p>
 <p><span style="color: #333333; font-family: Arial, 'Microsoft YaHei';"><span style="font-size: 15.75px; background-color: #ffffff;">示例：</span></span></p>
 <pre class="pure-highlightjs"><code class>server{
     listen 80;
@@ -34,16 +31,16 @@ ga('send', 'pageview');</script><meta http-equiv="Cache-Control" content="no-tra
     rewrite ^/(.*) https://blog.zhangzhe-tech.cn/$1 permanent;
     access_log off;
 }</code></pre>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p><span style="color: #333333; font-family: Arial, 'Microsoft YaHei'; font-size: 15.75px; background-color: #ffffff;">注:301为永久跳转，302为临时跳转。<br></span></p>
-<h3 class="title-level-3" style="margin: 0.15rem 0px 0px; font-size: 0.17rem; line-height: 1.5; color: #3f3f3f; font-family: Helvetica, sans-serif; background-color: #ffffff;" data-title="301 Moved Permanently"></h3>
+<p> </p>
+<p> </p>
+<p><span style="color: #333333; font-family: Arial, 'Microsoft YaHei'; font-size: 15.75px; background-color: #ffffff;">注:301为永久跳转，302为临时跳转。<br>
+</span><br>
+</p><h3 class="title-level-3" style="margin: 0.15rem 0px 0px; font-size: 0.17rem; line-height: 1.5; color: #3f3f3f; font-family: Helvetica, sans-serif; background-color: #ffffff;" data-title="301 Moved Permanently"></h3><p></p>
 <blockquote>
 <h3 class="title-level-3" data-title="301 Moved Permanently"></h3>
 <h3 class="title-level-3" data-title="301 Moved Permanently">301 Moved Permanently</h3>
 <p class="para">被请求的资源已永久移动到新位置，并且将来任何对此资源的引用都应该使用本响应返回的若干个 URI 之一。如果可能，拥有链接编辑功能的客户端应当自动把请求的地址修改为从服务器反馈回来的地址。除非额外指定，否则这个响应也是可缓存的。</p>
-
-<h3 class="title-level-3" data-title="302 Move temporarily">302 Move temporarily</h3>
+<p></p><h3 class="title-level-3" data-title="302 Move temporarily">302 Move temporarily</h3><p></p>
 <p class="para">请求的资源临时从不同的 URI响应请求。由于这样的重定向是临时的，客户端应当继续向原有地址发送以后的请求。只有在Cache-Control或Expires中进行了指定的情况下，这个响应才是可缓存的。</p>
 </blockquote>
 </div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">张哲</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://blog.asec01.net/use-html-and-nginx-to-redirect/">https://blog.asec01.net/use-html-and-nginx-to-redirect/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/">CC BY-NC-SA 3.0 中国大陆</a> unless stating additionally.</span></div></div><div class="post-meta__tag-list"></div><nav id="pagination"><div class="prev-post pull-left"><a href="/robot-competition-2017/"><i class="fa fa-chevron-left">  </i><span>第十八届机器人竞赛</span></a></div><div class="next-post pull-right"><a href="/ingress-17-05-17-20/"><span>[Ingress]一周咸鱼报告17.05.17-20</span><i class="fa fa-chevron-right"></i></a></div></nav><div id="disqus_thread"></div><script>var unused = null;
