@@ -8,7 +8,7 @@
     <atom:link href="//feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>某人胡写和瞎想的地方</description>
-    <pubDate>Tue, 09 Jun 2020 06:12:47 GMT</pubDate>
+    <pubDate>Tue, 09 Jun 2020 06:23:09 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -28,12 +28,12 @@
 <a id="more"></a>
 
 <p><img src="xampp.jpg" alt></p>
-<p>XAMPP报错，显示PID4占用了80端口<br>访问了下看看，是微软家的服务</p>
+<p>XAMPP 报错，显示 PID 4 占用了80端口<br>访问了下看看，是微软家的服务</p>
 <p><img src="request.jpg" alt="Server: Microsoft-HTTPAPI/2.0"></p>
-<p>那应该是http服务了吧</p>
+<p>那应该是 HTTP 服务了吧</p>
 <p><img src="stophttp.jpg" alt></p>
 <p>看了下，不敢动，不敢动</p>
-<p>Windows Remote Management (WS-Management) 应该是我Hyper-V相关的服务，会很麻烦emmm</p>
+<p>Windows Remote Management (WS-Management) 应该是我 Hyper-V 相关的服务，会很麻烦emmm</p>
 <p>查询资料得知，这个服务可以改监听地址</p>
 <p><img src="httpshowlisten.jpg" alt></p>
 <p>默认没被设置，大概是直接监听 0.0.0.0 了</p>
