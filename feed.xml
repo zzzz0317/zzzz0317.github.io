@@ -8,8 +8,134 @@
     <atom:link href="//feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>某人胡写和瞎想的地方</description>
-    <pubDate>Tue, 09 Jun 2020 06:23:09 GMT</pubDate>
+    <pubDate>Sun, 14 Jun 2020 18:31:31 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>北京联通光猫破解</title>
+      <link>https://blog.asec01.net/bj-unicom-fiber-modem-crack/</link>
+      <guid>https://blog.asec01.net/bj-unicom-fiber-modem-crack/</guid>
+      <pubDate>Thu, 11 Jun 2020 16:05:45 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;2019新款光猫 F477V2&lt;/p&gt;
+&lt;p&gt;切换地区、取得超管权限、获得SIP连接信息&lt;/p&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>2019新款光猫 F477V2</p>
+<p>切换地区、取得超管权限、获得SIP连接信息</p>
+<a id="more"></a>
+
+<h1 id="前情概要-吐槽"><a href="#前情概要-吐槽" class="headerlink" title="前情概要+吐槽"></a>前情概要+吐槽</h1><ul>
+<li>因为电信出国线路过于辣鸡，投诉多次无果，申请免违约金退费成功</li>
+<li>一个多月前家里换了联通300M，￥1300+一年，附赠每月20G的流量和1000分钟的语音，大概是比电信划算</li>
+<li>就你北京联通事多，全国哪个城市联通都不封的这么死</li>
+</ul>
+<h1 id="在动手之前要说的"><a href="#在动手之前要说的" class="headerlink" title="在动手之前要说的"></a>在动手之前要说的</h1><ul>
+<li>本人对以下内容的可靠性不做保证，由本教程带来的一切损失由您个人承担，软件版本的变化可能会导致本教程失效</li>
+<li>本教程的方法理论支持中兴系列大部分读不出来密码的猫</li>
+<li>未破解的页面可能看起来和您的光猫有一些不一样，那是因为我懒得再把光猫还原回去了 :)</li>
+<li><strong>建议在做任何操作前做好备份(北京区没法备份，我就把 状态-&gt;网络侧信息 里面的内容都粘出来了，在破解过程中会用到)</strong></li>
+<li>请看完整篇文章再动手操作</li>
+<li>遇到不会的内容可以尝试联系博主Telegram<a href="https://t.me/zzhezz_bot" target="_blank" rel="noopener">@zzhezz_bot</a>，大概可以无偿帮助(看心情、难易程度以及有没有好好阅读本文)</li>
+</ul>
+<h1 id="第一次尝试破解"><a href="#第一次尝试破解" class="headerlink" title="第一次尝试破解"></a>第一次尝试破解</h1><p>本次破解只是简单的破解，没啥意义。。。除了给联通装维人员造成麻烦？</p>
+<p>装好网之后，尝试登陆后台</p>
+<p><img src="cuuserlogin.jpg" alt></p>
+<p>用户密码登陆进去似乎并没有什么用（</p>
+<p>不过师傅已经给改成桥接了，还能凑合用</p>
+<p>尝试进入管理员后台</p>
+<p><img src="cuhtml404.jpg" alt></p>
+<p>尝试了几个地址，并没有联通管理登录后台</p>
+<p>放弃？不可能！</p>
+<p><img src="ztehiddenswitch.jpg" alt></p>
+<p>这应该是中兴的隐藏后门，用来切换版本</p>
+<p>想起了之前搞电信光猫的经验，Default Version应该有搞头</p>
+<p><strong>切换版本会恢复出厂设置！！！</strong></p>
+<p>密码是 CUAdmin，注意大小写</p>
+<p><del>一阵劈里啪啦的响声后</del>，我们获得了光猫超管页面*1</p>
+<p><img src="cuhtml.jpg" alt></p>
+<p>密码还是 CUAdmin，进入</p>
+<p>然后到基本配置-&gt;上行链路配置-&gt;WAN连接中进行设置</p>
+<p><img src="culink.jpg" alt></p>
+<p>默认应该只有1和2</p>
+<p>1那个TR069基本不用，2直接桥接上网的话需要改 VLANID:3961，路由模式同理，自己体会体会就行</p>
+<p>到这里我就完成了第一步的破解</p>
+<h1 id="第二次尝试破解"><a href="#第二次尝试破解" class="headerlink" title="第二次尝试破解"></a>第二次尝试破解</h1><p>别看了，这思路不通</p>
+<p>去联通营业厅办了固话，所以。。配置需要下发</p>
+<p>地区都改了怎么下发嘛😂</p>
+<p>然后就尝试改IMS、TR069之类的地址</p>
+<p>师傅说后台找不到这个猫了</p>
+<p>感谢 <a href="https://laozhou.org/" target="_blank" rel="noopener">@老周部落</a> 提供的各种连接信息</p>
+<p><img src="lzbl.jpg" alt></p>
+<p>懒得解释都是啥了，反正。。失败了🤔</p>
+<h1 id="第三次尝试破解"><a href="#第三次尝试破解" class="headerlink" title="第三次尝试破解"></a>第三次尝试破解</h1><p>给师傅打电话要求重新下发所有配置</p>
+<p>然后赶紧把猫的地区设置改回了北京，然后发现：没配置！！！等着吧=.=</p>
+<p>师傅回电：光猫不在线，没法下发配置，让我重启</p>
+<p>按要求重启了两次，那边还是看不到猫</p>
+<p>师傅说要上门给我换个猫，那我怎么好意思呢（</p>
+<p>自己弄挂的就别让人家上门了。。。</p>
+<p>后来试了试用光猫拨号模式连接PPPoE，那边就看到了！！！</p>
+<p>不知道他们系统怎么调的，反正配置下发成功（</p>
+<p>这个猫很不意外的默认没开Telnet，所以。。。TTL（从<a href="https://liyin.date/" target="_blank" rel="noopener">@立音喵</a>那里白嫖的）！上！</p>
+<p><img src="ttl.jpg" alt></p>
+<p>线序我已贴好，排针不自带需要自己焊，正常上电状态不要接VCC</p>
+<p>波特率115200，用Putty或者Xshell之类的软件搞一下就好了</p>
+<p>提醒：因为我懒得重新破解了，<del>以下截图都来自与Telnet</del>咕咕咕，过程应该一样，<strong>除了TTL会刷出很多系统日志</strong></p>
+<p>使用 <code>sendcmd 1 DB saveasy</code> 生成备份文件 <code>/userconfig/cfg/db_backup_cfg.xml</code></p>
+<p>下载 <a href="http://tftpd32.jounin.net/tftpd32_download.html" target="_blank" rel="noopener">TFTPD32</a> 或者其他TFTP服务器软件，启动</p>
+<p>然后在Telnet中 <code>tftp -p -l /userconfig/cfg/db_backup_cfg.xml 你.的.I.P</code></p>
+<p>这样我们就拿到了备份文件(北京联通的猫连备份页面都封死了)</p>
+<p>然后打开 <a href="https://www.nirsoft.net/utils/router_password_recovery.html#DownloadLinks" target="_blank" rel="noopener">RouterPassView</a>，直接读取这个文件。。。好了大家能看得懂了吧</p>
+<p><img src="routerpassview.jpg" alt></p>
+<p>sip的用户名密码可以直接 <code>Ctrl</code>+<code>F</code> 搜索 “8610” 找到对应位置</p>
+<p>对于3CX电话系统，应该这么填写中继认证信息</p>
+<p><img src="3cxauth.jpg" alt></p>
+<p>然后直接重置地区，手动把配置写回去就好了（不是还原备份）</p>
+<p>小建议：可以配置VLAN透传来实现一根网线承载所有业务，配置如下</p>
+<p><img src="vlantransparent.jpg" alt></p>
+<p>Hyper-V中这么设置（用3CX举例）</p>
+<p><img src="hypervnetwork.jpg" alt></p>
+<p>到此，破解过程全部完成。</p>
+<h1 id="附录：北京联通VLAN搜集"><a href="#附录：北京联通VLAN搜集" class="headerlink" title="附录：北京联通VLAN搜集"></a>附录：北京联通VLAN搜集</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>VLANID</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>TR069</td>
+<td>3969</td>
+<td>PPPoE用户名: bjcu-hgu@rms 密码: s1b5x7z9</td>
+</tr>
+<tr>
+<td>上网</td>
+<td>3961</td>
+<td></td>
+</tr>
+<tr>
+<td>语音</td>
+<td>3010</td>
+<td>静态地址</td>
+</tr>
+<tr>
+<td>IPTV</td>
+<td>3964</td>
+<td>静态地址</td>
+</tr>
+<tr>
+<td>可视电话（无用）</td>
+<td>3962</td>
+<td></td>
+</tr>
+</tbody></table>
+]]></content:encoded>
+      
+      <comments>https://blog.asec01.net/bj-unicom-fiber-modem-crack/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>Windows PID 4 占用 TCP 80 端口</title>
@@ -377,39 +503,19 @@ emmmm</p>
       <description>
       
         &lt;p&gt;哈 好久没有写博客了&lt;/p&gt;
-&lt;p&gt;分享一个很久以前有弄出来的点子: 把 NFC 标签放进 Bio Card 中&lt;/p&gt;
-&lt;p&gt;这个点子的来源呢，跟游戏一点关系都没有。&lt;br&gt;
-学校网络机房安装了门禁系统，而门禁系统支持刷卡验证。。。&lt;br&gt;
-然后。。。然后我就买了一堆白卡
       
       </description>
       
       <content:encoded><![CDATA[<p>哈 好久没有写博客了</p>
+<a id="more"></a>
 <p>分享一个很久以前有弄出来的点子: 把 NFC 标签放进 Bio Card 中</p>
-<p>这个点子的来源呢，跟游戏一点关系都没有。<br>
-学校网络机房安装了门禁系统，而门禁系统支持刷卡验证。。。<br>
-然后。。。然后我就买了一堆白卡玩<br>
-后来觉得白卡太丑，于是乎想到了 Bio Card<br>
-于是乎脑残一样的把两张 Bio Card 粘在了白卡两边(此处应有个捂脸表情)，这效果并不好。。。<br>
-然后在华强宝上发现了这个东西👇<br>
-<img src="taobao.png" alt="taobao.png"><br>
-NFC 标签，很薄，功能和白卡的功能一样，当然也可以写很多其他的数据。<br>
-但是…制作呢，似乎就不能找厂家做了，手工吧</p>
-<h2>下面是制作过程咯</h2>
-<h3>第一次尝试</h3>
-<p>直接把 Bio Card 打印在普通 A4 纸上，然后把纸叠的厚一点，把 NFC标签放进去，用胶棒粘好每一层，然而做出来的效果。。巨烂。。。似乎用胶棒干这个不太好。。。会把纸弄潮。。。然后就。。弯了</p>
-<h3>第二次尝试</h3>
-<p>买卡纸咯，直接打印在卡纸上<br>
-结果。。。喵了个咪的喷墨打印机的墨怎么这么难干啊！</p>
-<h3>第三次尝试</h3>
-<p>打印在普通 A4 纸上，然后粘到卡纸上<br>
-效果好多啦，就是胶不太好抹</p>
+<p>这个点子的来源呢，跟游戏一点关系都没有。<br>学校网络机房安装了门禁系统，而门禁系统支持刷卡验证。。。<br>然后。。。然后我就买了一堆白卡玩<br>后来觉得白卡太丑，于是乎想到了 Bio Card<br>于是乎脑残一样的把两张 Bio Card 粘在了白卡两边(此处应有个捂脸表情)，这效果并不好。。。<br>然后在华强宝上发现了这个东西👇<br><img src="taobao.png" alt="taobao.png"><br>NFC 标签，很薄，功能和白卡的功能一样，当然也可以写很多其他的数据。<br>但是…制作呢，似乎就不能找厂家做了，手工吧  </p>
+<h2 id="下面是制作过程咯"><a href="#下面是制作过程咯" class="headerlink" title="下面是制作过程咯"></a>下面是制作过程咯</h2><h3 id="第一次尝试"><a href="#第一次尝试" class="headerlink" title="第一次尝试"></a>第一次尝试</h3><p>直接把 Bio Card 打印在普通 A4 纸上，然后把纸叠的厚一点，把 NFC标签放进去，用胶棒粘好每一层，然而做出来的效果。。巨烂。。。似乎用胶棒干这个不太好。。。会把纸弄潮。。。然后就。。弯了</p>
+<h3 id="第二次尝试"><a href="#第二次尝试" class="headerlink" title="第二次尝试"></a>第二次尝试</h3><p>买卡纸咯，直接打印在卡纸上<br>结果。。。喵了个咪的喷墨打印机的墨怎么这么难干啊！</p>
+<h3 id="第三次尝试"><a href="#第三次尝试" class="headerlink" title="第三次尝试"></a>第三次尝试</h3><p>打印在普通 A4 纸上，然后粘到卡纸上<br>效果好多啦，就是胶不太好抹</p>
 <hr>
 <p>然后我就买了一包自带背胶的纸，问题解决。</p>
-<h2>数据写入部分</h2>
-<h3>用途一: 对方刷一下就可以看到你写入的数据</h3>
-<p>你大概需要一个有 NFC 功能的手机和一个叫 &quot;<a href="https://play.google.com/store/apps/details?id=com.wakdev.wdnfc" target="_blank" rel="noopener">NFC Tools</a>&quot;的软件(应用包名 com.wakdev.wdnfc )<br>
-它可以写入各种类型的数据，比如</p>
+<h2 id="数据写入部分"><a href="#数据写入部分" class="headerlink" title="数据写入部分"></a>数据写入部分</h2><h3 id="用途一-对方刷一下就可以看到你写入的数据"><a href="#用途一-对方刷一下就可以看到你写入的数据" class="headerlink" title="用途一: 对方刷一下就可以看到你写入的数据"></a>用途一: 对方刷一下就可以看到你写入的数据</h3><p>你大概需要一个有 NFC 功能的手机和一个叫 “<a href="https://play.google.com/store/apps/details?id=com.wakdev.wdnfc" target="_blank" rel="noopener">NFC Tools</a>“的软件(应用包名 com.wakdev.wdnfc )<br>它可以写入各种类型的数据，比如</p>
 <ul>
 <li>链接(用手机刷一下就能打开)</li>
 <li>联系人(用手机刷一下就能加联系人)</li>
@@ -417,17 +523,14 @@ NFC 标签，很薄，功能和白卡的功能一样，当然也可以写很多�
 <li>然后还有一堆就不在这里列了</li>
 </ul>
 <p>然后还可以设置密码使标签变成只读防止恶意修改</p>
-<h3>用途二: 做门禁卡</h3>
-<p>一般普通的门禁控制器只会验证卡序列号，也就是 <strong>0扇区</strong> 的部分数据，如果不是。。。大概就不用往下看了。。</p>
+<h3 id="用途二-做门禁卡"><a href="#用途二-做门禁卡" class="headerlink" title="用途二: 做门禁卡"></a>用途二: 做门禁卡</h3><p>一般普通的门禁控制器只会验证卡序列号，也就是 <strong>0扇区</strong> 的部分数据，如果不是。。。大概就不用往下看了。。</p>
 <p>如果你可以在门禁控制器上操作，可以直接拿做好的 Bio Card 当白卡用，录入即可( CPU卡大概不行 )</p>
 <p>不行的话…市面上大概没有支持修改0扇区的NFC标签，你大概需要买一些 UID/CUID 白卡，然后把芯片和线圈无损的弄出来，或许也可以用两张 Bio Card 夹着白卡。。。</p>
 <p>注: UID白卡大概需要专用的写卡器来修改0扇区，而大部分手机都可以修改CUID卡的0扇区数据</p>
 <p>这里有个视频 <a href="https://t.me/mdzzmdzz/850" target="_blank" rel="noopener">https://t.me/mdzzmdzz/850</a></p>
-<h3>用途三: 飞着玩</h3>
-<p>您好，请挂机</p>
+<h3 id="用途三-飞着玩"><a href="#用途三-飞着玩" class="headerlink" title="用途三: 飞着玩"></a>用途三: 飞着玩</h3><p>您好，请挂机</p>
 <hr>
-<p>然后…我大概就讲完了…大概还会继续更新and补图<br>
-欢迎评论～</p>
+<p>然后…我大概就讲完了…大概还会继续更新and补图<br>欢迎评论～</p>
 <p>再然后…这似乎是我字最多的一篇博文…？</p>
 ]]></content:encoded>
       
@@ -468,45 +571,6 @@ emmmm</p>
 ]]></content:encoded>
       
       <comments>https://blog.asec01.net/bj54zx-coming-of-age-ceremony-2018/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>成年了</title>
-      <link>https://blog.asec01.net/18-years-old/</link>
-      <guid>https://blog.asec01.net/18-years-old/</guid>
-      <pubDate>Sat, 17 Mar 2018 15:05:45 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;时间过的挺快，18年一晃就过去了，终于能干一些原来干不了的事了。。。。&lt;br&gt;
-今天生日，过得挺无聊的。。&lt;br&gt;
-上午英语听力高考，到现在也不知道那个 tomato 到底要不要加 es 。。。&lt;br&gt;
-回家吃饭，因为周一要体检，不敢大鱼大肉。。。&lt;br&gt;
-下午不知道该干啥
-      
-      </description>
-      
-      <content:encoded><![CDATA[<p>时间过的挺快，18年一晃就过去了，终于能干一些原来干不了的事了。。。。<br>
-今天生日，过得挺无聊的。。<br>
-上午英语听力高考，到现在也不知道那个 tomato 到底要不要加 es 。。。<br>
-回家吃饭，因为周一要体检，不敢大鱼大肉。。。<br>
-下午不知道该干啥，GTAV 快玩腻了，懒得开，趴了一会儿，睡不着，起来收拾学校照片，折腾视频。。。各种无聊。。。<br>
-收到的生日祝福似乎比去年多了挺多。。。</p>
-<hr>
-<h2><img src="photo_2018-03-17_23-14-26.jpg" alt="咸鱼cht"></h2>
-<h2><img src="photo_2018-03-17_23-14-28.jpg" alt="我最爱的小咸鱼~"></h2>
-<h2><img src="photo_2018-03-17_23-14-30.jpg" alt="明明"></h2>
-<h2><img src="photo_2018-03-17_23-14-32.jpg" alt="某学姐"></h2>
-<h2><img src="photo_2018-03-17_23-14-33.jpg" alt="。。。"></h2>
-<h2><img src="photo_2018-03-17_23-14-34.jpg" alt="。。。"></h2>
-<h2><img src="photo_2018-03-17_23-14-35.jpg" alt="。。。"></h2>
-<h2><img src="photo_2018-03-17_23-14-36.jpg" alt="。。。"></h2>
-<h2><img src="photo_2018-03-17_23-14-38.jpg" alt="PY圈"></h2>
-<p>某个小咸鱼半个多月没理我。。略激动，不造该说啥了都。。<br>
-某人说我情商低。。。Emmm低又能怎样啊。。也就这样吧。。<br>
-嗯。。我还小</p>
-]]></content:encoded>
-      
-      <comments>https://blog.asec01.net/18-years-old/#disqus_thread</comments>
     </item>
     
   </channel>
