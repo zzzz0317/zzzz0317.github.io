@@ -8,8 +8,28 @@
     <atom:link href="//feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>某人胡写和瞎想的地方</description>
-    <pubDate>Sun, 14 Jun 2020 18:41:46 GMT</pubDate>
+    <pubDate>Wed, 17 Jun 2020 05:55:28 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Zabbix 5 更换图表字体</title>
+      <link>https://blog.asec01.net/zabbix-5-change-font/</link>
+      <guid>https://blog.asec01.net/zabbix-5-change-font/</guid>
+      <pubDate>Wed, 17 Jun 2020 05:44:53 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;看起来换了字体更换方法&lt;/p&gt;
+&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/s
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>看起来换了字体更换方法</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> 先把TTF文件扔到服务器上你喜欢的地方</span><br><span class="line">scp Deng.ttf user@x.x.x.x:/usr/share/fonts/truetype/Deng/</span><br><span class="line"><span class="meta">#</span> 然后删除旧的字体文件</span><br><span class="line">rm /etc/alternatives/zabbix-frontend-font</span><br><span class="line"><span class="meta">#</span> 然后重新连接</span><br><span class="line">ln -s /usr/share/fonts/truetype/Deng/Deng.ttf /etc/alternatives/zabbix-frontend-font</span><br></pre></td></tr></table></figure>
+
+]]></content:encoded>
+      
+      <comments>https://blog.asec01.net/zabbix-5-change-font/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>北京联通光猫破解</title>
@@ -535,42 +555,6 @@ emmmm</p>
 ]]></content:encoded>
       
       <comments>https://blog.asec01.net/biocard-with-rfid-tag/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>成人仪式</title>
-      <link>https://blog.asec01.net/bj54zx-coming-of-age-ceremony-2018/</link>
-      <guid>https://blog.asec01.net/bj54zx-coming-of-age-ceremony-2018/</guid>
-      <pubDate>Thu, 26 Apr 2018 15:17:18 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;嗯，已经过去一个月了&lt;/p&gt;
-      
-      </description>
-      
-      <content:encoded><![CDATA[<p>嗯，已经过去一个月了</p>
-<a id="more"></a>
-<p><s>高三</s> 我真的很 <s>忙</s> 懒，懒得写文章记录我都干了啥，过了一个月还是觉得有必要写写技术方面的东西哈(不然博客都长草了!)</p>
-<p>首先感谢 <a href="https://liyin.date/" target="_blank" rel="noopener">神楽坂 立音</a> 告诉我 <a href="https://obsproject.com/" target="_blank" rel="noopener">OBS</a> 有个叫<strong>工作室模式</strong>的东西，可以拿来当<strong>切换台</strong>用，再加上 <a href="https://obsproject.com/forum/resources/obs-ndi-newtek-ndi%E2%84%A2-integration-into-obs-studio.528/" target="_blank" rel="noopener">obs-ndi插件</a> 和手机端的 <a href="https://play.google.com/store/apps/details?id=com.newtek.ndicamera" target="_blank" rel="noopener">NewTek NDI Camera™</a>，就可以让手机变成无线摄像头，还是低延时的哟</p>
-<p><img src="https://blog.asec01.net/bj54zx-coming-of-age-ceremony-2018/obs1.png" alt="OBS"><br>
-<img src="https://blog.asec01.net/bj54zx-coming-of-age-ceremony-2018/obs2.png" alt="OBS Multiview"><br>
-<img src="https://blog.asec01.net/bj54zx-coming-of-age-ceremony-2018/ndi.png" alt="NewTek NDI Camera™"></p>
-<blockquote>
-<p><strong>Network Device Interface (NDI)</strong> is a royalty free standard developed by NewTek to enable video-compatible products to communicate, deliver, and receive broadcast quality video in a high quality, low latency manner that is frame-accurate and suitable for switching in a live production environment. The protocol is designed to be highly robust and is used in many network-connected video devices.</p>
-</blockquote>
-<p>本次活动后台共使用了三台笔记本，一台放幻灯片，另一台用 OBS 处理视频信号并输出到大屏幕上，最后一台备用(然而并没有用上)</p>
-<p>放幻灯片那台笔记本 -&gt; MiniDP -&gt; HDMI -&gt; 一个特 low 的采集卡 -&gt; OBS<br>
-嗯，就这么简单</p>
-<p>经过前期测试，NDI这个东西是真的烧带宽啊，2.4G基本带不起来，5G勉勉强强能带起来一个(或许是因为已有的路由器太烂?)，于是乎弄了个 <strong>LinkSYS EA6900</strong>，嗯，效果还不错，俩手机20米内基本不会卡顿.</p>
-<p>声音呢？把家里的小混音台搬过去了，后台只负责视频的声音，那玩意大概没啥用。</p>
-<p>技术上面嘛，大概就是这么多。</p>
-<p><img src="https://blog.asec01.net/bj54zx-coming-of-age-ceremony-2018/photo_2018-04-27_00-14-37.jpg" alt="image"></p>
-<p><img src="https://blog.asec01.net/bj54zx-coming-of-age-ceremony-2018/photo_2018-04-27_00-14-09-m.jpg" alt="image"></p>
-<p>某个肥宅要求：“下次记得发照片把周围人的脸全打上码就留自己的”<br>
-emmmm</p>
-]]></content:encoded>
-      
-      <comments>https://blog.asec01.net/bj54zx-coming-of-age-ceremony-2018/#disqus_thread</comments>
     </item>
     
   </channel>
