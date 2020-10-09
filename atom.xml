@@ -1,0 +1,1225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>只有一秒的记忆</title>
+    <link>https://blog.asec01.net/</link>
+    <atom:link href="/atom.xml" rel="self" type="application/rss+xml"/>
+    
+    <description>某人胡写和瞎想的地方</description>
+    <pubDate>Wed, 17 Jun 2020 05:55:28 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Zabbix 5 更换图表字体</title>
+      <link>https://blog.asec01.net/zabbix-5-change-font/</link>
+      <guid>https://blog.asec01.net/zabbix-5-change-font/</guid>
+      <pubDate>Wed, 17 Jun 2020 05:44:53 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;看起来换了字体更换方法&lt;/p&gt;
+&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/s
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>看起来换了字体更换方法</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> 先把TTF文件扔到服务器上你喜欢的地方</span><br><span class="line">scp Deng.ttf user@x.x.x.x:/usr/share/fonts/truetype/Deng/</span><br><span class="line"><span class="meta">#</span> 然后删除旧的字体文件</span><br><span class="line">rm /etc/alternatives/zabbix-frontend-font</span><br><span class="line"><span class="meta">#</span> 然后重新连接</span><br><span class="line">ln -s /usr/share/fonts/truetype/Deng/Deng.ttf /etc/alternatives/zabbix-frontend-font</span><br></pre></td></tr></table></figure>
+
+]]></content:encoded>
+      
+      <comments>https://blog.asec01.net/zabbix-5-change-font/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>北京联通光猫破解</title>
+      <link>https://blog.asec01.net/bj-unicom-fiber-modem-crack/</link>
+      <guid>https://blog.asec01.net/bj-unicom-fiber-modem-crack/</guid>
+      <pubDate>Sun, 14 Jun 2020 16:02:34 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;2019新款光猫 F477V2&lt;/p&gt;
+&lt;p&gt;切换地区、取得超管权限、获得SIP连接信息&lt;/p&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>2019新款光猫 F477V2</p>
+<p>切换地区、取得超管权限、获得SIP连接信息</p>
+<a id="more"></a>
+
+<h1 id="前情概要-吐槽"><a href="#前情概要-吐槽" class="headerlink" title="前情概要+吐槽"></a>前情概要+吐槽</h1><ul>
+<li>因为电信出国线路过于辣鸡，投诉多次无果，申请免违约金退费成功</li>
+<li>一个多月前家里换了联通300M，￥1300+一年，附赠每月20G的流量和1000分钟的语音，大概是比电信划算</li>
+<li>就你北京联通事多，全国哪个城市联通都不封的这么死</li>
+</ul>
+<h1 id="在动手之前要说的"><a href="#在动手之前要说的" class="headerlink" title="在动手之前要说的"></a>在动手之前要说的</h1><ul>
+<li>本人对以下内容的可靠性不做保证，由本教程带来的一切损失由您个人承担，软件版本的变化可能会导致本教程失效</li>
+<li>本教程的方法理论支持中兴系列大部分读不出来密码的猫</li>
+<li>未破解的页面可能看起来和您的光猫有一些不一样，那是因为我懒得再把光猫还原回去了 :)</li>
+<li><strong>建议在做任何操作前做好备份(北京区没法备份，我就把 状态-&gt;网络侧信息 里面的内容都粘出来了，在破解过程中会用到)</strong></li>
+<li>请看完整篇文章再动手操作</li>
+<li>遇到不会的内容可以尝试联系博主Telegram<a href="https://t.me/zzhezz_bot" target="_blank" rel="noopener">@zzhezz_bot</a>，大概可以无偿帮助(看心情、难易程度以及有没有好好阅读本文)</li>
+</ul>
+<h1 id="第一次尝试破解"><a href="#第一次尝试破解" class="headerlink" title="第一次尝试破解"></a>第一次尝试破解</h1><p>本次破解只是简单的破解，没啥意义。。。除了给联通装维人员造成麻烦？</p>
+<p>装好网之后，尝试登陆后台</p>
+<p><img src="cuuserlogin.jpg" alt></p>
+<p>用户密码登陆进去似乎并没有什么用（</p>
+<p>不过师傅已经给改成桥接了，还能凑合用</p>
+<p>尝试进入管理员后台</p>
+<p><img src="cuhtml404.jpg" alt></p>
+<p>尝试了几个地址，并没有联通管理登录后台</p>
+<p>放弃？不可能！</p>
+<p><img src="ztehiddenswitch.jpg" alt></p>
+<p>这应该是中兴的隐藏后门，用来切换版本</p>
+<p>想起了之前搞电信光猫的经验，Default Version应该有搞头</p>
+<p><strong>切换版本会恢复出厂设置！！！</strong></p>
+<p>密码是 CUAdmin，注意大小写</p>
+<p><del>一阵劈里啪啦的响声后</del>，我们获得了光猫超管页面*1</p>
+<p><img src="cuhtml.jpg" alt></p>
+<p>密码还是 CUAdmin，进入</p>
+<p>然后到基本配置-&gt;上行链路配置-&gt;WAN连接中进行设置</p>
+<p><img src="culink.jpg" alt></p>
+<p>默认应该只有1和2</p>
+<p>1那个TR069基本不用，2直接桥接上网的话需要改 VLANID:3961，路由模式同理，自己体会体会就行</p>
+<p>到这里我就完成了第一步的破解</p>
+<h1 id="第二次尝试破解"><a href="#第二次尝试破解" class="headerlink" title="第二次尝试破解"></a>第二次尝试破解</h1><p>别看了，这思路不通</p>
+<p>去联通营业厅办了固话，所以。。配置需要下发</p>
+<p>地区都改了怎么下发嘛😂</p>
+<p>然后就尝试改IMS、TR069之类的地址</p>
+<p>师傅说后台找不到这个猫了</p>
+<p>感谢 <a href="https://laozhou.org/" target="_blank" rel="noopener">@老周部落</a> 提供的各种连接信息</p>
+<p><img src="lzbl.jpg" alt></p>
+<p>懒得解释都是啥了，反正。。失败了🤔</p>
+<h1 id="第三次尝试破解"><a href="#第三次尝试破解" class="headerlink" title="第三次尝试破解"></a>第三次尝试破解</h1><p>给师傅打电话要求重新下发所有配置</p>
+<p>然后赶紧把猫的地区设置改回了北京，然后发现：没配置！！！等着吧=.=</p>
+<p>师傅回电：光猫不在线，没法下发配置，让我重启</p>
+<p>按要求重启了两次，那边还是看不到猫</p>
+<p>师傅说要上门给我换个猫，那我怎么好意思呢（</p>
+<p>自己弄挂的就别让人家上门了。。。</p>
+<p>后来试了试用光猫拨号模式连接PPPoE，那边就看到了！！！</p>
+<p>不知道他们系统怎么调的，反正配置下发成功（</p>
+<p>这个猫很不意外的默认没开Telnet，所以。。。TTL（从<a href="https://liyin.date/" target="_blank" rel="noopener">@立音喵</a>那里白嫖的）！上！</p>
+<p><img src="ttl.jpg" alt></p>
+<p>线序我已贴好，排针不自带需要自己焊，正常上电状态不要接VCC</p>
+<p>波特率115200，用Putty或者Xshell之类的软件搞一下就好了</p>
+<p>提醒：因为我懒得重新破解了，<del>以下截图都来自与Telnet</del>咕咕咕，过程应该一样，<strong>除了TTL会刷出很多系统日志</strong></p>
+<p>使用 <code>sendcmd 1 DB saveasy</code> 生成备份文件 <code>/userconfig/cfg/db_backup_cfg.xml</code></p>
+<p>下载 <a href="http://tftpd32.jounin.net/tftpd32_download.html" target="_blank" rel="noopener">TFTPD32</a> 或者其他TFTP服务器软件，启动</p>
+<p>然后在Telnet中 <code>tftp -p -l /userconfig/cfg/db_backup_cfg.xml 你.的.I.P</code></p>
+<p>这样我们就拿到了备份文件(北京联通的猫连备份页面都封死了)</p>
+<p>然后打开 <a href="https://www.nirsoft.net/utils/router_password_recovery.html#DownloadLinks" target="_blank" rel="noopener">RouterPassView</a>，直接读取这个文件。。。好了大家能看得懂了吧</p>
+<p><img src="routerpassview.jpg" alt></p>
+<p>sip的用户名密码可以直接 <code>Ctrl</code>+<code>F</code> 搜索 “8610” 找到对应位置</p>
+<p>对于3CX电话系统，应该这么填写中继认证信息</p>
+<p><img src="3cxauth.jpg" alt></p>
+<p>然后直接重置地区，手动把配置写回去就好了（不是还原备份）</p>
+<p>小建议：可以配置VLAN透传来实现一根网线承载所有业务，配置如下</p>
+<p><img src="vlantransparent.jpg" alt></p>
+<p>Hyper-V中这么设置（用3CX举例）</p>
+<p><img src="hypervnetwork.jpg" alt></p>
+<p>到此，破解过程全部完成。</p>
+<h1 id="附录：北京联通VLAN搜集"><a href="#附录：北京联通VLAN搜集" class="headerlink" title="附录：北京联通VLAN搜集"></a>附录：北京联通VLAN搜集</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>VLANID</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>TR069</td>
+<td>3969</td>
+<td>PPPoE用户名: bjcu-hgu@rms 密码: s1b5x7z9</td>
+</tr>
+<tr>
+<td>上网</td>
+<td>3961</td>
+<td></td>
+</tr>
+<tr>
+<td>语音</td>
+<td>3010</td>
+<td>静态地址</td>
+</tr>
+<tr>
+<td>IPTV</td>
+<td>3964</td>
+<td>静态地址</td>
+</tr>
+<tr>
+<td>可视电话（无用）</td>
+<td>3962</td>
+<td></td>
+</tr>
+</tbody></table>
+]]></content:encoded>
+      
+      <comments>https://blog.asec01.net/bj-unicom-fiber-modem-crack/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Windows PID 4 占用 TCP 80 端口</title>
+      <link>https://blog.asec01.net/windows-pid-4-tcp-port-80/</link>
+      <guid>https://blog.asec01.net/windows-pid-4-tcp-port-80/</guid>
+      <pubDate>Tue, 09 Jun 2020 05:22:28 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;装好XAMPP，准备写作业&lt;/p&gt;
+&lt;p&gt;嗯?&lt;/p&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>装好XAMPP，准备写作业</p>
+<p>嗯?</p>
+<a id="more"></a>
+
+<p><img src="xampp.jpg" alt></p>
+<p>XAMPP 报错，显示 PID 4 占用了80端口<br>访问了下看看，是微软家的服务</p>
+<p><img src="request.jpg" alt="Server: Microsoft-HTTPAPI/2.0"></p>
+<p>那应该是 HTTP 服务了吧</p>
+<p><img src="stophttp.jpg" alt></p>
+<p>看了下，不敢动，不敢动</p>
+<p>Windows Remote Management (WS-Management) 应该是我 Hyper-V 相关的服务，会很麻烦emmm</p>
+<p>查询资料得知，这个服务可以改监听地址</p>
+<p><img src="httpshowlisten.jpg" alt></p>
+<p>默认没被设置，大概是直接监听 0.0.0.0 了</p>
+<p><img src="httpaddlisten.jpg" alt></p>
+<p>监听个 127.0.0.2 吧</p>
+<p><img src="xamppstart.jpg" alt></p>
+<p>虽说还报错，但是能用了</p>
+]]></content:encoded>
+      
+      <comments>https://blog.asec01.net/windows-pid-4-tcp-port-80/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>安装 Jellyfin 开始肥宅生活</title>
+      <link>https://blog.asec01.net/install-jellyfin/</link>
+      <guid>https://blog.asec01.net/install-jellyfin/</guid>
+      <pubDate>Tue, 24 Mar 2020 08:18:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;Emby的开源替代品，操作基本一致&lt;/p&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>Emby的开源替代品，操作基本一致</p>
+<a id="more"></a>
+<h1>先放两张效果图</h1>
+<p><img src="2B5D79D7-0D48-4098-952F-E2535940D9E8.png" alt></p>
+<p><img src="A27879CD-5C35-48a6-8489-DFC1FD22520E.png" alt></p>
+<p>完美的宅家生活 不就是这样嘛</p>
+<h1>在 Windows 系统上安装</h1>
+<p>直接去 <a href="https://jellyfin.org/downloads/#windows" target="_blank" rel="noopener">官网</a> 下载安装包就好，我才懒得讲怎么装（</p>
+<h1>Ubuntu/Debian 安装</h1>
+<h2>从官方源中安装</h2>
+<ol>
+<li>Debian</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">添加 Jellyfin Team 的签名  </span></span><br><span class="line">wget -O - https://repo.jellyfin.org/debian/jellyfin_team.gpg.key | sudo apt-key add -</span><br><span class="line"><span class="meta">#</span><span class="bash">添加源</span></span><br><span class="line">echo "deb [arch=$( dpkg --print-architecture )] https://repo.jellyfin.org/debian $( lsb_release -c -s ) main" | sudo tee /etc/apt/sources.list.d/jellyfin.list</span><br><span class="line"><span class="meta">#</span><span class="bash">更新缓存</span></span><br><span class="line">sudo apt update</span><br><span class="line"><span class="meta">#</span><span class="bash">安装 Jellyfin</span></span><br><span class="line">sudo apt install jellyfin</span><br><span class="line"><span class="meta">#</span><span class="bash">开机自启</span></span><br><span class="line">sudo systemctl enable jellyfin</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>Ubuntu</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">启用 Universe repository</span></span><br><span class="line">add-apt-repository universe</span><br><span class="line"><span class="meta">#</span><span class="bash">添加 Jellyfin Team 的签名  </span></span><br><span class="line">wget -O - https://repo.jellyfin.org/ubuntu/jellyfin_team.gpg.key | sudo apt-key add -</span><br><span class="line"><span class="meta">#</span><span class="bash">添加源</span></span><br><span class="line">echo "deb [arch=$( dpkg --print-architecture )] https://repo.jellyfin.org/ubuntu $( lsb_release -c -s ) main" | sudo tee /etc/apt/sources.list.d/jellyfin.list</span><br><span class="line"><span class="meta">#</span><span class="bash">更新缓存</span></span><br><span class="line">sudo apt update</span><br><span class="line"><span class="meta">#</span><span class="bash">安装 Jellyfin</span></span><br><span class="line">sudo apt install jellyfin</span><br><span class="line"><span class="meta">#</span><span class="bash">开机自启</span></span><br><span class="line">sudo systemctl enable jellyfin</span><br></pre></td></tr></table></figure>
+<h2>获取 deb 包方式安装 (如果前面哪种方法很慢可以试试这种)</h2>
+<ul>
+<li>中国大陆地区建议找个代理来进行下面操作</li>
+<li>从 <a href="https://repo.jellyfin.org/releases/server/debian/versions/" target="_blank" rel="noopener">这里(Debian)</a> 或者 <a href="https://repo.jellyfin.org/releases/server/ubuntu/versions/" target="_blank" rel="noopener">这里(Ubuntu)</a> 下载最新版本的 Jellyfin 主程序</li>
+<li>从 <a href="https://repo.jellyfin.org/releases/server/debian/versions/jellyfin-ffmpeg/" target="_blank" rel="noopener">这里(Debian)</a> 或者 <a href="https://repo.jellyfin.org/releases/server/ubuntu/versions/jellyfin-ffmpeg/" target="_blank" rel="noopener">这里(Ubuntu)</a> 下载最新版本的 jellyfin-ffmpeg</li>
+<li>将两个deb文件发送到服务器上</li>
+<li>安装依赖(Debian) <code>sudo apt install at libass9 libbluray2 libfl2 libmp3lame0 libnuma1 libogg0 libopus0 libtheora0 libva-drm2 libva2 libvdpau1 libvorbis0a libvorbisenc2 libwebpmux3 libx264-155 libx265-165 libzvbi-common libzvbi0</code></li>
+<li>安装依赖(Ubuntu) <code>sudo apt install sudo apt install at libsqlite3-0 libfontconfig1 libfreetype6 libssl1.0.0</code></li>
+<li>安装 Jellyfin <code>sudo dpkg -i jellyfin_*.deb jellyfin-ffmpeg_*.deb</code></li>
+<li>解决剩下的依赖问题 <code>sudo apt -f install</code></li>
+</ul>
+<h1>开始使用</h1>
+<p>打开浏览器，进入 <code>http://ip:8096/</code>，选择中文</p>
+<p><img src="D6DAD723-3B60-4c53-AF6C-73B4CC4B089D.png" alt="选择显示语言"></p>
+<p><img src="2BE1B4F5-9FC4-4abc-B7BB-FB92816D41EF.png" alt="设置用户名密码"></p>
+<p><img src="50B8D61F-2AFA-459d-92A5-CFDF7B11A218.png" alt="添加媒体库"></p>
+<p><img src="3CF9398A-78C8-4b9e-A366-862A6326BDB0.png" alt="设置首选元数据语言，注意中国在这里显示的是People's Republic of China"></p>
+<p><img src="C911A1BA-1FF8-489e-A993-2EF746AD8C3B.png" alt="允许远程访问，如果要使用反向代理之类的建议不选择第二项"></p>
+<p><img src="2A7CBA97-7AC4-436e-95DF-822FA72E47C6.png" alt="完成！"></p>
+<h1>反向代理</h1>
+<p>根据官方贴出来的配置修改</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">    listen 端口号 ssl http2;</span><br><span class="line">    server_name 你的域名;</span><br><span class="line">    ssl_certificate 证书路径;</span><br><span class="line">    ssl_certificate_key 密钥路径;</span><br><span class="line">    ssl_stapling on;</span><br><span class="line">    ssl_stapling_verify on;</span><br><span class="line">    # Security / XSS Mitigation Headers</span><br><span class="line">    add_header X-Frame-Options &quot;SAMEORIGIN&quot;;</span><br><span class="line">    add_header X-XSS-Protection &quot;1; mode=block&quot;;</span><br><span class="line">    add_header X-Content-Type-Options &quot;nosniff&quot;;</span><br><span class="line">    # Content Security Policy</span><br><span class="line">    # See: https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP</span><br><span class="line">    # Enforces https content and restricts JS/CSS to origin</span><br><span class="line">    # External Javascript (such as cast_sender.js for Chromecast) must be whitelisted.</span><br><span class="line">    add_header Content-Security-Policy &quot;default-src https: data: blob:; style-src &apos;self&apos; &apos;unsafe-inline&apos;; script-src &apos;self&apos; &apos;unsafe-inline&apos; https://www.gstatic.com/cv/js/sender/v1/cast_sender.js; worker-src &apos;self&apos; blob:; connect-src &apos;self&apos;; object-src &apos;none&apos;; frame-ancestors &apos;self&apos;&quot;;</span><br><span class="line">    location / &#123;</span><br><span class="line">        # Proxy main Jellyfin traffic</span><br><span class="line">        proxy_pass http://127.0.0.1:8096/;</span><br><span class="line">        proxy_set_header Host $host;</span><br><span class="line">        proxy_set_header X-Real-IP $remote_addr;</span><br><span class="line">        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;</span><br><span class="line">        proxy_set_header X-Forwarded-Proto $scheme;</span><br><span class="line">        proxy_set_header X-Forwarded-Protocol $scheme;</span><br><span class="line">        proxy_set_header X-Forwarded-Host $http_host;</span><br><span class="line">        # Disable buffering when the nginx proxy gets very resource heavy upon streaming</span><br><span class="line">        proxy_buffering off;</span><br><span class="line">    &#125;</span><br><span class="line">    location /socket &#123;</span><br><span class="line">        # Proxy Jellyfin Websockets traffic</span><br><span class="line">        proxy_pass http://127.0.0.1:8096/socket;</span><br><span class="line">        proxy_http_version 1.1;</span><br><span class="line">        proxy_set_header Upgrade $http_upgrade;</span><br><span class="line">        proxy_set_header Connection &quot;upgrade&quot;;</span><br><span class="line">        proxy_set_header Host $host;</span><br><span class="line">        proxy_set_header X-Real-IP $remote_addr;</span><br><span class="line">        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;</span><br><span class="line">        proxy_set_header X-Forwarded-Proto $scheme;</span><br><span class="line">        proxy_set_header X-Forwarded-Protocol $scheme;</span><br><span class="line">        proxy_set_header X-Forwarded-Host $http_host;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1>服务控制</h1>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">查看状态</span></span><br><span class="line">systemctl status jellyfin</span><br><span class="line"><span class="meta">#</span><span class="bash">启动服务</span></span><br><span class="line">systemctl start jellyfin</span><br><span class="line"><span class="meta">#</span><span class="bash">停止服务</span></span><br><span class="line">systemctl stop jellyfin</span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      <comments>https://blog.asec01.net/install-jellyfin/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>PHP报错：open_basedir restriction in effect</title>
+      <link>https://blog.asec01.net/php-open-basedir-lnmp/</link>
+      <guid>https://blog.asec01.net/php-open-basedir-lnmp/</guid>
+      <pubDate>Sun, 22 Mar 2020 17:07:46 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;突然想改改我主页上某个跳转用的文件，却发现这个页面打不开了。。。&lt;/p&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>突然想改改我主页上某个跳转用的文件，却发现这个页面打不开了。。。</p>
+<a id="more"></a>
+<p><img src="/php-open-basedir-lnmp/A18481E7-BE96-4a82-980E-61793F15898A.png" alt="image"></p>
+<p>提示 <code>No input file specified()</code></p>
+<p>但是在同一个服务器不同的网站的却没有报这个问题，试着又新建了个 <code>phpinfo.php</code> ，结果依旧不行，一样的报错。。。</p>
+<p>那就检查日志吧</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">2020/03/21 12:30:49 [error] 20151#20151: *104 FastCGI sent in stderr: &quot;PHP message: PHP Warning:  Unknown: open_basedir restriction in effect. File(/var/www/home/conn.php) is not within the allowed path(s): (/home/wwwroot/home:/tmp/:/proc/) in Unknown on line 0</span><br><span class="line"></span><br><span class="line">PHP message: PHP Warning:  Unknown: failed to open stream: Operation not permitted in Unknown on line 0</span><br><span class="line"></span><br><span class="line">Unable to open primary script: /var/www/home/conn.php (Operation not permitted)&quot; while reading response header from upstream, client: 172.69.34.190, server: home.asec01.net, request: &quot;GET /conn.php HTTP/1.1&quot;, upstream: &quot;fastcgi://unix:/var/run/php/php7.2-fpm.sock:&quot;, host: &quot;home.asec01.net&quot;</span><br></pre></td></tr></table></figure>
+<p>得知是 <code>open_basedir</code> 在作怪，检查 <code>/etc/php/x.x/fpm/php.ini</code>，这个功能并没有被配置，很奇怪</p>
+<p>查了查资料，发现 <code>网站目录/.user.ini</code> 也可以配置这个功能</p>
+<p><img src="/php-open-basedir-lnmp/76965F75-B1C8-462e-B5DF-862659606945.png" alt="image"></p>
+<p>果然如此，那就干掉它，重启nginx，一切正常。</p>
+<p>解释下为啥会出这个问题哈：</p>
+<p>前一阵子重装服务器系统，网站目录直接被我 <code>tar czvf</code> 的打包了，原来的web环境是用lnmp一键安装包装的，这个东西新建网站会自动创建 <code>.user.ini</code> 保证安全，但我重装系统直接 <code>apt install</code> 了所有需要的东西，web目录也都变了。。所以emmmm</p>
+]]></content:encoded>
+      
+      <comments>https://blog.asec01.net/php-open-basedir-lnmp/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>一加手机添加加密门禁卡(填好一加埋的坑)</title>
+      <link>https://blog.asec01.net/oneplus-add-encrypted-card/</link>
+      <guid>https://blog.asec01.net/oneplus-add-encrypted-card/</guid>
+      <pubDate>Thu, 19 Mar 2020 07:45:46 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;写入时提示Auth Error之类的认证错误可以看看这篇&lt;/p&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>写入时提示Auth Error之类的认证错误可以看看这篇</p>
+<a id="more"></a>
+<h2>写在前面</h2>
+<ul>
+<li>这是一个<strong>需要root</strong>的操作！</li>
+<li>适用于 <strong>Android 10</strong> 系统预装 <strong>卡券</strong> 应用的 <strong>一加</strong> 手机</li>
+<li>在这之前如果已经添加了加密的卡，没有成功写入数据，建议删掉</li>
+</ul>
+<h2>先说下这么操作的用处</h2>
+<ul>
+<li>不用做一张ID相同的空卡去模拟</li>
+<li>目前来看，不这么操作会出现写卡器无法写入的问题（如Proxmark3提示Auth Error）<br>
+<img src="/oneplus-add-encrypted-card/13EC9E5D-764E-4f65-BEE7-CF1B85C2A6FC.png" alt="AuthError"></li>
+</ul>
+<h2>开始操作</h2>
+<p>打开ADB，接到电脑上</p>
+<ul>
+<li>
+<p>确认手机是否连接成功<br>
+<code>adb devices</code></p>
+</li>
+<li>
+<p>进入shell模式<br>
+<code>adb shell</code></p>
+</li>
+<li>
+<p>获取root权限<br>
+<code>su</code></p>
+</li>
+<li>
+<p>启动一加某调试用App<br>
+<code>am start -n cn.oneplus.wallet/.MenuActivity</code></p>
+</li>
+</ul>
+<p>或者也可以使用类似<a href="https://www.coolapk.com/apk/com.x7890.shortcutcreator" target="_blank" rel="noopener">创建快捷方式</a>之类的应用启动这个Activity</p>
+<p>然后你应该得到了这样的页面<br>
+<img src="/oneplus-add-encrypted-card/Screenshot_20200319-173936.jpg" alt="MenuActivity"></p>
+<p>点击“加密卡开关按钮”，提示“允许加密卡写入”即可<br>
+<img src="/oneplus-add-encrypted-card/Screenshot_20200319-174039.jpg" alt="AllowEncryptedCard"></p>
+<p>然后直接在卡券应用中添加门禁卡，直接把有数据的原卡贴在手机NFC天线上即可，不用再做一张ID相同的空卡去模拟了</p>
+<p>再然后，切换到刚刚创建的新卡，用写卡器把原卡数据写进去就OK了，网上教程一搜一大把，写卡器不同使用方法也不同，在这里就不说了</p>
+]]></content:encoded>
+      
+      <comments>https://blog.asec01.net/oneplus-add-encrypted-card/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>再见2019，你好2020 :)</title>
+      <link>https://blog.asec01.net/hello-2020/</link>
+      <guid>https://blog.asec01.net/hello-2020/</guid>
+      <pubDate>Tue, 31 Dec 2019 16:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;大学生活非常充实 :)&lt;/p&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>大学生活非常充实 :)</p>
+<a id="more"></a>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=424496525&auto=1&height=66"></iframe>
+<p>年底了有点糟心就捋捋时间线吧</p>
+<hr>
+<h2>2019.1</h2>
+<p>近乎白嫖的Google home mini到手<br>
+期末考试 高数爆炸<br>
+net 域名转移至 Cloudflare</p>
+<h2>2019.2</h2>
+<p>复习高数 准备补考<br>
+腱鞘囊肿手术<br>
+前一天写了“<a href="https://www.coolapk.com/apk/net.asec01.fsn" target="_blank" rel="noopener">全屏消息</a>” (因分手弃坑)<br>
+被 <a href="https://sspai.com/post/53062" target="_blank" rel="noopener">少数派</a> 推送</p>
+<h2>2019.3</h2>
+<p>家里装修完 入住<br>
+pfsense 啥的都开花<br>
+生日<br>
+抢到了小米9</p>
+<h2>2019.4</h2>
+<p>人生第一顿海底捞</p>
+<h2>2019.5</h2>
+<p>从 “北京冰狮科技有限公司” 离职<br>
+成功修好因电源极性反接而损坏的的GS308</p>
+<h2>2019.6</h2>
+<p>中美创客大赛</p>
+<h2>2019.7</h2>
+<p>数据科学训练营<br>
+无聊暑假<br>
+腾讯CSS</p>
+<h2>2019.8</h2>
+<p>无聊暑假<br>
+科目一90分<br>
+补大创项目<br>
+Kotlin / Everywhere</p>
+<h2>2019.9</h2>
+<p>开学<br>
+大数据学院活动<br>
+租房</p>
+<h2>2019.10</h2>
+<p>十一放假 提前回学校 过日子<br>
+大创项目中期检查<br>
+影楼不给原片就把影楼的管理系统炸开了。。。</p>
+<h2>2019.11</h2>
+<p>pfsense从实体机转移到虚拟化<br>
+分手<br>
+第一瓶崂山百花蛇草水 来自<a href="https://liyin.date/" target="_blank" rel="noopener">@wmliyin</a></p>
+<h2>2019.12</h2>
+<p>生活重回正轨<br>
+GDG<br>
+正式入坑Beat Saber<br>
+蓝桥杯报名</p>
+<hr>
+<h1>上图</h1>
+<h2>白嫖的 Google Home Mini (2019.1)</h2>
+<p><a href="1.jpg"><img src="1.jpg" alt></a></p>
+<h2>腱鞘囊肿手术 (2019.2)</h2>
+<p><a href="2.jpg"><img src="2.jpg" alt></a></p>
+<h2>生日礼物 (2019.3)</h2>
+<p><a href="3.jpg"><img src="3.jpg" alt></a></p>
+<h2>人生第一顿海底捞 (2019.4)</h2>
+<p><a href="4.jpg"><img src="4.jpg" alt></a></p>
+<h2>GS308 (2019.5)</h2>
+<p><a href="5.jpg"><img src="5.jpg" alt></a></p>
+<h2>中美创客大赛 (2019.6)</h2>
+<p><a href="6.jpg"><img src="6.jpg" alt></a></p>
+<h2>腾讯CSS (2019.7)</h2>
+<p><a href="7.jpg"><img src="7.jpg" alt></a></p>
+<h2>Kotlin / Everywhere (2019.8)</h2>
+<p><a href="8.jpg"><img src="8.jpg" alt></a></p>
+<h2>大数据学院活动 (2019.9)</h2>
+<p><a href="9.jpg"><img src="9.jpg" alt></a></p>
+<h2>大创项目中期检查 (2019.10)</h2>
+<p><a href="9.jpg"><img src="10.jpg" alt></a></p>
+<h2>第一瓶崂山百花蛇草水 (2019.11)</h2>
+<p><a href="10.jpg"><img src="11.jpg" alt></a></p>
+<h2>GDG (2019.12)</h2>
+<p><a href="11.jpg"><img src="12.jpg" alt></a></p>
+<h1>总结</h1>
+<p>一年都还好，年底有点爆炸，唉。。。<br>
+新的一年，想挣更多钱 :)</p>
+]]></content:encoded>
+      
+      <comments>https://blog.asec01.net/hello-2020/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>net::ERR_HTTP2_PROTOCOL_ERROR 200</title>
+      <link>https://blog.asec01.net/Nginx-HTTP2-PROTOCOL-ERROR-200/</link>
+      <guid>https://blog.asec01.net/Nginx-HTTP2-PROTOCOL-ERROR-200/</guid>
+      <pubDate>Tue, 24 Dec 2019 05:18:58 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;proxy_max_temp_file_size&lt;/p&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>proxy_max_temp_file_size</p>
+<a id="more"></a>
+<p><s>早上</s> 中午，打开自己的Gogs准备开干<br>
+<img src="1.jpg" alt><br>
+？？？<br>
+emmmm</p>
+<p><img src="lan.jpg" alt><br>
+局域网正常</p>
+<p>难道因为反代的锅。。？</p>
+<p>网上查资料emmmm<br>
+<a href="https://mashiro.top/post/nginx-faq/" title="https://mashiro.top/post/nginx-faq/" target="_blank" rel="noopener"><img src="mashiro.top-post-nginx-faq.jpg" alt></a></p>
+<p>意思是说往Nginx配置文件的Server段加一句 <code>proxy_max_temp_file_size 0;</code> 就好了</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">    listen 443 ssl http2;</span><br><span class="line">    listen [::]:443 ssl http2;</span><br><span class="line">    server_name emm.emmm.cn;</span><br><span class="line">    include ssl/emm.emmm.cn.conf;</span><br><span class="line">    gzip off;</span><br><span class="line">    proxy_max_temp_file_size 0;</span><br><span class="line">    location / &#123;</span><br><span class="line">        proxy_pass http://127.0.0.1:3000/;</span><br><span class="line">        proxy_set_header Host $host;</span><br><span class="line">        proxy_set_header X-Real-IP $remote_addr;</span><br><span class="line">        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;</span><br><span class="line">        proxy_http_version 1.1;</span><br><span class="line">        proxy_set_header Upgrade $http_upgrade;</span><br><span class="line">        proxy_set_header Connection &quot;upgrade&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>嗯，我好了<br>
+<img src="gogs.jpg" alt></p>
+]]></content:encoded>
+      
+      <comments>https://blog.asec01.net/Nginx-HTTP2-PROTOCOL-ERROR-200/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>再见2018，你好2019</title>
+      <link>https://blog.asec01.net/hello-2019/</link>
+      <guid>https://blog.asec01.net/hello-2019/</guid>
+      <pubDate>Mon, 31 Dec 2018 16:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;rm&lt;/p&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>rm</p>
+<a id="more"></a>
+<hr>
+<p>2018年过去咯，咕咕咕了很多事情，来我们来列一下[捂脸]</p>
+<ul>
+<li>更新博客：小米Aqara智能开关零火单键版拆解</li>
+<li>更新博客：wifi-deauter更新</li>
+<li>自用项目：紧急模式</li>
+<li>高考复习（其实复习了点，无奈已经大一了）[捂脸]</li>
+<li>帮学校弄视频</li>
+<li>咕咕咕 想不起来了咕咕咕</li>
+</ul>
+<hr>
+<p>然后再列一下搞了啥大事情</p>
+<ul>
+<li>在分校机房各种浪浪浪</li>
+<li><a href="https://blog.asec01.net/18-years-old/">成年了</a></li>
+<li><a href="https://blog.asec01.net/bj54zx-coming-of-age-ceremony-2018/">成人仪式说服各种老师让我待在后台</a></li>
+<li>高考</li>
+<li>高考那两天在住的酒店炸监控</li>
+<li>rm</li>
+<li>暑假入职了一个手游公司当运维</li>
+<li>大学加入了学生会宣传部</li>
+<li>干掉了学校食堂明厨亮灶的屏幕（谁让他们把Teamviewer的密码写屏幕上的。。。）</li>
+<li>被宣传部大佬拉去做项目</li>
+<li>被宣传部大佬拉去吃饭</li>
+<li>一个不是单身狗的我被宣传部大佬塞的狗粮撑死了</li>
+<li>在饭局上给项目负责人做表情包</li>
+<li>参加了高中的新年联欢</li>
+<li>家里装修，用pfsense做了套路由系统，然而年底了还没装完。。。</li>
+</ul>
+<hr>
+<p>总结一下这一年：高考前浪不起来，高考之后开始皮的不行</p>
+<p>然后<br>
+2019 请善待我</p>
+<p>好啦 就这么多w</p>
+]]></content:encoded>
+      
+      <comments>https://blog.asec01.net/hello-2019/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>把 NFC 标签放进 Bio Card</title>
+      <link>https://blog.asec01.net/biocard-with-rfid-tag/</link>
+      <guid>https://blog.asec01.net/biocard-with-rfid-tag/</guid>
+      <pubDate>Tue, 03 Jul 2018 16:06:51 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;哈 好久没有写博客了&lt;/p&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>哈 好久没有写博客了</p>
+<a id="more"></a>
+<p>分享一个很久以前有弄出来的点子: 把 NFC 标签放进 Bio Card 中</p>
+<p>这个点子的来源呢，跟游戏一点关系都没有。<br>学校网络机房安装了门禁系统，而门禁系统支持刷卡验证。。。<br>然后。。。然后我就买了一堆白卡玩<br>后来觉得白卡太丑，于是乎想到了 Bio Card<br>于是乎脑残一样的把两张 Bio Card 粘在了白卡两边(此处应有个捂脸表情)，这效果并不好。。。<br>然后在华强宝上发现了这个东西👇<br><img src="taobao.png" alt="taobao.png"><br>NFC 标签，很薄，功能和白卡的功能一样，当然也可以写很多其他的数据。<br>但是…制作呢，似乎就不能找厂家做了，手工吧  </p>
+<h2 id="下面是制作过程咯"><a href="#下面是制作过程咯" class="headerlink" title="下面是制作过程咯"></a>下面是制作过程咯</h2><h3 id="第一次尝试"><a href="#第一次尝试" class="headerlink" title="第一次尝试"></a>第一次尝试</h3><p>直接把 Bio Card 打印在普通 A4 纸上，然后把纸叠的厚一点，把 NFC标签放进去，用胶棒粘好每一层，然而做出来的效果。。巨烂。。。似乎用胶棒干这个不太好。。。会把纸弄潮。。。然后就。。弯了</p>
+<h3 id="第二次尝试"><a href="#第二次尝试" class="headerlink" title="第二次尝试"></a>第二次尝试</h3><p>买卡纸咯，直接打印在卡纸上<br>结果。。。喵了个咪的喷墨打印机的墨怎么这么难干啊！</p>
+<h3 id="第三次尝试"><a href="#第三次尝试" class="headerlink" title="第三次尝试"></a>第三次尝试</h3><p>打印在普通 A4 纸上，然后粘到卡纸上<br>效果好多啦，就是胶不太好抹</p>
+<hr>
+<p>然后我就买了一包自带背胶的纸，问题解决。</p>
+<h2 id="数据写入部分"><a href="#数据写入部分" class="headerlink" title="数据写入部分"></a>数据写入部分</h2><h3 id="用途一-对方刷一下就可以看到你写入的数据"><a href="#用途一-对方刷一下就可以看到你写入的数据" class="headerlink" title="用途一: 对方刷一下就可以看到你写入的数据"></a>用途一: 对方刷一下就可以看到你写入的数据</h3><p>你大概需要一个有 NFC 功能的手机和一个叫 “<a href="https://play.google.com/store/apps/details?id=com.wakdev.wdnfc" target="_blank" rel="noopener">NFC Tools</a>“的软件(应用包名 com.wakdev.wdnfc )<br>它可以写入各种类型的数据，比如</p>
+<ul>
+<li>链接(用手机刷一下就能打开)</li>
+<li>联系人(用手机刷一下就能加联系人)</li>
+<li>Wi-Fi 接入点信息(用手机刷一下就能接上)</li>
+<li>然后还有一堆就不在这里列了</li>
+</ul>
+<p>然后还可以设置密码使标签变成只读防止恶意修改</p>
+<h3 id="用途二-做门禁卡"><a href="#用途二-做门禁卡" class="headerlink" title="用途二: 做门禁卡"></a>用途二: 做门禁卡</h3><p>一般普通的门禁控制器只会验证卡序列号，也就是 <strong>0扇区</strong> 的部分数据，如果不是。。。大概就不用往下看了。。</p>
+<p>如果你可以在门禁控制器上操作，可以直接拿做好的 Bio Card 当白卡用，录入即可( CPU卡大概不行 )</p>
+<p>不行的话…市面上大概没有支持修改0扇区的NFC标签，你大概需要买一些 UID/CUID 白卡，然后把芯片和线圈无损的弄出来，或许也可以用两张 Bio Card 夹着白卡。。。</p>
+<p>注: UID白卡大概需要专用的写卡器来修改0扇区，而大部分手机都可以修改CUID卡的0扇区数据</p>
+<p>这里有个视频 <a href="https://t.me/mdzzmdzz/850" target="_blank" rel="noopener">https://t.me/mdzzmdzz/850</a></p>
+<h3 id="用途三-飞着玩"><a href="#用途三-飞着玩" class="headerlink" title="用途三: 飞着玩"></a>用途三: 飞着玩</h3><p>您好，请挂机</p>
+<hr>
+<p>然后…我大概就讲完了…大概还会继续更新and补图<br>欢迎评论～</p>
+<p>再然后…这似乎是我字最多的一篇博文…？</p>
+]]></content:encoded>
+      
+      <comments>https://blog.asec01.net/biocard-with-rfid-tag/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>成人仪式</title>
+      <link>https://blog.asec01.net/bj54zx-coming-of-age-ceremony-2018/</link>
+      <guid>https://blog.asec01.net/bj54zx-coming-of-age-ceremony-2018/</guid>
+      <pubDate>Thu, 26 Apr 2018 15:17:18 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;嗯，已经过去一个月了&lt;/p&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>嗯，已经过去一个月了</p>
+<a id="more"></a>
+<p><s>高三</s> 我真的很 <s>忙</s> 懒，懒得写文章记录我都干了啥，过了一个月还是觉得有必要写写技术方面的东西哈(不然博客都长草了!)</p>
+<p>首先感谢 <a href="https://liyin.date/" target="_blank" rel="noopener">神楽坂 立音</a> 告诉我 <a href="https://obsproject.com/" target="_blank" rel="noopener">OBS</a> 有个叫<strong>工作室模式</strong>的东西，可以拿来当<strong>切换台</strong>用，再加上 <a href="https://obsproject.com/forum/resources/obs-ndi-newtek-ndi%E2%84%A2-integration-into-obs-studio.528/" target="_blank" rel="noopener">obs-ndi插件</a> 和手机端的 <a href="https://play.google.com/store/apps/details?id=com.newtek.ndicamera" target="_blank" rel="noopener">NewTek NDI Camera™</a>，就可以让手机变成无线摄像头，还是低延时的哟</p>
+<p><img src="https://blog.asec01.net/bj54zx-coming-of-age-ceremony-2018/obs1.png" alt="OBS"><br>
+<img src="https://blog.asec01.net/bj54zx-coming-of-age-ceremony-2018/obs2.png" alt="OBS Multiview"><br>
+<img src="https://blog.asec01.net/bj54zx-coming-of-age-ceremony-2018/ndi.png" alt="NewTek NDI Camera™"></p>
+<blockquote>
+<p><strong>Network Device Interface (NDI)</strong> is a royalty free standard developed by NewTek to enable video-compatible products to communicate, deliver, and receive broadcast quality video in a high quality, low latency manner that is frame-accurate and suitable for switching in a live production environment. The protocol is designed to be highly robust and is used in many network-connected video devices.</p>
+</blockquote>
+<p>本次活动后台共使用了三台笔记本，一台放幻灯片，另一台用 OBS 处理视频信号并输出到大屏幕上，最后一台备用(然而并没有用上)</p>
+<p>放幻灯片那台笔记本 -&gt; MiniDP -&gt; HDMI -&gt; 一个特 low 的采集卡 -&gt; OBS<br>
+嗯，就这么简单</p>
+<p>经过前期测试，NDI这个东西是真的烧带宽啊，2.4G基本带不起来，5G勉勉强强能带起来一个(或许是因为已有的路由器太烂?)，于是乎弄了个 <strong>LinkSYS EA6900</strong>，嗯，效果还不错，俩手机20米内基本不会卡顿.</p>
+<p>声音呢？把家里的小混音台搬过去了，后台只负责视频的声音，那玩意大概没啥用。</p>
+<p>技术上面嘛，大概就是这么多。</p>
+<p><img src="https://blog.asec01.net/bj54zx-coming-of-age-ceremony-2018/photo_2018-04-27_00-14-37.jpg" alt="image"></p>
+<p><img src="https://blog.asec01.net/bj54zx-coming-of-age-ceremony-2018/photo_2018-04-27_00-14-09-m.jpg" alt="image"></p>
+<p>某个肥宅要求：“下次记得发照片把周围人的脸全打上码就留自己的”<br>
+emmmm</p>
+]]></content:encoded>
+      
+      <comments>https://blog.asec01.net/bj54zx-coming-of-age-ceremony-2018/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>成年了</title>
+      <link>https://blog.asec01.net/18-years-old/</link>
+      <guid>https://blog.asec01.net/18-years-old/</guid>
+      <pubDate>Sat, 17 Mar 2018 15:05:45 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;时间过的挺快，18年一晃就过去了，终于能干一些原来干不了的事了。。。。  &lt;/p&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>时间过的挺快，18年一晃就过去了，终于能干一些原来干不了的事了。。。。  </p>
+<a id="more"></a>
+<p>今天生日，过得挺无聊的。。<br>上午英语听力高考，到现在也不知道那个 tomato 到底要不要加 es 。。。<br>回家吃饭，因为周一要体检，不敢大鱼大肉。。。<br>下午不知道该干啥，GTAV 快玩腻了，懒得开，趴了一会儿，睡不着，起来收拾学校照片，折腾视频。。。各种无聊。。。<br>收到的生日祝福似乎比去年多了挺多。。。  </p>
+<hr>
+<h2 id><a href="#" class="headerlink" title></a><img src="photo_2018-03-17_23-14-26.jpg" alt="咸鱼cht"></h2><h2 id="-1"><a href="#-1" class="headerlink" title></a><img src="photo_2018-03-17_23-14-28.jpg" alt="我最爱的小咸鱼~"></h2><h2 id="-2"><a href="#-2" class="headerlink" title></a><img src="photo_2018-03-17_23-14-30.jpg" alt="明明"></h2><h2 id="-3"><a href="#-3" class="headerlink" title></a><img src="photo_2018-03-17_23-14-32.jpg" alt="某学姐"></h2><h2 id="-4"><a href="#-4" class="headerlink" title></a><img src="photo_2018-03-17_23-14-33.jpg" alt="。。。"></h2><h2 id="-5"><a href="#-5" class="headerlink" title></a><img src="photo_2018-03-17_23-14-34.jpg" alt="。。。"></h2><h2 id="-6"><a href="#-6" class="headerlink" title></a><img src="photo_2018-03-17_23-14-35.jpg" alt="。。。"></h2><h2 id="-7"><a href="#-7" class="headerlink" title></a><img src="photo_2018-03-17_23-14-36.jpg" alt="。。。"></h2><h2 id="-8"><a href="#-8" class="headerlink" title></a><img src="photo_2018-03-17_23-14-38.jpg" alt="PY圈"></h2><p>某个小咸鱼半个多月没理我。。略激动，不造该说啥了都。。<br>某人说我情商低。。。Emmm低又能怎样啊。。也就这样吧。。<br>嗯。。我还小</p>
+]]></content:encoded>
+      
+      <comments>https://blog.asec01.net/18-years-old/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>絮叨 | 2018年2月</title>
+      <link>https://blog.asec01.net/talk-2018-02/</link>
+      <guid>https://blog.asec01.net/talk-2018-02/</guid>
+      <pubDate>Sat, 24 Feb 2018 16:46:01 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;最近各种不顺啊…刚放假，就发烧了一个星期…摊在床上边搞事情边被英语老师崔作业…不过最后作业还是写的差不多了[捂脸]&lt;/p&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>最近各种不顺啊…刚放假，就发烧了一个星期…摊在床上边搞事情边被英语老师崔作业…不过最后作业还是写的差不多了[捂脸]</p>
+<a id="more"></a>
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="86" src="//music.163.com/outchain/player?type=2&id=27510174&auto=1&height=66"></iframe>
+
+
+<hr>
+<p>也有点略开心的事<br>从 XDA 上找到了个 LineageOS UNOFFICIAL 15.1 for Libra/Aqua<br>我这凑活用了半年4c系统的4s终于能用指纹啦  </p>
+<hr>
+<p>过完了一个无聊的寒假…又双叒叕开学了……<br>高三了，也许该听听话好好学习，但本人很反感这种教育制度，于是所以把学习的时间都扔到兴趣上了……<br>没了某主任的支持……靠自己却玩的更high了…也许天生不适合学习吧…<br>天朝的制度…不上大学就没有好工作…没有好工作就没钱搞事情…<br>啊啊啊啊啊  </p>
+<hr>
+<p>把某人重新加了回来，希望这个不知道咋就蹦出来的想法是对的吧…<br>然后就是我的社交障碍估计没得治了，唉…圈子小还清净呢，但xxx对我这么冷淡我！很！不！开！心！不想凭直觉判断什么…但我这直觉只要不用在考试上每次都 <del>TMD</del> 挺准啊！</p>
+<hr>
+<p>就这样吧… 发个博文证明自己还活着… <del>我大概没有自杀倾向…</del> 有小伙伴陪着自杀个锤子</p>
+]]></content:encoded>
+      
+      <comments>https://blog.asec01.net/talk-2018-02/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>再见 2017 ，你好 2018</title>
+      <link>https://blog.asec01.net/hello-2018/</link>
+      <guid>https://blog.asec01.net/hello-2018/</guid>
+      <pubDate>Mon, 01 Jan 2018 15:06:11 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;时光飞逝，转眼间博主快18咯&lt;br&gt;这一年发生了许多许多&lt;br&gt;记性不好，这些能记住的都算印象深刻了吧。。。&lt;br&gt;这是我的第一篇“年终总结”  &lt;/p&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>时光飞逝，转眼间博主快18咯<br>这一年发生了许多许多<br>记性不好，这些能记住的都算印象深刻了吧。。。<br>这是我的第一篇“年终总结”  </p>
+<a id="more"></a>
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="86" src="//music.163.com/outchain/player?type=2&id=40249016&auto=1&height=66"></iframe>
+------
+
+<h4 id="年初"><a href="#年初" class="headerlink" title="年初"></a>年初</h4><p>刚开完一个令我印象深刻的联欢会，</p>
+<blockquote>
+<p>为啥印象深刻呢？校级联欢，老师托我搞了个微信墙。。。Exciting</p>
+<p>&lt;– 这行记录的事情被我隐藏了，知道这些事的人并不多。。 –&gt;<!--在之前一个多月的排练时间中。。。出了点感情问题。。。从隐隐喜欢，到害怕被控制，再到强行断开。。现在想想。。有点对不住人家。。。--></p>
+</blockquote>
+<p>就被主任托给各个会考科目的老师折腾会考去了。。。一个元旦折腾过去，会考过了。</p>
+<p>入坑Ingress，成了北绿一个小小的特工。</p>
+<hr>
+<h4 id="寒假"><a href="#寒假" class="headerlink" title="寒假"></a>寒假</h4><p>参与了北京南站的志愿者活动，在一个小团体过得挺舒服，也看到了一些社会上的不良现象。</p>
+<hr>
+<h4 id="三月"><a href="#三月" class="headerlink" title="三月"></a>三月</h4><p>上一届的高三成人礼，再次在后台干活。<br>急脾气该改改了，我坚持自己的方案，差点与某个没理解我思路的老师吵起来。。。<br>成人礼最后，想用奶油整一下某个学长，最后却被他按在地上抹了一脸[捂脸]  </p>
+<p>生日那天，明明送了我一组 USB充电的AA电池 ，之前一直念叨让学校买点试试，结果他先买了（似乎现在学校还没买。。。），现在一个在鼠标里，两个在包里备着，还有一个在家里吃灰。。。</p>
+<hr>
+<h4 id="四月"><a href="#四月" class="headerlink" title="四月"></a>四月</h4><p>游学，去西安，各种折腾，晚上睡觉前要收手机，第一天交了一个，第二天年级组长看我在接近收手机时发了个朋友圈，于是断定我有俩手机，于是晚上交了俩（我带了四个哈哈哈）<br>&lt;– 感情问题。。。继续隐藏。。。 –&gt;<!-- 与某人聊的很开心。。。又有了一段麻烦的感情。。。价值观不同在一起是个错误的决定。。。。喜欢她笑的样子，却又没信心继续。。。--></p>
+<hr>
+<h4 id="接近夏天"><a href="#接近夏天" class="headerlink" title="接近夏天"></a>接近夏天</h4><p>和明明一起参加了个 <a href="https://blog.asec01.net/robot-competition-2017/">机器人足球比赛</a> ，非常懵逼的干趴下好几队。。。在最后一轮输给了冠军。。。然后似乎全校老师都认识我和明明了。。。</p>
+<p>放假前和明明<a href="https://blog.asec01.net/bj54zx-2017-summer/">帮学校弄视频</a>，第一次用 AE 做动画（套模板）</p>
+<hr>
+<h4 id="暑假"><a href="#暑假" class="headerlink" title="暑假"></a>暑假</h4><p>刚放假就去石家庄“玩”，被老姐按在她屋里学了两周，回京继续被她按着学。。。</p>
+<p>老妈收走了我的显示器。。于是我这个熊孩子找了个废笔记本屏幕<a href="https://blog.asec01.net/how-to-modified-laptop-screen-to-monitor/">组装了个显示器</a>。。。</p>
+<hr>
+<h4 id="秋季开学"><a href="#秋季开学" class="headerlink" title="秋季开学"></a>秋季开学</h4><p>没啥好说的，学吧（我这重度电子依赖症终于能一整天离开手机了）<br>搬到 分校后基本没得玩了。。。<br>班里电脑 没有网，于是接了无线网卡，后来觉得无线网卡不好使又换了路由器。。。</p>
+<hr>
+<h4 id="年末"><a href="#年末" class="headerlink" title="年末"></a>年末</h4><p>新年联欢，主任出差，设备靠自己，照样玩得挺High</p>
+<hr>
+<p>其他事件等我想起来再加吧 。。。。</p>
+<hr>
+<h4 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h4><p>希望自己在高考前少碰点电子设备吧。。。</p>
+]]></content:encoded>
+      
+      <comments>https://blog.asec01.net/hello-2018/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>ESP8266 断网神器 基础使用</title>
+      <link>https://blog.asec01.net/esp8266-wifi-deauther-basic/</link>
+      <guid>https://blog.asec01.net/esp8266-wifi-deauther-basic/</guid>
+      <pubDate>Wed, 04 Oct 2017 15:51:03 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;我们都是熊孩纸~~~ x2&lt;/p&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>我们都是熊孩纸~~~ x2</p>
+<a id="more"></a>
+<hr>
+<p>&lt; 接上文 &gt;</p>
+<h4>基础使用</h4>
+<p>本文仅介绍Deauth攻击。<br>
+后续我会写关于Beacon和Probe的使用方式，敬请期待</p>
+<hr>
+<h4>连接</h4>
+<p>这块没有啥好说的。。。<br>
+使用手机或者 PC 搜索 WiFi 接入点<br>
+你会发现一个名为 <strong>pwned</strong> 的接入点，此热点默认密码为 <strong>deauther</strong><br>
+<img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther-basic/connect-wifi-01.png" alt="image"><br>
+<img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther-basic/connect-wifi-02.png" alt="image"></p>
+<p>然后随便打开个现代一点的浏览器（360滚，谁知道他会搞出什么事）<br>
+在地址栏输入 <strong>192.168.4.1</strong><br>
+<img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther-basic/web-warning.png" alt="image"></p>
+<p>翻译：</p>
+<blockquote>
+<p>此软件仅用于测试802.11 标准中的常见漏洞.<br>
+它可以中断无保护的 wi-fi 连接.<br>
+在使用之前请查阅您的国家的法律.</p>
+<p>您只能在自己的网络和设备上使用它!<br>
+此软件在未经许可的情况下对其他网络的使用是非法的!</p>
+<p>你要为你所做的一切包括这个程序负责!<br>
+它将记录所有针对任何网络和设备的操作.</p>
+<p>请不要将此项目命名为干扰器，他没有扰乱任何频率。<br>
+去 <a href="http://github.com/spacehuhn/esp8266_deauther" target="_blank" rel="noopener">github.com/spacehuhn/esp8266_deauther</a> 获得更多信息</p>
+</blockquote>
+<p>当然果断理解啦</p>
+<hr>
+<h4>扫描接入点</h4>
+<p>理解了上面的通知会直接把你带到扫描页面（192.168.4.1/apscan.html）<br>
+<img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther-basic/web-scan-aps.png" alt="image"></p>
+<p>等待几秒，扫描完成<br>
+<img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther-basic/web-scan-aps-result.png" alt="image"><br>
+选择攻击目标<br>
+<img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther-basic/web-scan-aps-select.png" alt="image"></p>
+<hr>
+<h4>攻击</h4>
+<p>切换到攻击页面（192.168.4.1/attack.html）<br>
+<img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther-basic/web-attack.png" alt="image"></p>
+<p>开始攻击<br>
+<img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther-basic/web-attack-start.png" alt="image"></p>
+<hr>
+<h4>效果</h4>
+<p>2.4G 就是连不上<br>
+<img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther-basic/phone-wifi-01.png" alt="image"><br>
+<img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther-basic/phone-wifi-02.png" alt="image"></p>
+<hr>
+<h4>设置</h4>
+<p>切换到设置页面（192.168.4.1/settings.html）<br>
+<img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther-basic/web-settings-1.png" alt="image"><br>
+SSID 是控制板子用的接入点的名称<br>
+Password 是连接密码</p>
+<p><img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther-basic/web-settings-2.png" alt="image"><br>
+Timeout 是自动停止时间<br>
+调成0为不自动停止</p>
+<p>其他设置不建议新手小白修改。。。</p>
+<hr>
+<h3>本文，完</h3>
+<p>Beacon之类的请待我更新下一篇博文。。。</p>
+]]></content:encoded>
+      
+      <comments>https://blog.asec01.net/esp8266-wifi-deauther-basic/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>ESP8266 断网神器 淘板子与刷入程序</title>
+      <link>https://blog.asec01.net/esp8266-wifi-deauther/</link>
+      <guid>https://blog.asec01.net/esp8266-wifi-deauther/</guid>
+      <pubDate>Tue, 03 Oct 2017 17:38:09 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;我们都是熊孩纸~~~&lt;/p&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>我们都是熊孩纸~~~</p>
+<a id="more"></a>
+<h4>实现原理：</h4>
+<blockquote>
+<p>Deauth（去认证）攻击<br>
+任何客户端进入一个无线网络前必须先获得一个AP接入点的认证，在这之后跟这个AP相关联。当一个客户端离开时，他会发送一个去除认证信息去不再和AP进行关联。攻击者可以向绑定到客户端IP地址的接入点发送去除认证消息，从而使用户离线并且需要重新认证，从而让攻击者可以观察到重新认证握手时候的有价值的信息。<br>
+为了防御这种攻击，可以设置接入点延迟解除认证或者解除关联请求（比如这样的请求需要排队等待5到10秒），从而给接入点机会来观测客户端后续发送过来的数据包。如果一个数据包在一个解除认证或者解除关联请求被放入等待队列之后到达，那么该请求会被丢弃，因为合法客户端将不会以该顺序生成数据包。</p>
+<p>来自 维基百科 网络接口层安全 （“Deauth（去认证）攻击”章节）</p>
+</blockquote>
+<hr>
+<h3>搞事情第一步当然是采购</h3>
+<p>某宝上面淘一块，推荐NodeMCU<br>
+推荐选择CP2102版本的，CH340的那个大了点。。。<br>
+CP2102: <a href="https://cnhv.co/2gua" target="_blank" rel="noopener">https://item.taobao.com/item.htm?id=530734023642</a><br>
+CH-340: <a href="https://cnhv.co/2gul" target="_blank" rel="noopener">https://item.taobao.com/item.htm?id=531755241333</a></p>
+<hr>
+<h3>然后货到了开搞</h3>
+<h4>两种搞事情的方式</h4>
+<ol>
+<li>直接刷大佬编译好的程序</li>
+<li>把大佬的源码拉过来自己编译</li>
+</ol>
+<p>本文先介绍第一种方式<br>
+第二种似乎。。没有什么必要<br>
+以后再写吧</p>
+<hr>
+<h4>下载 NodeMCU-Flasher</h4>
+<p><a href="https://cnhv.co/2gv8" target="_blank" rel="noopener">https://github.com/nodemcu/nodemcu-flasher</a></p>
+<p><img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther/nodemcu-flasher-download.PNG" alt="image"></p>
+<p>根据你自己的操作系统版本，这俩文件夹自己选<br>
+<img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther/nodemcu-flasher-use-01.PNG" alt="image"></p>
+<p><img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther/nodemcu-flasher-use-02.PNG" alt="image"></p>
+<p>打开软件<br>
+<img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther/nodemcu-flasher-use-03.PNG" alt="image"></p>
+<p>将 NodeMCU 连接到电脑上<br>
+（我就不告诉你咋装驱动）<br>
+<img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther/nodemcu-flasher-connect.PNG" alt="image"><br>
+连接成功，放在一边</p>
+<hr>
+<h4>下载 esp8266_deauther</h4>
+<p>发布地址: <a href="https://cnhv.co/2gx7" target="_blank" rel="noopener">https://github.com/spacehuhn/esp8266_deauther/releases</a><br>
+直接下载: <a href="https://cnhv.co/2gxo" target="_blank" rel="noopener">https://github.com/spacehuhn/esp8266_deauther/releases/download/v.1.6/esp8266_deauther_1mb.bin</a></p>
+<hr>
+<h4>开始刷程序</h4>
+<p>Config -&gt; 小齿轮 -&gt; 选择刚刚下载的文件<br>
+<img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther/nodemcu-flasher-use-04.PNG" alt="image"></p>
+<p>Operation -&gt; Flash<br>
+<img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther/nodemcu-flasher-use-05.PNG" alt="image"></p>
+<p>刷入完成<br>
+<img src="https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther/nodemcu-flasher-use-05.PNG" alt="image"></p>
+<hr>
+<h3>本文，完</h3>
+<p>基础使用请看：<a href="https://cnhv.co/2mip" target="_blank" rel="noopener">https://blog.zhangzhe-tech.cn/esp8266-wifi-deauther-basic/</a></p>
+]]></content:encoded>
+      
+      <comments>https://blog.asec01.net/esp8266-wifi-deauther/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>九年计划</title>
+      <link>https://blog.asec01.net/nine-years-plan/</link>
+      <guid>https://blog.asec01.net/nine-years-plan/</guid>
+      <pubDate>Thu, 21 Sep 2017 05:08:00 GMT</pubDate>
+      <description>
+      
+        &lt;h2&gt;简单说明&lt;/h2&gt;
+&lt;p&gt;在北京市第五十四中学的秋季运动会上，武旭主任屡次担当女子实心球裁判。&lt;/p&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<h2>简单说明</h2>
+<p>在北京市第五十四中学的秋季运动会上，武旭主任屡次担当女子实心球裁判。</p>
+<a id="more"></a>  
+<p>每年计划的执行者都会拍下一张武旭主任坐在那里的照片[滑稽]<br>
+本计划的目标是拍摄武旭主任9年的变化，在计划最后一年在朋友圈中发9张图。</p>
+<h2>成果展示</h2>
+<p>2014 [暂未添加原图]<br>
+<img src="https://blog.zhangzhe-tech.cn/nine-years-plan/2014.jpg" alt="image"></p>
+<p>2015 [暂未添加原图]<br>
+<img src="https://blog.zhangzhe-tech.cn/nine-years-plan/2015.jpg" alt="image"></p>
+<p>2016 [暂未添加原图]<br>
+<img src="https://blog.zhangzhe-tech.cn/nine-years-plan/2016.jpg" alt="image"></p>
+<p>2017 [暂未添加原图]<br>
+<img src="https://blog.zhangzhe-tech.cn/nine-years-plan/2017.JPG" alt="image"></p>
+<p>2018 <a href="https://blog.zhangzhe-tech.cn/nine-years-plan/2018-o.jpg" target="_blank" rel="noopener">原图</a><br>
+<img src="https://blog.zhangzhe-tech.cn/nine-years-plan/2018-s.jpg" alt="image"></p>
+<h2>计划成员</h2>
+<ul>
+<li>
+<p><strong>江昊楠</strong>：本计划的发起者。<br>
+拍摄2014-2016年，共三张<br>
+当时的职务：DV社团社长（2014-2016）</p>
+</li>
+<li>
+<p><strong>张哲</strong>：拍摄2017 2018<br>
+当时的职务：科技社团社长（2016-2017）</p>
+</li>
+<li>
+<p><strong>周慧明</strong>： 拍摄2017<br>
+当时的职务：科技社团副社长（2016-2017）</p>
+</li>
+<li>
+<p><strong>蒋思怡</strong>：拍摄2018<br>
+当时的职务：跑路的预备社长</p>
+</li>
+</ul>
+<h2>备注</h2>
+<ul>
+<li>本计划由 2017届毕业生 <strong>江昊楠</strong> 发起。</li>
+<li>本计划共需要9年，已执行5年。</li>
+</ul>
+]]></content:encoded>
+      
+      <comments>https://blog.asec01.net/nine-years-plan/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>辣鸡MIUI</title>
+      <link>https://blog.asec01.net/junk-miui/</link>
+      <guid>https://blog.asec01.net/junk-miui/</guid>
+      <pubDate>Sun, 10 Sep 2017 15:55:19 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;MIUI9 快如闪电&lt;br&gt;
+快你个锤子&lt;/p&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>MIUI9 快如闪电<br>
+快你个锤子</p>
+<a id="more"></a>
+<p>不小心把Magisk框架弄崩了<br>
+然后爽死我<br>
+绿色守护没自动休眠应用<br>
+冰箱把国产毒瘤都放出来了<br>
+开个摩拜小车要5分钟<br>
+网易云音乐开始慢放</p>
+<p>Magisk死了的时候内存最多能剩1.3G<br>
+卡的要命<br>
+修好了只剩不到700M<br>
+一点都不卡<br>
+谁能给我解释一下这是啥个意思</p>
+<p>更新到开发板 7.9.7<br>
+依旧装不上Magisk v14.0<br>
+还强行改我按键习惯<br>
+短按菜单键不能显示菜单<br>
+那这玩意为何还要叫菜单键<br>
+<img src="https://blog.zhangzhe-tech.cn/junk-miui/Screenshot_2017-09-10-23-25-17-255_com.android.settings.png" alt="image"></p>
+<p>以后换手机绝对不用国产深度定制系统</p>
+]]></content:encoded>
+      
+      <comments>https://blog.asec01.net/junk-miui/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>用笔记本屏幕造个显示器</title>
+      <link>https://blog.asec01.net/how-to-modified-laptop-screen-to-monitor/</link>
+      <guid>https://blog.asec01.net/how-to-modified-laptop-screen-to-monitor/</guid>
+      <pubDate>Sat, 12 Aug 2017 15:18:12 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;嗯，高三了，老妈没收了我的显示器[捂脸] （虽然以前也不给我吧）  &lt;/p&gt;
+&lt;p&gt;暑假还有点时间，搞事！&lt;/p&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>嗯，高三了，老妈没收了我的显示器[捂脸] （虽然以前也不给我吧）  </p>
+<p>暑假还有点时间，搞事！</p>
+<a id="more"></a>
+<hr>
+<h2 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h2><h5 id="2017-8-10-11"><a href="#2017-8-10-11" class="headerlink" title="2017.8.10-11"></a>2017.8.10-11</h5><p>手头有个巨老的笔记本 NEC Versa S3000<br>拆了拆了<br>嗯第一次拆笔记本，喵的键盘还可以卸下来[再次捂脸]<br>拆机过程并不重要，重要的是我忘记拍照了[第三次捂脸]</p>
+<p>液晶屏GET√</p>
+<p><img src="IMG_20170812_225438.jpg" alt="image"></p>
+<p><img src="IMG_20170811_224208.jpg" alt="image"></p>
+<p>然后是 华强宝</p>
+<p><img src="IMG_20170812_225912.png" alt="image"></p>
+<hr>
+<h2 id="货到啦"><a href="#货到啦" class="headerlink" title="货到啦"></a>货到啦</h2><h5 id="2017-08-14"><a href="#2017-08-14" class="headerlink" title="2017.08.14"></a>2017.08.14</h5><p>忘记拍拆包了[捂脸]</p>
+<p>组装起来试一试<br><img src="IMG_20170814_155301.jpg" alt="image"><br><img src="IMG_20170814_155347.jpg" alt="image"><br>嗯，很好，能用</p>
+<p>然后开始搞外壳<br><img src="IMG_20170814_160510.jpg" alt="image"></p>
+<p><img src="IMG_20170814_160914.jpg" alt="image"><br>放到原来的外壳上</p>
+<p><img src="IMG_20170814_160942.jpg" alt="image"><br>某根电源线太短我只能在外壳上打洞了[捂脸]</p>
+<p><img src="IMG_20170814_161309.jpg" alt="image"><br>装上外壳依旧能用</p>
+<h3 id="这就完了？"><a href="#这就完了？" class="headerlink" title="这就完了？"></a>这就完了？</h3><h2 id="才怪嘞！"><a href="#才怪嘞！" class="headerlink" title="才怪嘞！"></a>才怪嘞！</h2><p>裸着用怎么行<br>给线路板加个壳保护一下嘛</p>
+<p><img src="IMG_20170814_162432.jpg" alt="image"><br>快递盒的正确用法</p>
+<p><img src="IMG_20170814_162550.jpg" alt="image"><br>万能的泡棉胶</p>
+<h2 id="完工！"><a href="#完工！" class="headerlink" title="完工！"></a>完工！</h2><p><img src="IMG_20170814_230405.jpg" alt="image"></p>
+<p><img src="IMG_20170814_164029.jpg" alt="image"></p>
+<p>希望不会被我和蔼的老妈发现[捂脸]</p>
+]]></content:encoded>
+      
+      <comments>https://blog.asec01.net/how-to-modified-laptop-screen-to-monitor/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>做好精致教育 成就共同梦想</title>
+      <link>https://blog.asec01.net/bj54zx-2017-summer/</link>
+      <guid>https://blog.asec01.net/bj54zx-2017-summer/</guid>
+      <pubDate>Wed, 12 Jul 2017 09:48:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;​北京市第五十四中学 2017·夏&lt;/p&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>​北京市第五十四中学 2017·夏</p>
+<a id="more"></a>
+<p>高清未压缩视频下载：链接: <a href="https://pan.baidu.com/s/1bpGRDNL" target="_blank" rel="noopener">https://pan.baidu.com/s/1bpGRDNL</a> 密码: e77u</p>
+<iframe frameborder="0" width="640" height="498" src="https://v.qq.com/iframe/player.html?vid=k0524y6pq4g&tiny=0&auto=0" allowfullscreen></iframe>
+<p>制作：<br>
+张哲 周慧明</p>
+<p>策划：<br>
+北京市第五十四中学 科宣处</p>
+<p>技术支持：<br>
+北京市第五十四中学 信息中心</p>
+]]></content:encoded>
+      
+      <comments>https://blog.asec01.net/bj54zx-2017-summer/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>使用一言API做些东西</title>
+      <link>https://blog.asec01.net/use-yiyan-api-build-something/</link>
+      <guid>https://blog.asec01.net/use-yiyan-api-build-something/</guid>
+      <pubDate>Mon, 26 Jun 2017 05:33:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;官方说明：&lt;a href=&quot;http://hitokoto.cn/api&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://hitokoto.cn/api&lt;/a&gt;&lt;/p&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>官方说明：<a href="http://hitokoto.cn/api" target="_blank" rel="noopener">http://hitokoto.cn/api</a></p>
+<a id="more"></a>
+<p>由于会考和中考，又放了一个小长假，无聊嘛，做一些东西</p>
+<p><img src="https://blog.zhangzhe-tech.cn/use-yiyan-api-build-something/2662489850.jpg" alt="20170626133226.jpg"></p>
+<p>比如博客顶部的这个</p>
+<p><img src="https://blog.zhangzhe-tech.cn/use-yiyan-api-build-something/1788633181.jpg" alt="20170626133342.jpg"></p>
+<p>还有这个</p>
+<p>这俩都调用了一言（<a href="http://hitokoto.cn" target="_blank" rel="noopener">hitokoto.cn</a>）的API。</p>
+<p>第一个源码在here↓<br>
+<a href="https://blog.zhangzhe-tech.cn/use-yiyan-api-build-something/3342414833.zip" target="_blank" rel="noopener">yiyan.zip</a></p>
+<p>第二个就不放源码了哈，实现起来一点都不难<br>
+<a href="http://public.asec01.net/projects/yiyan/" target="_blank" rel="noopener">http://public.asec01.net/projects/yiyan/</a></p>
+]]></content:encoded>
+      
+      <comments>https://blog.asec01.net/use-yiyan-api-build-something/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>第十八届机器人竞赛 - 经验与总结</title>
+      <link>https://blog.asec01.net/robot-competition-2017-exp/</link>
+      <guid>https://blog.asec01.net/robot-competition-2017-exp/</guid>
+      <pubDate>Sat, 24 Jun 2017 09:20:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;lalala&lt;/p&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>lalala</p>
+<a id="more"></a>
+
+<h3 id="程序与硬件方面"><a href="#程序与硬件方面" class="headerlink" title="程序与硬件方面"></a>程序与硬件方面</h3><h5 id="在厂家提供的程序上做出修改，添加拨码开关用于快速调整开球战术。"><a href="#在厂家提供的程序上做出修改，添加拨码开关用于快速调整开球战术。" class="headerlink" title="在厂家提供的程序上做出修改，添加拨码开关用于快速调整开球战术。"></a>在厂家提供的程序上做出修改，添加拨码开关用于快速调整开球战术。</h5><ol>
+<li>重新测量距离数据，使程序判断车在赛场中的位置更加精准。  </li>
+<li>修改添加开球战术。  <ul>
+<li>战术1:启动后0.3s内不受追球程序控制，前0.05s以40%的功率进行直冲，后0.25s以100%的功率直冲。这是最常用的战术，用于冲破对方防线 。  </li>
+<li>战术2:(仅用于开球)启动后0.3s内不受追球程序控制，前0.05s以40%的功率进行直冲，之后带球向右偏转，最后启动追球模块尝试射门。</li>
+<li>战术3:启动后0.5s内不受追球程序控制，前0.05s以40%的功率进行直冲，后0.45s以100%的功率直冲。此战术可在开球时扰乱对方机器人的进攻路线，使另一台机器人获得优势。</li>
+</ul>
+</li>
+</ol>
+<h3 id="比赛"><a href="#比赛" class="headerlink" title="比赛"></a>比赛</h3><ol>
+<li>对方机器人并排放在球门前，中间留空，我方开球，直接启用战术1，进球成功率99％</li>
+<li>对方开球，我方防守，一个机器人正对对方机器人，开启冲撞战术，有很大几率抢到球。</li>
+<li>开球时机器人不正对球，用前部偏左或偏右撞击机器人，可使机器人在开球时向右偏，绕开对方防线。</li>
+<li>(有待验证)对方机器比我方功率大时，可将我方一台机器人的功率调制80%，以柔克刚。</li>
+<li>(有待验证)对方一台机器人由于各种原因下场时，我方也应停用一台机器人，由于场地小，数量优势在这里可能是劣势。</li>
+<li>中场休息时用风扇给电机散热。</li>
+</ol>
+<hr>
+<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>付出总会有收获。</p>
+<hr>
+<h4 id="未完待续-by-哲"><a href="#未完待续-by-哲" class="headerlink" title="未完待续 by 哲"></a>未完待续 by 哲</h4>]]></content:encoded>
+      
+      <comments>https://blog.asec01.net/robot-competition-2017-exp/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>第十八届机器人竞赛</title>
+      <link>https://blog.asec01.net/robot-competition-2017/</link>
+      <guid>https://blog.asec01.net/robot-competition-2017/</guid>
+      <pubDate>Sat, 24 Jun 2017 09:09:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;好几天前就该写了。。。&lt;/p&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>好几天前就该写了。。。</p>
+<a id="more"></a>
+
+<hr>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=430026356&auto=1&height=66"></iframe>
+
+
+<!--more-->
+
+
+<hr>
+<p>经过6月10、11两天的激烈角逐，我和明明小组赛三战全胜，半决赛惜败最后的冠军队，止步四强，最后在全市各区县11支代表队中夺得第三名。感谢学校为我们提供这么好的环境。<br><img src="https://blog.zhangzhe-tech.cn/robot-competition-2017/2483275344.jpg" alt="1.jpg"></p>
+<p><img src="https://blog.zhangzhe-tech.cn/robot-competition-2017/2044858228.jpg" alt="2.jpg"></p>
+<p><img src="https://blog.zhangzhe-tech.cn/robot-competition-2017/3208353433.jpg" alt="3.jpg"></p>
+<p><img src="https://blog.zhangzhe-tech.cn/robot-competition-2017/381128313.jpg" alt="4.jpg"></p>
+<p><img src="https://blog.zhangzhe-tech.cn/robot-competition-2017/2531674439.jpg" alt="5.jpg"></p>
+<p><img src="https://blog.zhangzhe-tech.cn/robot-competition-2017/965860375.jpg" alt="6.jpg"></p>
+<p><img src="https://blog.zhangzhe-tech.cn/robot-competition-2017/1849840459.jpg" alt="7.jpg"></p>
+<p><img src="https://blog.zhangzhe-tech.cn/robot-competition-2017/3985478342.jpg" alt="8.jpg"></p>
+<p><img src="https://blog.zhangzhe-tech.cn/robot-competition-2017/2264798567.jpg" alt="9.jpg"></p>
+<hr>
+<h3 id="经验"><a href="#经验" class="headerlink" title="经验"></a>经验</h3><p><a href="https://blog.zhangzhe-tech.cn/robot-competition-2017-exp/" target="_blank" rel="noopener">https://blog.zhangzhe-tech.cn/robot-competition-2017-exp/</a></p>
+<h3 id="部分内容来源"><a href="#部分内容来源" class="headerlink" title="部分内容来源"></a>部分内容来源</h3><p><a href="https://mp.weixin.qq.com/s?__biz=MzAxODU1ODg2Mg==&amp;mid=2649515921&amp;idx=1&amp;sn=13c130e958b01e94d92f2eeb8a8cd2b9" target="_blank" rel="noopener">https://mp.weixin.qq.com/s?__biz=MzAxODU1ODg2Mg==&amp;mid=2649515921&amp;idx=1&amp;sn=13c130e958b01e94d92f2eeb8a8cd2b9</a></p>
+]]></content:encoded>
+      
+      <comments>https://blog.asec01.net/robot-competition-2017/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>使用html和nginx配置文件实现页面跳转</title>
+      <link>https://blog.asec01.net/use-html-and-nginx-to-redirect/</link>
+      <guid>https://blog.asec01.net/use-html-and-nginx-to-redirect/</guid>
+      <pubDate>Tue, 06 Jun 2017 07:29:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;lalala&lt;/p&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>lalala</p>
+<a id="more"></a>
+
+<h2>html方式</h2>
+等待5秒，跳转到https://www.google.com/
+<pre class="pure-highlightjs"><code class>&lt;meta http-equiv="refresh" content="5;url=https://www.google.com/"&gt;</code></pre>
+插入至&lt;head&gt;标签中即可
+
+<h2>nginx 301/302 页面重定向</h2>
+<h3>301</h3>
+<pre class="pure-highlightjs"><code class>rewrite ^/(.*) http://exp.com/$1 permanent;</code></pre>
+<h3>302</h3>
+<pre class="pure-highlightjs"><code class>rewrite ^/(.*) http://exp.com/$1 redirect;</code></pre>
+<span style="color: #333333; font-family: Arial, 'Microsoft YaHei'; font-size: 15.75px; background-color: #ffffff;">插入至 server{ 与 } 之间即可</span>
+
+<p><span style="color: #333333; font-family: Arial, 'Microsoft YaHei';"><span style="font-size: 15.75px; background-color: #ffffff;">示例：</span></span></p>
+<pre class="pure-highlightjs"><code class>server{
+    listen 80;
+    server_name jump.asec01.net;
+    rewrite ^/(.*) https://blog.zhangzhe-tech.cn/$1 permanent;
+    access_log off;
+}</code></pre>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="color: #333333; font-family: Arial, 'Microsoft YaHei'; font-size: 15.75px; background-color: #ffffff;">注:301为永久跳转，302为临时跳转。<br></span></p>
+<h3 class="title-level-3" style="margin: 0.15rem 0px 0px; font-size: 0.17rem; line-height: 1.5; color: #3f3f3f; font-family: Helvetica, sans-serif; background-color: #ffffff;" data-title="301 Moved Permanently"></h3>
+<blockquote>
+<h3 class="title-level-3" data-title="301 Moved Permanently"></h3>
+<h3 class="title-level-3" data-title="301 Moved Permanently">301 Moved Permanently</h3>
+<p class="para">被请求的资源已永久移动到新位置，并且将来任何对此资源的引用都应该使用本响应返回的若干个 URI 之一。如果可能，拥有链接编辑功能的客户端应当自动把请求的地址修改为从服务器反馈回来的地址。除非额外指定，否则这个响应也是可缓存的。</p>
+
+<h3 class="title-level-3" data-title="302 Move temporarily">302 Move temporarily</h3>
+<p class="para">请求的资源临时从不同的 URI响应请求。由于这样的重定向是临时的，客户端应当继续向原有地址发送以后的请求。只有在Cache-Control或Expires中进行了指定的情况下，这个响应才是可缓存的。</p>
+</blockquote>
+]]></content:encoded>
+      
+      <comments>https://blog.asec01.net/use-html-and-nginx-to-redirect/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>[Ingress]一周咸鱼报告17.05.17-20</title>
+      <link>https://blog.asec01.net/ingress-17-05-17-20/</link>
+      <guid>https://blog.asec01.net/ingress-17-05-17-20/</guid>
+      <pubDate>Sun, 21 May 2017 11:33:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;咸鱼咸鱼大咸鱼&lt;/p&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>咸鱼咸鱼大咸鱼</p>
+<a id="more"></a>
+<p>17.05.15 胡连</p>
+<p><img src="https://blog.zhangzhe-tech.cn/ingress-17-05-17-20/wp-1495366216211.png"> </p>
+<p>17.05.16 继续胡连</p>
+<p><img src="https://blog.zhangzhe-tech.cn/ingress-17-05-17-20/wp-1495366179420.png"> </p>
+<p>17.05.17 LVL7 get√</p>
+<p><img src="https://blog.zhangzhe-tech.cn/ingress-17-05-17-20/wp-1495366140374.jpg">  </p>
+<p>17.05.18 第一次用 L7 的 XMP Buster</p>
+<img src="https://blog.zhangzhe-tech.cn/ingress-17-05-17-20/wp-1495365637512.png">
+<p> </p>
+<p>17.05.19 早上发现刘家窑的新 Portal</p>
+<img src="https://blog.zhangzhe-tech.cn/ingress-17-05-17-20/wp-1495365781839.png">
+<p>放学把门口总部绿了</p>
+<img src="https://blog.zhangzhe-tech.cn/ingress-17-05-17-20/wp-1495365702494.png" style="color: rgb(0, 135, 190);">
+<p> </p>
+<p>17.05.20 大晚上出去搞事</p>
+<p>红桶get√</p>
+<img src="https://blog.zhangzhe-tech.cn/ingress-17-05-17-20/wp-1495365951182.png">
+<p>经验get√</p>
+<p><img src="https://blog.zhangzhe-tech.cn/ingress-17-05-17-20/wp-1495365998666.png">体力。。没了</p>
+<img src="https://blog.zhangzhe-tech.cn/ingress-17-05-17-20/wp-1495365985318.png">]]></content:encoded>
+      
+      <comments>https://blog.asec01.net/ingress-17-05-17-20/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>[Ingress]咸鱼报告17.05.14</title>
+      <link>https://blog.asec01.net/ingress-17-05-14/</link>
+      <guid>https://blog.asec01.net/ingress-17-05-14/</guid>
+      <pubDate>Sun, 14 May 2017 15:09:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;咸鱼咸鱼小咸鱼&lt;/p&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>咸鱼咸鱼小咸鱼</p>
+<a id="more"></a>
+<p>17-5-13↓</p>
+<img src="https://blog.zhangzhe-tech.cn/ingress-17-05-14/wp-1494774233962.png">
+<p>～～～我是一条分割线～～～</p>
+<p>17-05-14↓</p>
+<img src="https://blog.zhangzhe-tech.cn/ingress-17-05-14/wp-1494774415673.png">
+<p>～～～我是一条分割线～～～<br>
+and小黄车↓</p>
+<img src="https://blog.zhangzhe-tech.cn/ingress-17-05-14/wp-1494774452946.png">]]></content:encoded>
+      
+      <comments>https://blog.asec01.net/ingress-17-05-14/#disqus_thread</comments>
+    </item>
+    
+  </channel>
+</rss>
